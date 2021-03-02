@@ -10,6 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.NewCoffeeApp">
         <activity android:name=".Hariov60Activity"
+            android:label="@string/hario_v60"
             android:parentActivityName=".MainActivity"/>
         <activity android:name=".MainActivity">
             <intent-filter>

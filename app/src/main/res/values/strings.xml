@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">NewCoffeeApp</string>
+    <string name="app_name">The New Coffee App</string>
+    <string name="hario_v60">Hario V60</string>
+    <string name="aeropress">Aeropress</string>
+    <string name="french_press">French Press</string>
+    <string name="iced_coffee">Iced Coffee</string>
 </resources>

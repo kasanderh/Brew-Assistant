@@ -26,6 +26,7 @@
         app:layout_constraintTop_toBottomOf="@+id/image_view_main">
 
         <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_marginTop="24dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
@@ -54,7 +55,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/image_view_card_v60"
-                        tools:text="Hario V60" />
+                        android:text="@string/hario_v60" />
 
                 </RelativeLayout>
 
@@ -83,7 +84,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/image_view_card_aeropress"
-                        tools:text="Aeropress" />
+                        android:text="@string/aeropress" />
 
                 </RelativeLayout>
 
@@ -114,7 +115,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/image_view_card_french_press"
-                        tools:text="French Press" />
+                        android:text="@string/french_press" />
 
                 </RelativeLayout>
 
@@ -146,7 +147,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/image_view_card_iced_coffee"
-                        tools:text="Iced Coffee" />
+                        android:text="@string/iced_coffee" />
 
                 </RelativeLayout>
 
