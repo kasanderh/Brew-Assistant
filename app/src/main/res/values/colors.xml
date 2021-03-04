@@ -6,8 +6,10 @@
     <color name="teal_200">#FF03DAC5</color>
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
+    <color name="off_black">#DD1B1A1A</color>
     <color name="white">#FFFFFFFF</color>
     <color name="latte">#FFF8E7</color>
-    <color name="coffee_brown">#B3864B</color>
+    <color name="coffee_brown">#936221</color>
+    <color name="coffee_beige">#AC834D</color>
 
 </resources>

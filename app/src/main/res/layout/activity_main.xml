@@ -17,45 +17,47 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ScrollView
-        android:background="@color/latte"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:background="@color/latte"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/image_view_main">
 
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_marginTop="24dp"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_view_v60"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
+                app:cardCornerRadius="6dp"
                 app:layout_constraintEnd_toStartOf="@id/card_view_aeropress"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
                 <RelativeLayout
-                    android:background="@color/coffee_brown"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:background="@drawable/background_card_view_main"
                     android:gravity="center">
 
                     <ImageView
                         android:id="@+id/image_view_card_v60"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        tools:src="@drawable/ic_launcher_background" />
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:src="@drawable/ic_coffee_cup" />
 
                     <TextView
                         android:id="@+id/text_view_v60"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/image_view_card_v60"
-                        android:text="@string/hario_v60" />
+                        android:text="@string/hario_v60"
+                        android:textSize="18sp" />
 
                 </RelativeLayout>
 
@@ -65,6 +67,7 @@
                 android:id="@+id/card_view_aeropress"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
+                app:cardCornerRadius="6dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/card_view_v60"
                 app:layout_constraintTop_toTopOf="parent">
@@ -72,19 +75,21 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:background="@drawable/background_card_view_main"
                     android:gravity="center">
 
                     <ImageView
                         android:id="@+id/image_view_card_aeropress"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        tools:src="@drawable/ic_launcher_background" />
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        tools:src="@drawable/ic_coffee_cup" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/image_view_card_aeropress"
-                        android:text="@string/aeropress" />
+                        android:text="@string/aeropress"
+                        android:textSize="18sp" />
 
                 </RelativeLayout>
 
@@ -95,6 +100,7 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_marginTop="24dp"
+                app:cardCornerRadius="6dp"
                 app:layout_constraintEnd_toStartOf="@id/card_view_iced_coffee"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/card_view_v60">
@@ -102,20 +108,22 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:background="@drawable/background_card_view_main"
                     android:gravity="center">
 
                     <ImageView
                         android:id="@+id/image_view_card_french_press"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        tools:src="@drawable/ic_launcher_background" />
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        tools:src="@drawable/ic_coffee_cup" />
 
                     <TextView
                         android:id="@+id/text_view_french_press"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/image_view_card_french_press"
-                        android:text="@string/french_press" />
+                        android:text="@string/french_press"
+                        android:textSize="18sp" />
 
                 </RelativeLayout>
 
@@ -127,6 +135,7 @@
                 android:layout_width="150dp"
                 android:layout_height="150dp"
                 android:layout_marginTop="24dp"
+                app:cardCornerRadius="6dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/card_view_french_press"
                 app:layout_constraintTop_toBottomOf="@id/card_view_aeropress">
@@ -134,20 +143,22 @@
                 <RelativeLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:background="@drawable/background_card_view_main"
                     android:gravity="center">
 
                     <ImageView
                         android:id="@+id/image_view_card_iced_coffee"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        tools:src="@drawable/ic_launcher_background" />
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        tools:src="@drawable/ic_coffee_cup" />
 
                     <TextView
                         android:id="@+id/text_view_iced_coffee"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/image_view_card_iced_coffee"
-                        android:text="@string/iced_coffee" />
+                        android:text="@string/iced_coffee"
+                        android:textSize="18sp" />
 
                 </RelativeLayout>
 
