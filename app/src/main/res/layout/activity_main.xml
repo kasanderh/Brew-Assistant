@@ -32,8 +32,8 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_view_v60"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
                 app:cardCornerRadius="6dp"
                 app:layout_constraintEnd_toStartOf="@id/card_view_aeropress"
                 app:layout_constraintStart_toStartOf="parent"
@@ -49,6 +49,7 @@
                         android:id="@+id/image_view_card_v60"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
+                        android:layout_centerInParent="true"
                         android:src="@drawable/ic_coffee_cup" />
 
                     <TextView
@@ -56,6 +57,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/image_view_card_v60"
+                        android:layout_centerInParent="true"
                         android:text="@string/hario_v60"
                         android:textSize="18sp" />
 
@@ -65,8 +67,8 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_view_aeropress"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
                 app:cardCornerRadius="6dp"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/card_view_v60"
@@ -82,12 +84,14 @@
                         android:id="@+id/image_view_card_aeropress"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
+                        android:layout_centerInParent="true"
                         tools:src="@drawable/ic_coffee_cup" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/image_view_card_aeropress"
+                        android:layout_centerInParent="true"
                         android:text="@string/aeropress"
                         android:textSize="18sp" />
 
@@ -97,8 +101,8 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_view_french_press"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
                 android:layout_marginTop="24dp"
                 app:cardCornerRadius="6dp"
                 app:layout_constraintEnd_toStartOf="@id/card_view_iced_coffee"
@@ -115,6 +119,7 @@
                         android:id="@+id/image_view_card_french_press"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
+                        android:layout_centerInParent="true"
                         tools:src="@drawable/ic_coffee_cup" />
 
                     <TextView
@@ -122,6 +127,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/image_view_card_french_press"
+                        android:layout_centerInParent="true"
                         android:text="@string/french_press"
                         android:textSize="18sp" />
 
@@ -132,8 +138,8 @@
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_view_iced_coffee"
-                android:layout_width="150dp"
-                android:layout_height="150dp"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
                 android:layout_marginTop="24dp"
                 app:cardCornerRadius="6dp"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -150,6 +156,7 @@
                         android:id="@+id/image_view_card_iced_coffee"
                         android:layout_width="80dp"
                         android:layout_height="80dp"
+                        android:layout_centerInParent="true"
                         tools:src="@drawable/ic_coffee_cup" />
 
                     <TextView
@@ -157,7 +164,84 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/image_view_card_iced_coffee"
+                        android:layout_centerInParent="true"
                         android:text="@string/iced_coffee"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view_coffee_tips"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="6dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/card_view_aeropress"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card_view_french_press">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_card_view_main"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/image_view_card_coffee_tips"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_coffee_cup" />
+
+                    <TextView
+                        android:id="@+id/text_view_coffee_tips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image_view_card_coffee_tips"
+                        android:layout_centerInParent="true"
+                        android:text="@string/coffee_tips"
+                        android:textSize="18sp" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view_calculator"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="6dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/card_view_coffee_tips"
+                app:layout_constraintTop_toBottomOf="@id/card_view_iced_coffee">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_card_view_main"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:id="@+id/image_view_card_calculator"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_coffee_cup" />
+
+                    <TextView
+                        android:id="@+id/text_view_calculator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image_view_card_calculator"
+                        android:layout_centerInParent="true"
+                        android:text="@string/calculator"
                         android:textSize="18sp" />
 
                 </RelativeLayout>

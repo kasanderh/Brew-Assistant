@@ -4,4 +4,6 @@
     <string name="aeropress">Aeropress</string>
     <string name="french_press">French Press</string>
     <string name="iced_coffee">Iced Coffee</string>
+    <string name="coffee_tips">Coffee Tips</string>
+    <string name="calculator">Calculator</string>
 </resources>

@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NewCoffeeApp">
-        <item android:name="android:fontFamily">sans-serif-light</item>
+
         <activity android:name=".Hariov60Activity"
             android:label="@string/hario_v60"
             android:parentActivityName=".MainActivity"/>
