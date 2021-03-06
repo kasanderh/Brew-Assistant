@@ -17,5 +17,25 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, Hariov60Activity::class.java)
             startActivity(intent)
         }
+
+        card_view_aeropress.setOnClickListener {
+            val intent = Intent(this, AeropressActivity::class.java)
+            startActivity(intent)
+        }
+
+        card_view_iced_coffee.setOnClickListener {
+            val intent = Intent(this, IcedCoffeeActivity::class.java)
+            startActivity(intent)
+        }
+
+        card_view_french_press.setOnClickListener {
+            val intent = Intent(this, FrenchPressActivity::class.java)
+            startActivity(intent)
+        }
+
+        card_view_calculator.setOnClickListener {
+            val intent = Intent(this, CalculatorActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

@@ -9,10 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NewCoffeeApp">
-
-        <activity android:name=".Hariov60Activity"
+        <activity android:name=".CalculatorActivity"></activity>
+        <activity
+            android:name=".IcedCoffeeActivity"
+            android:label="@string/iced_coffee"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".FrenchPressActivity"
+            android:label="@string/french_press"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".AeropressActivity"
+            android:label="@string/aeropress"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Hariov60Activity"
             android:label="@string/hario_v60"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
