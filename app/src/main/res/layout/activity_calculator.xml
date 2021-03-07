@@ -7,4 +7,87 @@
     android:background="@color/latte"
     tools:context=".CalculatorActivity">
 
+    <ImageView
+        android:id="@+id/image_view_calculator"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/image_about"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_view_calculator_coffee"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_coffee"
+        app:layout_constraintEnd_toStartOf="@+id/text_edit_coffee"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_view_calculator" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_edit_coffee"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:hint="Coffee in grams"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_view_calculator_coffee"
+        app:layout_constraintTop_toBottomOf="@id/image_view_calculator">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <ImageView
+        android:id="@+id/image_view_calculator_water"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_cup_water"
+        app:layout_constraintEnd_toStartOf="@+id/text_edit_water"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_view_calculator_coffee" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_edit_water"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="24dp"
+        android:hint="Water in grams"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/image_view_calculator_coffee"
+        app:layout_constraintTop_toBottomOf="@id/text_edit_coffee">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:layout_marginStart="48dp"
+        style="@style/Widget.AppCompat.CompoundButton.Switch"
+        android:layout_marginEnd="48dp"
+        android:text="Dose coffee 60 grams or 75 grams"
+        app:layout_constraintTop_toBottomOf="@id/image_view_calculator_water"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:id="@+id/switch_dose"
+        android:layout_width="0dp"
+        android:layout_height="50dp"/>
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>
