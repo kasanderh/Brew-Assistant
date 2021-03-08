@@ -2,8 +2,8 @@
     <!-- Base application theme. -->
     <style name="Theme.NewCoffeeApp" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/coffee_brown</item>
-        <item name="colorPrimaryVariant">@color/coffee_beige</item>
+        <item name="colorPrimary">@color/coffee_medium</item>
+        <item name="colorPrimaryVariant">@color/coffee_dark</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
@@ -13,7 +13,7 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
 
-        <item name="android:fontFamily">sans-serif-light</item>
+        <item name="android:fontFamily">sans-serif</item>
 
     </style>
 

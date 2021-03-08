@@ -8,9 +8,16 @@
     <color name="black">#FF000000</color>
     <color name="off_black">#DD1B1A1A</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="latte">#FFF8E7</color>
+    <color name="latte">#EDE0D4</color>
+    <color name="latte_old">#FFF8E7</color>
+    <color name="latte_light">#EDE0D4</color>
+    <color name="latte_medium">#E6CCB2</color>
+    <color name="latte_dark">#DDB892</color>
     <color name="coffee_brown">#936221</color>
     <color name="coffee_beige">#AC834D</color>
+    <color name="coffee_light">#B08968</color>
+    <color name="coffee_medium">#9C6644</color>
+    <color name="coffee_dark">#7F5539</color>
     <color name="brown_dark">#753504</color>
 
 

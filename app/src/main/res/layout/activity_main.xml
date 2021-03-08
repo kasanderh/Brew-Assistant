@@ -19,7 +19,7 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="@color/latte"
+        android:background="@color/latte_light"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -56,6 +56,7 @@
                         android:id="@+id/text_view_v60"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/latte_light"
                         android:layout_below="@+id/image_view_card_v60"
                         android:layout_centerInParent="true"
                         android:text="@string/hario_v60"
@@ -92,6 +93,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/image_view_card_aeropress"
                         android:layout_centerInParent="true"
+                        android:textColor="@color/latte_light"
                         android:text="@string/aeropress"
                         android:textSize="18sp" />
 
@@ -126,6 +128,7 @@
                         android:id="@+id/text_view_french_press"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/latte_light"
                         android:layout_below="@+id/image_view_card_french_press"
                         android:layout_centerInParent="true"
                         android:text="@string/french_press"
@@ -163,6 +166,7 @@
                         android:id="@+id/text_view_iced_coffee"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/latte_light"
                         android:layout_below="@+id/image_view_card_iced_coffee"
                         android:layout_centerInParent="true"
                         android:text="@string/iced_coffee"
@@ -203,6 +207,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/image_view_card_coffee_tips"
                         android:layout_centerInParent="true"
+                        android:textColor="@color/latte_light"
                         android:text="@string/coffee_tips"
                         android:textSize="18sp" />
 
@@ -241,6 +246,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/image_view_card_calculator"
                         android:layout_centerInParent="true"
+                        android:textColor="@color/latte_light"
                         android:text="@string/calculator"
                         android:textSize="18sp" />
 
