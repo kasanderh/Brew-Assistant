@@ -14,6 +14,16 @@ class Hariov60Activity : AppCompatActivity() {
     }
 
     private fun setText() {
+        text_view_hario_title.text = "Hario V60"
+        text_view_hario_description.text = "Hario V60 is a pourover coffee maker"
+        text_view_hario_recipe.text = """
+            Step 1: asdasdasd
+            
+            Step 2: asdasdasd
+            
+            Step 3: asdasdasddaddsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsdsssssssssssssssssssssssssssssssss
+        """.trimIndent()
+
 
     }
 }

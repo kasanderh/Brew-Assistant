@@ -31,19 +31,21 @@
         android:id="@+id/text_edit_coffee"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="150dp"
-        android:textColorHint="@color/white"
-        android:background="@color/coffee_brown"
         android:layout_height="50dp"
         android:layout_marginTop="24dp"
-        android:hint="Coffee in grams"
+        android:background="@color/coffee_brown"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/image_view_calculator_coffee"
         app:layout_constraintTop_toBottomOf="@id/image_view_calculator">
 
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_edit_box_coffee"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:hint="Coffee in grams"
+            android:inputType="number" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -63,57 +65,59 @@
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="150dp"
         android:layout_height="50dp"
-        android:textColorHint="@color/white"
-        android:background="@color/coffee_brown"
         android:layout_marginTop="24dp"
-        android:hint="Water in grams"
+        android:background="@color/coffee_brown"
+        android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/image_view_calculator_coffee"
         app:layout_constraintTop_toBottomOf="@id/text_edit_coffee">
 
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/text_edit_box_water"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:hint="Water in grams"
+            android:inputType="number" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
     <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_dose"
+        style="@style/Widget.AppCompat.CompoundButton.Switch"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
         android:paddingStart="12dp"
         android:paddingEnd="12dp"
-        android:layout_marginStart="48dp"
-        style="@style/Widget.AppCompat.CompoundButton.Switch"
-        android:layout_marginEnd="48dp"
         android:text="Dose coffee 60 grams or 75 grams"
-        app:layout_constraintTop_toBottomOf="@id/image_view_calculator_water"
         app:layout_constraintBottom_toTopOf="@id/button_clear"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:id="@+id/switch_dose"
-        android:layout_width="0dp"
-        android:layout_height="50dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_view_calculator_water" />
 
     <Button
-        android:layout_marginStart="24dp"
         android:id="@+id/button_clear"
-        app:layout_constraintTop_toBottomOf="@id/switch_dose"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/button_calculate"
         android:layout_width="120dp"
         android:layout_height="50dp"
-        android:text="Clear" />
+        android:layout_marginStart="24dp"
+        android:text="Clear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/button_calculate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/switch_dose" />
 
     <Button
-        app:layout_constraintStart_toEndOf="@id/button_clear"
+        android:id="@+id/button_calculate"
+        android:layout_width="120dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="24dp"
+        android:text="Calculate"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/switch_dose"
-        android:id="@+id/button_calculate"
-        android:layout_marginEnd="24dp"
-        android:layout_width="120dp"
-        android:text="Calculate"
-        android:layout_height="50dp" />
+        app:layout_constraintStart_toEndOf="@id/button_clear"
+        app:layout_constraintTop_toBottomOf="@id/switch_dose" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
