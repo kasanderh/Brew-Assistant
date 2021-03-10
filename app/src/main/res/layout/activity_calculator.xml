@@ -30,11 +30,13 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/text_edit_coffee"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:background="@color/coffee_brown"
+        android:hint="@string/coffee_in_grams"
         android:textColorHint="@color/white"
+        app:layout_constraintBottom_toTopOf="@id/text_edit_water"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/image_view_calculator_coffee"
         app:layout_constraintTop_toBottomOf="@id/image_view_calculator">
@@ -44,8 +46,9 @@
             android:id="@+id/text_edit_box_coffee"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Coffee in grams"
-            android:inputType="number" />
+            android:enabled="false"
+            android:inputType="number"
+            android:singleLine="true" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -63,10 +66,11 @@
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/text_edit_water"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-        android:layout_width="150dp"
-        android:layout_height="50dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:background="@color/coffee_brown"
+        android:hint="@string/water_in_grams"
         android:textColorHint="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/image_view_calculator_coffee"
@@ -77,8 +81,8 @@
             android:id="@+id/text_edit_box_water"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:hint="Water in grams"
-            android:inputType="number" />
+            android:inputType="number"
+            android:singleLine="true" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -96,6 +100,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/image_view_calculator_water" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch_coffee_water"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginEnd="48dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:text="Calculate coffee or water"
+        app:layout_constraintBottom_toTopOf="@id/button_clear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/switch_dose" />
 
     <Button
         android:id="@+id/button_clear"

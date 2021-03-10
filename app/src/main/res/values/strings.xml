@@ -6,4 +6,6 @@
     <string name="iced_coffee">Iced Coffee</string>
     <string name="coffee_tips">Coffee Tips</string>
     <string name="calculator">Calculator</string>
+    <string name="water_in_grams">Enter water in grams</string>
+    <string name="coffee_in_grams">Enter coffee in grams</string>
 </resources>
