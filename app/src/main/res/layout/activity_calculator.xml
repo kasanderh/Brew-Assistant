@@ -124,7 +124,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/button_calculate"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/switch_dose" />
+        app:layout_constraintTop_toBottomOf="@id/switch_coffee_water" />
 
     <Button
         android:id="@+id/button_calculate"
@@ -135,7 +135,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@id/button_clear"
-        app:layout_constraintTop_toBottomOf="@id/switch_dose" />
+        app:layout_constraintTop_toBottomOf="@id/switch_coffee_water" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

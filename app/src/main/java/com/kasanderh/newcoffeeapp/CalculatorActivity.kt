@@ -38,6 +38,35 @@ class CalculatorActivity : AppCompatActivity() {
 
 
         button_calculate.setOnClickListener {
+            var coffeeNeeded: Double
+            var waterNeeded: Double
+
+            var calculateCoffee: Boolean = !switch_coffee_water.isChecked
+            var doseIsSixty: Boolean = !switch_dose.isChecked
+
+            if(calculateCoffee) {
+                // calculateCoffee is boolean
+                // if switch is at coffee, input water
+                if(doseIsSixty) {
+                    waterNeeded = text_edit_box_water.text.toString().toDouble() * 0.06
+                    text_edit_box_coffee.setText(waterNeeded.toString())
+
+                } else {
+                    waterNeeded = text_edit_box_water.text.toString().toDouble() * 0.075
+                    text_edit_box_coffee.setText(waterNeeded.toString())
+                }
+            } else {
+                // switch is at water, so input coffee dose
+                if(doseIsSixty) {
+                    coffeeNeeded = text_edit_box_coffee.text.toString().toDouble() * 16.666667
+                    text_edit_box_water.setText(coffeeNeeded.toString().format("%.2f, d"))
+                } else {
+                    coffeeNeeded = text_edit_box_coffee.text.toString().toDouble() * 13.333333
+                    text_edit_box_water.setText(coffeeNeeded.toString().format("%.2f, d"))
+                }
+            }
+
+
 //            var coffeeInput: Double = valueOf(text_edit_box_coffee.text.toString())
 //            var waterInput: Double = valueOf(text_edit_box_water.text.toString())
 //
