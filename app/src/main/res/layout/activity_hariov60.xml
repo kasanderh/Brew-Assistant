@@ -9,86 +9,102 @@
 
     <ImageView
         android:id="@+id/image_view_hario_v60"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="230dp"
         android:scaleType="centerCrop"
         android:src="@drawable/image_hario_v60"
-        app:layout_constraintBottom_toTopOf="@id/scroll_view_v60"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ScrollView
-        android:id="@+id/scroll_view_v60"
-        android:layout_width="match_parent"
+    <!--    <ScrollView-->
+    <!--        android:id="@+id/scroll_view_v60"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="0dp"-->
+    <!--        app:layout_constraintBottom_toBottomOf="parent"-->
+    <!--        app:layout_constraintEnd_toEndOf="parent"-->
+    <!--        app:layout_constraintStart_toStartOf="parent"-->
+    <!--        app:layout_constraintTop_toBottomOf="@+id/image_view_hario_v60">-->
+
+    <!--        <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_marginBottom="24dp">-->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_hario_title"
+        android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:cardCornerRadius="6dp"
+        app:layout_constraintBottom_toTopOf="@id/card_view_v60_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_view_hario_v60">
+
+        <TextView
+            android:id="@+id/text_view_hario_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textSize="18sp"
+            tools:text="This is a test text." />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_v60_description"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:cardCornerRadius="6dp"
+        app:layout_constraintBottom_toTopOf="@id/card_view_v60_recipe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_view_hario_title">
+
+        <TextView
+            android:id="@+id/text_view_hario_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:textSize="18sp"
+            tools:text="This is also a test text." />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_v60_recipe"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="12dp"
+        app:cardCornerRadius="6dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/image_view_hario_v60">
+        app:layout_constraintTop_toBottomOf="@id/card_view_v60_description">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
+
+        <TextView
+            android:id="@+id/text_view_hario_recipe"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="24dp">
+            android:padding="8dp"
+            android:textSize="18sp"
+            tools:text="This is also a test text." />
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_view_hario_title"
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:layout_margin="24dp"
-                app:cardCornerRadius="6dp"
-                app:layout_constraintTop_toTopOf="parent">
 
-                <TextView
-                    android:id="@+id/text_view_hario_title"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="8dp"
-                    android:textSize="18sp"
-                    tools:text="This is a test text." />
+    </androidx.cardview.widget.CardView>
 
-            </androidx.cardview.widget.CardView>
+    <!--        </androidx.constraintlayout.widget.ConstraintLayout>-->
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_view_v60_description"
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:layout_margin="24dp"
-                app:cardCornerRadius="6dp"
-                app:layout_constraintTop_toBottomOf="@id/card_view_hario_title">
-
-                <TextView
-                    android:id="@+id/text_view_hario_description"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="8dp"
-                    android:textSize="18sp"
-                    tools:text="This is also a test text." />
-
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/card_view_v60_recipe"
-                android:layout_width="match_parent"
-                android:layout_height="150dp"
-                android:layout_margin="24dp"
-                app:cardCornerRadius="6dp"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/card_view_v60_description">
-
-                <TextView
-                    android:id="@+id/text_view_hario_recipe"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:padding="8dp"
-                    android:textSize="18sp"
-                    tools:text="This is also a test text." />
-
-            </androidx.cardview.widget.CardView>
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
-
-    </ScrollView>
+    <!--    </ScrollView>-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>
