@@ -7,6 +7,7 @@ import android.widget.Toast
 import androidx.core.view.isVisible
 import kotlinx.android.synthetic.main.activity_calculator.*
 import java.lang.Double.valueOf
+import kotlin.math.roundToInt
 
 class CalculatorActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -50,27 +51,27 @@ class CalculatorActivity : AppCompatActivity() {
                 if(doseIsSixty) {
                     waterNeeded = text_edit_box_water.text.toString().toDouble() * 0.06
                     text_edit_box_coffee.setText(waterNeeded.toString())
-                    var resultText = "You need $waterNeeded grams of water!"
+                    var resultText = "You need ${waterNeeded.roundToInt()} grams of coffee!"
                     text_view_calculator_result.text = resultText
                 // "You need $waterNeeded grams of water!"
 
                 } else {
                     waterNeeded = text_edit_box_water.text.toString().toDouble() * 0.075
                     text_edit_box_coffee.setText(waterNeeded.toString())
-                    var resultText = "You need $waterNeeded grams of water!"
+                    var resultText = "You need ${waterNeeded.roundToInt()} grams of coffee!"
                     text_view_calculator_result.text = resultText
                 }
             } else {
                 // switch is at water, so input coffee dose
                 if(doseIsSixty) {
                     coffeeNeeded = text_edit_box_coffee.text.toString().toDouble() * 16.666667
-                    text_edit_box_water.setText(coffeeNeeded.toString().format("%.2f, d"))
-                    var resultText = "You need $coffeeNeeded grams of coffee!"
+                    text_edit_box_water.setText(coffeeNeeded.toString())
+                    var resultText = "You need ${coffeeNeeded.roundToInt()} grams of water!"
                     text_view_calculator_result.text = resultText
                 } else {
                     coffeeNeeded = text_edit_box_coffee.text.toString().toDouble() * 13.333333
-                    text_edit_box_water.setText(coffeeNeeded.toString().format("%.2f, d"))
-                    var resultText = "You need $coffeeNeeded grams of coffee!"
+                    text_edit_box_water.setText(coffeeNeeded.toString())
+                    var resultText = "You need ${coffeeNeeded.roundToInt()} grams of water!"
                     text_view_calculator_result.text = resultText
                 }
             }
