@@ -53,8 +53,6 @@
     </androidx.cardview.widget.CardView>-->
 
 
-
-
     <androidx.cardview.widget.CardView
         android:id="@+id/card_view_input"
         android:layout_width="0dp"
@@ -63,7 +61,7 @@
         android:layout_marginTop="12dp"
         android:layout_marginEnd="24dp"
         app:cardCornerRadius="6dp"
-        app:layout_constraintBottom_toTopOf="@id/card_view_calculator_switch"
+        app:layout_constraintBottom_toTopOf="@id/card_view_result"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/image_view_calculator">
@@ -87,12 +85,10 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/text_edit_coffee"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                style="@style/Widget.Design.TextInputLayout"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:background="@color/coffee_medium"
-                android:hint="@string/coffee_in_grams"
-                android:textColorHint="@color/white"
+                android:hint="Coffee needed"
                 app:layout_constraintBottom_toTopOf="@id/text_edit_water"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/image_view_calculator_coffee"
@@ -105,7 +101,9 @@
                     android:layout_height="match_parent"
                     android:enabled="false"
                     android:inputType="number"
-                    android:singleLine="true" />
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    tools:text="15" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -124,12 +122,10 @@
 
             <com.google.android.material.textfield.TextInputLayout
                 android:id="@+id/text_edit_water"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                style="@style/Widget.Design.TextInputLayout"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:background="@color/coffee_medium"
                 android:hint="@string/water_in_grams"
-                android:textColorHint="@color/white"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/image_view_calculator_water"
@@ -141,11 +137,63 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:inputType="number"
-                    android:singleLine="true" />
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    tools:text="250" />
 
             </com.google.android.material.textfield.TextInputLayout>
 
+
         </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view_result"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintBottom_toTopOf="@id/card_view_calculator_switch"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_view_input">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image_view_result_card"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:src="@drawable/coffee_bean"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/text_view_calculator_result"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_view_calculator_result"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="24dp"
+                android:paddingTop="12dp"
+                android:paddingStart="12dp"
+                android:paddingBottom="12dp"
+                android:textColor="@color/off_black"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/image_view_result_card"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="You need 30 grams of coffee!" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     </androidx.cardview.widget.CardView>
 
@@ -153,7 +201,7 @@
 
         android:id="@+id/card_view_calculator_switch"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="120dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="24dp"
@@ -162,7 +210,7 @@
         app:layout_constraintBottom_toTopOf="@id/button_clear"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/card_view_input">
+        app:layout_constraintTop_toBottomOf="@id/card_view_result">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
@@ -205,8 +253,8 @@
         android:layout_width="120dp"
         android:layout_height="50dp"
         android:layout_marginStart="24dp"
-        android:text="Clear"
         android:layout_marginBottom="24dp"
+        android:text="Clear"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/button_calculate"
         app:layout_constraintStart_toStartOf="parent"
