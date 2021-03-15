@@ -1,5 +1,6 @@
 package com.kasanderh.newcoffeeapp
 
+import android.opengl.Visibility
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -48,6 +49,8 @@ class CalculatorActivity : AppCompatActivity() {
             if(calculateCoffee) {
                 // calculateCoffee is boolean
                 // if switch is at coffee, input water
+                // set the imageview and textview to "gone"
+                showCoffee(false)
                 if(doseIsSixty) {
                     waterNeeded = text_edit_box_water.text.toString().toDouble() * 0.06
                     text_edit_box_coffee.setText(waterNeeded.toString())
@@ -63,6 +66,8 @@ class CalculatorActivity : AppCompatActivity() {
                 }
             } else {
                 // switch is at water, so input coffee dose
+                //showCoffee true, so the input for coffee shows and input for water does not show
+                showCoffee(true)
                 if(doseIsSixty) {
                     coffeeNeeded = text_edit_box_coffee.text.toString().toDouble() * 16.666667
                     text_edit_box_water.setText(coffeeNeeded.toString())
@@ -99,6 +104,27 @@ class CalculatorActivity : AppCompatActivity() {
         }
 
 
+
+    }
+
+    private fun showCoffee(show: Boolean) {
+        if(show){
+            image_view_calculator_coffee.visibility = View.VISIBLE
+            text_edit_coffee.visibility = View.VISIBLE
+
+            image_view_calculator_water.visibility = View.GONE
+            text_edit_water.visibility = View.GONE
+
+
+//            image_view_result_card.setImageResource(coffee_bean)
+
+        } else {
+            image_view_calculator_coffee.visibility = View.GONE
+            text_edit_coffee.visibility = View.GONE
+
+            image_view_calculator_water.visibility = View.VISIBLE
+            text_edit_water.visibility = View.VISIBLE
+        }
 
     }
 }
