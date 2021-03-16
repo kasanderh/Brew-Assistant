@@ -18,25 +18,48 @@ class CalculatorActivity : AppCompatActivity() {
     }
 
     private fun onClickListeners() {
+        switch_coffee_water.setOnClickListener{
+            if(switch_coffee_water.isChecked){
+                image_view_calculator_coffee.visibility = View.VISIBLE
+                text_edit_coffee.visibility = View.VISIBLE
+
+                image_view_calculator_water.visibility = View.GONE
+                text_edit_water.visibility = View.GONE
+                image_view_result_card.setImageResource(R.drawable.water_drop)
+
+
+//            image_view_result_card.setImageResource(coffee_bean)
+
+            } else if(!switch_coffee_water.isChecked) {
+                image_view_calculator_coffee.visibility = View.GONE
+                text_edit_coffee.visibility = View.GONE
+
+                image_view_calculator_water.visibility = View.VISIBLE
+                text_edit_water.visibility = View.VISIBLE
+                image_view_result_card.setImageResource(R.drawable.coffee_bean)
+
+            }
+        }
+
         button_clear.setOnClickListener {
             text_edit_box_coffee.setText("")
             text_edit_box_water.setText("")
         }
 
-        switch_coffee_water.setOnClickListener {
-            if(switch_coffee_water.isChecked) {
-                text_edit_box_water.isEnabled = false
-                text_edit_water.hint = "Water needed"
-                text_edit_box_coffee.isEnabled = true
-                text_edit_coffee.hint = "Enter coffee in grams"
-            } else {
-                text_edit_box_water.isEnabled = true
-                text_edit_water.hint = "Enter water in grams"
-                text_edit_box_coffee.isEnabled = false
-                text_edit_coffee.hint = "Coffee needed"
-
-            }
-        }
+//        switch_coffee_water.setOnClickListener {
+//            if(switch_coffee_water.isChecked) {
+//                text_edit_box_water.isEnabled = false
+//                text_edit_water.hint = "Water needed"
+//                text_edit_box_coffee.isEnabled = true
+//                text_edit_coffee.hint = "Enter coffee in grams"
+//            } else {
+//                text_edit_box_water.isEnabled = true
+//                text_edit_water.hint = "Enter water in grams"
+//                text_edit_box_coffee.isEnabled = false
+//                text_edit_coffee.hint = "Coffee needed"
+//
+//            }
+//        }
 
 
         button_calculate.setOnClickListener {
@@ -50,7 +73,6 @@ class CalculatorActivity : AppCompatActivity() {
                 // calculateCoffee is boolean
                 // if switch is at coffee, input water
                 // set the imageview and textview to "gone"
-                showCoffee(false)
                 if(doseIsSixty) {
                     waterNeeded = text_edit_box_water.text.toString().toDouble() * 0.06
                     text_edit_box_coffee.setText(waterNeeded.toString())
@@ -67,7 +89,6 @@ class CalculatorActivity : AppCompatActivity() {
             } else {
                 // switch is at water, so input coffee dose
                 //showCoffee true, so the input for coffee shows and input for water does not show
-                showCoffee(true)
                 if(doseIsSixty) {
                     coffeeNeeded = text_edit_box_coffee.text.toString().toDouble() * 16.666667
                     text_edit_box_water.setText(coffeeNeeded.toString())
@@ -107,24 +128,24 @@ class CalculatorActivity : AppCompatActivity() {
 
     }
 
-    private fun showCoffee(show: Boolean) {
-        if(show){
-            image_view_calculator_coffee.visibility = View.VISIBLE
-            text_edit_coffee.visibility = View.VISIBLE
-
-            image_view_calculator_water.visibility = View.GONE
-            text_edit_water.visibility = View.GONE
-
-
-//            image_view_result_card.setImageResource(coffee_bean)
-
-        } else {
-            image_view_calculator_coffee.visibility = View.GONE
-            text_edit_coffee.visibility = View.GONE
-
-            image_view_calculator_water.visibility = View.VISIBLE
-            text_edit_water.visibility = View.VISIBLE
-        }
-
-    }
+//    private fun showCoffee(show: Boolean) {
+//        if(show){
+//            image_view_calculator_coffee.visibility = View.VISIBLE
+//            text_edit_coffee.visibility = View.VISIBLE
+//
+//            image_view_calculator_water.visibility = View.GONE
+//            text_edit_water.visibility = View.GONE
+//
+//
+////            image_view_result_card.setImageResource(coffee_bean)
+//
+//        } else if(!show) {
+//            image_view_calculator_coffee.visibility = View.GONE
+//            text_edit_coffee.visibility = View.GONE
+//
+//            image_view_calculator_water.visibility = View.VISIBLE
+//            text_edit_water.visibility = View.VISIBLE
+//        }
+//
+//    }
 }
