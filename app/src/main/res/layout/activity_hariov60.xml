@@ -50,7 +50,7 @@
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:textSize="18sp"
-            tools:text="This is a test text." />
+            android:text="@string/hario_v60" />
 
     </androidx.cardview.widget.CardView>
 
@@ -73,7 +73,7 @@
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:textSize="18sp"
-            tools:text="This is also a test text." />
+            android:text="@string/v60_description" />
 
     </androidx.cardview.widget.CardView>
 
@@ -98,7 +98,7 @@
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:textSize="18sp"
-            tools:text="This is also a test text." />
+            android:text="@string/v60_recipe" />
 
 
     </androidx.cardview.widget.CardView>
