@@ -8,24 +8,26 @@
     <string name="calculator">Calculator</string>
     <string name="water_in_grams">Enter water in grams</string>
     <string name="coffee_in_grams">Enter coffee in grams</string>
-    <string name="v60_description">The Hario V60 is a Pour over coffee brewer</string>
 
-    <string name="v60_recipe"> \nThe Hario V60 is a pour-over brewer which means that water is poured over the water and the water travels through the bed of coffee with the help of gravity.
-        \n\nRecommended dose:
-        \n60 grams of coffee to 1000g (1L) of water.
-        \nFor a half liter brew, you would use 30g of coffee and 500g of water.
-        \n\nSteps: \n1. First we boil the water, measure and grind our beans and put the filter in the V60.
-        \n\n2. Wet the filter with the warm water and discard it.
-        \n\n3. Now we bloom the coffee by wetting all the coffee with 3:1 ratio grams of water to grams of coffee.
-        \n\n4. The coffee blooms for 45 seconds to allow it to release CO2 gas trapped by the roasting process and release the flavor of the beans.
-        \n\n5. Pour water in circles starting from the center and out, and then inwards spiral, and repeat until 350g of water has been poured.
-        \n\n6. Once we reach about 3/4 of the total water, we wait for the coffee bed to lower (about 30s) and we pour water until we reach our target water weight.
-        \n\n7. Quick stir once to the right and once to the left.
-        \n\n8. Let the coffee drain while we move the V60 carefully in circles to get an even extraction.
-        \n\n9. Remove the V60 filter holder and stir the coffee with a wooden spoon before pouring into cups.
-        \n\n10. Serve the coffee and enjoy your fresh brew!
-        \n\n
-        \n\n
-        \n\n
+    <string name="v60_description">The <b>Hario V60</b> is a Japanese <i>pour-over</i> brewer.
+    This means that water is poured over the water and the water travels through the bed of coffee with the help of gravity.
+    It is very popular, and used by people all over the world.
+    </string>
+
+    <string name="v60_dose"><b><u>Recommended dose:</u></b>
+    \n60 grams of coffee to 1000g (1L) of water.
+    \nFor a half liter brew, you would use 30g of coffee and 500g of water.</string>
+
+    <string name="v60_recipe"><b><u>Steps:</u></b>
+        \n1. First we boil the water, measure and grind our beans and put the filter in the V60.
+    \n\n2. Wet the filter with the warm water and discard it.
+    \n\n3. Now we bloom the coffee by wetting all the coffee with 3:1 ratio grams of water to grams of coffee.
+    \n\n4. The coffee blooms for 45 seconds to allow it to release CO2 gas trapped by the roasting process and release the flavor of the beans.
+    \n\n5. Pour water in circles starting from the center and out, and then inwards spiral, and repeat until 350g of water has been poured.
+    \n\n6. Once we reach about 3/4 of the total water, we wait for the coffee bed to lower (about 30s) and we pour water until we reach our target water weight.
+    \n\n7. Quick stir once to the right and once to the left.
+    \n\n8. Let the coffee drain while we move the V60 carefully in circles to get an even extraction.
+    \n\n9. Remove the V60 filter holder and stir the coffee with a wooden spoon before pouring into cups.
+    \n\n10. Serve the coffee and enjoy your fresh brew!
     </string>
 </resources>
