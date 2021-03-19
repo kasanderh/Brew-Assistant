@@ -9,25 +9,112 @@
     <string name="water_in_grams">Enter water in grams</string>
     <string name="coffee_in_grams">Enter coffee in grams</string>
 
-    <string name="v60_description">The <b>Hario V60</b> is a Japanese <i>pour-over</i> brewer.
-    This means that water is poured over the water and the water travels through the bed of coffee with the help of gravity.
-    It is very popular, and used by people all over the world.
+    <string name="v60_description">
+        The <b>Hario V60</b> is a Japanese <i>pour-over</i> brewer.
+        This means that water is poured over the water and the water travels through the bed of coffee with the help of gravity.
+        It is very popular, and used by people all over the world.
     </string>
 
-    <string name="v60_dose"><b><u>Recommended dose:</u></b>
-    \n60 grams of coffee to 1000g (1L) of water.
-    \nFor a half liter brew, you would use 30g of coffee and 500g of water.</string>
+    <string name="v60_dose">
+        <b><u>Recommended dose:</u></b>
+        \n60 grams of coffee to 1000g (1L) of water.
+        \nFor a half liter brew, you would use 30g of coffee and 500g of water.</string>
 
-    <string name="v60_recipe"><b><u>Steps:</u></b>
+    <string name="v60_recipe">
+        <b><u>Steps:</u></b>
         \n1. First we boil the water, measure and grind our beans and put the filter in the V60.
-    \n\n2. Wet the filter with the warm water and discard it.
-    \n\n3. Now we bloom the coffee by wetting all the coffee with 3:1 ratio grams of water to grams of coffee.
-    \n\n4. The coffee blooms for 45 seconds to allow it to release CO2 gas trapped by the roasting process and release the flavor of the beans.
-    \n\n5. Pour water in circles starting from the center and out, and then inwards spiral, and repeat until 350g of water has been poured.
-    \n\n6. Once we reach about 3/4 of the total water, we wait for the coffee bed to lower (about 30s) and we pour water until we reach our target water weight.
-    \n\n7. Quick stir once to the right and once to the left.
-    \n\n8. Let the coffee drain while we move the V60 carefully in circles to get an even extraction.
-    \n\n9. Remove the V60 filter holder and stir the coffee with a wooden spoon before pouring into cups.
-    \n\n10. Serve the coffee and enjoy your fresh brew!
+        \n\n2. Wet the filter with the warm water and discard it.
+        \n\n3. Now we bloom the coffee by wetting all the coffee with 3:1 ratio grams of water to grams of coffee.
+        \n\n4. The coffee blooms for 45 seconds to allow it to release CO2 gas trapped by the roasting process and release the flavor of the beans.
+        \n\n5. Pour water in circles starting from the center and out, and then inwards spiral, and repeat until 350g of water has been poured.
+        \n\n6. Once we reach about 3/4 of the total water, we wait for the coffee bed to lower (about 30s) and we pour water until we reach our target water weight.
+        \n\n7. Quick stir once to the right and once to the left.
+        \n\n8. Let the coffee drain while we move the V60 carefully in circles to get an even extraction.
+        \n\n9. Remove the V60 filter holder and stir the coffee with a wooden spoon before pouring into cups.
+        \n\n10. Serve the coffee and enjoy your fresh brew!
     </string>
+
+    <string name="aeropress_description">The <b>Aeropress</b> is an <u>immersion</u> brewer, which means that water and coffee is left brewing together over time, rather than poured through the coffee in a filter.</string>
+
+    <string name="aeropress_dose"><b><u>Recommended dose:</u></b>
+        \n68 grams of coffee to 1000g (1L) of water.
+        \nFor one cup brew, you would use 17g of coffee and 250g of water.</string>
+
+    <string name="aeropress_recipe">
+        <b><u>Steps:</u></b>
+        \n1. First boil the water, measure and grind the beans and put a filter in the filter-cap.
+        \n\n2. Fasten the filter holder in the mid part of the Aeropress, and place it on a cup.
+        \n\n3. Pre-heat the Aeropress and wet the filter by pouring hot water through it before discarding the water.
+        \n\n4. Place the cup with the Aeroress on the scale. Add the coffee in to the Aeropress, start the timer and pour water until 250mL. Fasten the piston carefully into the mid part to create a vacuum.
+        \n\n5. At the 1:00 mark, remove the piston, stir around with a spoon and put the piston back on.
+        \n\n6. At 1:30 minutes, remove the cup from the scale, and then start pressing down gently without using force. Stop when you hear a "hissing" sound.
+        \n\n7. Remove the Aeropress from the cup, and press out the remaining water in to a sink, and discard the coffee puck in to the recycling bin. Clean the Aeropress by rinsing it well under warm water.
+        \n\n8. Enjoy your fresh cup of coffee!
+    </string>
+
+    <string name="french_press_description">The <b>French Press</b> is a classic <u>immersion</u> brewer, and it uses the most basic principles of brewing to make a rich, enjoyable cup with a lot of body.</string>
+
+    <string name="french_press_dose">
+        <b><u>Recommended dose:</u></b>
+        \n75 grams of coffee to 1000g (1L) of water.
+        \nFor a half liter brew, you would use 37,5g of coffee and 500g of water.
+    </string>
+
+    <string name="french_press_recipe">
+     <b><u>Steps:</u></b>
+        \n1. First boil the water, measure and grind the beans.
+        \n\n2. Pre-heat the French Press including the plunger with boiling water before discarding the water.
+        \n\n3. Take out the plunger, put the French Press on the scale and add the coffee. Remember to tare the scale so it starts at zero.
+        \n\n4. Start the timer before adding the water quickly and controlled to wet all the coffee.
+        \n\n5. Put the plunger on the top of the French Press, without it touching the coffee for it to trap the heat in the brewer.
+        \n\n6. When the timer hits 3:45 minutes, take off the plunger and stir the coffee with a wooden spoon.
+        \n\n7. I recommend to let the coffee sit for additionally 3-4 minutes after this, with the plunger on, to let all the coffee sink to the bottom.
+        \n\n8. After all the coffee is at the bottom, plunge carefully half-way and decant slowly and carefully to avoid getting the "sludge" at the bottom.
+        \n\n9. Enjoy a clean, full-bodied cup of coffee!
+    </string>
+
+    <string name="iced_coffee_description">
+        <b>Flash brew</b>, or <b>Japanese Iced Coffee</b> is a simple way of making use of all the flavour in the coffee beans and enjoying them chilled.
+        The name <i>Flash Brew</i> comes from the fact that we brew the coffee as we would brew V60, but we replace some of the water with iced cubes, which the  hot coffee drips down on and gets chilled instantly <i>in a flash.</i>
+    </string>
+
+    <string name="iced_coffee_dose">
+        <b><u>Recommended dose:</u></b>
+        \n60 grams of coffee to 1000g (1L) of water.
+        \nFor a half liter brew, you would use 30g of coffee and 500g of water.
+    </string>
+
+    <string name="icedcoffeerecipe">
+        \n\nI recommend following the instructions for V60, but with these changes:
+        \n\n1. Grind a little finer than usual, as we use less water we want to extract as much as possible.
+        \n\n2. Replace 40% of the water with ice cubes, and put the cubes directly in the server while brewing. One gram of water equals one gram of ice.
+        \n\n3. After brewing, swirl or stir the server carefully to chill the coffee and melt all the ice.
+        \n\n4. Serve the coffee in a chilled glass, and optionally with more ice cubes. Keep in mind that the ice will dilute the coffee further when it melts.
+        \n\n5. Enjoy on a hot and sunny day for maximum refreshing effect!
+    </string>
+
+    <string name="coffee101text">
+        Great coffee is something everybody can make, and by following some simple guidelines, it will result in great coffee every time.
+        \n\n1. Tip number one is always use fresh, clean water. The water going in should be odorless, clear, fresh and good enough to drink.
+        \n\n2. Always use clean equipment, as old coffee grounds will produce bad tasting components in your coffee. You only want to taste the fresh beans you just ground and put into your coffee maker.
+        \n\n3. I recommend getting a burr coffee grinder. This way you will be able to enjoy your beans in the freshest way possible, and you can grind your beans according to your brewing method. Some methods require finer or courser grind than others.
+        \n\n4. Weigh your coffee. Get a scale and weigh your coffee. Coffee brewing is a precise science, and you would want to know exactly how much coffee you are using so you can use the same dose every time.
+        \n\n5. Use fresh coffee beans. If you are unsure which coffee to buy, ask the local coffee shop for recommendations. Baristas almost always know the coffees they are selling, and can give information about taste notes, and give recommendations based on your home brewer.
+        \n\n6. It is a good idea to write down your recipes, as you will be able to remake the great cup you made the last time, or you can make changes to your recipe one factor at a time.
+        \n\n7. If your coffee takes too long to brew or is too fast, grind setting is the only factor you need to change. Use the same dose of coffee and same amount of water, and only change the grind setting, and you will be able to find the optimal setting for a perfect cup.
+        \n\n8. Coffee can get very technical very fast. Don\'t get too hung up on the details when brewing. As long as your coffee tastes great, you have already done a lot right.
+    </string>
+
+    <string name="aboutpage">\n\nMy name is <b>Kasander</b>, and I <i>love</i> coffee!
+        \n\nIn this application I have gathered all my favourite recipes for different coffee brewing methods I have experience with. I have not included espresso, as this is a completely different world.
+        \n
+        \n\nMade by a coffee lover and former barista.
+        \n\nSuggestions and feedback are always welcome!
+        \n\nYou can find me at:
+        \n @github: kasanderh  \n @instagram: kaffekas
+        \n\n
+        \n\n\t\t\t\t\t\t\t\t\tHappy Brewing!
+    </string>
+
+
 </resources>
