@@ -18,8 +18,8 @@ class CalculatorActivity : AppCompatActivity() {
     }
 
     private fun onClickListeners() {
-        switch_coffee_water.setOnClickListener{
-            if(switch_coffee_water.isChecked){
+        switch_coffee_water.setOnClickListener {
+            if (switch_coffee_water.isChecked) {
                 image_view_calculator_coffee.visibility = View.VISIBLE
                 text_edit_coffee.visibility = View.VISIBLE
 
@@ -30,7 +30,7 @@ class CalculatorActivity : AppCompatActivity() {
 
 //            image_view_result_card.setImageResource(coffee_bean)
 
-            } else if(!switch_coffee_water.isChecked) {
+            } else if (!switch_coffee_water.isChecked) {
                 image_view_calculator_coffee.visibility = View.GONE
                 text_edit_coffee.visibility = View.GONE
 
@@ -44,6 +44,7 @@ class CalculatorActivity : AppCompatActivity() {
         button_clear.setOnClickListener {
             text_edit_box_coffee.setText("")
             text_edit_box_water.setText("")
+            text_view_calculator_result.setText("")
         }
 
 //        switch_coffee_water.setOnClickListener {
@@ -69,39 +70,44 @@ class CalculatorActivity : AppCompatActivity() {
             var calculateCoffee: Boolean = !switch_coffee_water.isChecked
             var doseIsSixty: Boolean = !switch_dose.isChecked
 
-            if(calculateCoffee) {
-                // calculateCoffee is boolean
-                // if switch is at coffee, input water
-                // set the imageview and textview to "gone"
-                if(doseIsSixty) {
-                    waterNeeded = text_edit_box_water.text.toString().toDouble() * 0.06
-                    text_edit_box_coffee.setText(waterNeeded.toString())
-                    var resultText = "You need ${waterNeeded.roundToInt()} grams of coffee!"
-                    text_view_calculator_result.text = resultText
-                // "You need $waterNeeded grams of water!"
+            if ((text_edit_box_coffee.text.toString().isNotEmpty()) || (text_edit_box_water.text.toString().isNotEmpty())) {
+                if (calculateCoffee) {
+                    // calculateCoffee is boolean
+                    // if switch is at coffee, input water
+                    // set the imageview and textview to "gone"
+                    if (doseIsSixty) {
+                        waterNeeded = text_edit_box_water.text.toString().toDouble() * 0.06
+//                    text_edit_box_coffee.setText(waterNeeded.toString())
+                        var resultText = "You need ${waterNeeded.roundToInt()} grams of coffee!"
+                        text_view_calculator_result.text = resultText
+                        // "You need $waterNeeded grams of water!"
 
+                    } else {
+                        waterNeeded = text_edit_box_water.text.toString().toDouble() * 0.075
+//                    text_edit_box_coffee.setText(waterNeeded.toString())
+                        var resultText = "You need ${waterNeeded.roundToInt()} grams of coffee!"
+                        text_view_calculator_result.text = resultText
+                    }
                 } else {
-                    waterNeeded = text_edit_box_water.text.toString().toDouble() * 0.075
-                    text_edit_box_coffee.setText(waterNeeded.toString())
-                    var resultText = "You need ${waterNeeded.roundToInt()} grams of coffee!"
-                    text_view_calculator_result.text = resultText
+                    // switch is at water, so input coffee dose
+                    //showCoffee true, so the input for coffee shows and input for water does not show
+                    if (doseIsSixty) {
+                        coffeeNeeded = text_edit_box_coffee.text.toString().toDouble() * 16.666667
+//                    text_edit_box_water.setText(coffeeNeeded.toString())
+                        var resultText = "You need ${coffeeNeeded.roundToInt()} grams of water!"
+                        text_view_calculator_result.text = resultText
+                    } else {
+                        coffeeNeeded = text_edit_box_coffee.text.toString().toDouble() * 13.333333
+//                    text_edit_box_water.setText(coffeeNeeded.toString())
+                        var resultText = "You need ${coffeeNeeded.roundToInt()} grams of water!"
+                        text_view_calculator_result.text = resultText
+                    }
                 }
             } else {
-                // switch is at water, so input coffee dose
-                //showCoffee true, so the input for coffee shows and input for water does not show
-                if(doseIsSixty) {
-                    coffeeNeeded = text_edit_box_coffee.text.toString().toDouble() * 16.666667
-                    text_edit_box_water.setText(coffeeNeeded.toString())
-                    var resultText = "You need ${coffeeNeeded.roundToInt()} grams of water!"
-                    text_view_calculator_result.text = resultText
-                } else {
-                    coffeeNeeded = text_edit_box_coffee.text.toString().toDouble() * 13.333333
-                    text_edit_box_water.setText(coffeeNeeded.toString())
-                    var resultText = "You need ${coffeeNeeded.roundToInt()} grams of water!"
-                    text_view_calculator_result.text = resultText
-                }
-            }
+                //Toast, because user clicked CALCULATE and no input
+                Toast.makeText(this, "Please enter value", Toast.LENGTH_SHORT).show()
 
+            }
 
 //            var coffeeInput: Double = valueOf(text_edit_box_coffee.text.toString())
 //            var waterInput: Double = valueOf(text_edit_box_water.text.toString())
@@ -123,7 +129,6 @@ class CalculatorActivity : AppCompatActivity() {
 //            }
 
         }
-
 
 
     }

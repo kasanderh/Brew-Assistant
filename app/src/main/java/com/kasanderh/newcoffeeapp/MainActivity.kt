@@ -37,5 +37,10 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, CalculatorActivity::class.java)
             startActivity(intent)
         }
+
+        card_view_coffee_tips.setOnClickListener {
+            val intent = Intent(this, CoffeeTipsActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
