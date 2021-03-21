@@ -46,7 +46,7 @@
     <androidx.cardview.widget.CardView
         android:id="@+id/card_view_aeropress_dose"
         android:layout_width="0dp"
-        android:layout_height="100dp"
+        android:layout_height="120dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="12dp"
         android:layout_marginEnd="24dp"
@@ -64,7 +64,7 @@
             android:paddingTop="8dp"
             android:paddingEnd="8dp"
             android:paddingBottom="8dp"
-            android:text="@string/v60_dose"
+            android:text="@string/aeropress_dose"
             android:textSize="18sp" />
 
     </androidx.cardview.widget.CardView>

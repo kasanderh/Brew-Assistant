@@ -9,19 +9,16 @@
     <string name="water_in_grams">Enter water in grams</string>
     <string name="coffee_in_grams">Enter coffee in grams</string>
 
-    <string name="v60_description">
-        The <b>Hario V60</b> is a Japanese <i>pour-over</i> brewer.
+    <string name="v60_description">The <b>Hario V60</b> is a Japanese <i>pour-over</i> brewer.
         This means that water is poured over the water and the water travels through the bed of coffee with the help of gravity.
         It is very popular, and used by people all over the world.
     </string>
 
-    <string name="v60_dose">
-        <b><u>Recommended dose:</u></b>
+    <string name="v60_dose"><b><u>Recommended dose:</u></b>
         \n60 grams of coffee to 1000g (1L) of water.
         \nFor a half liter brew, you would use 30g of coffee and 500g of water.</string>
 
-    <string name="v60_recipe">
-        <b><u>Steps:</u></b>
+    <string name="v60_recipe"><b><u>Steps:</u></b>
         \n1. First we boil the water, measure and grind our beans and put the filter in the V60.
         \n\n2. Wet the filter with the warm water and discard it.
         \n\n3. Now we bloom the coffee by wetting all the coffee with 3:1 ratio grams of water to grams of coffee.
@@ -40,8 +37,7 @@
         \n68 grams of coffee to 1000g (1L) of water.
         \nFor one cup brew, you would use 17g of coffee and 250g of water.</string>
 
-    <string name="aeropress_recipe">
-        <b><u>Steps:</u></b>
+    <string name="aeropress_recipe"><b><u>Steps:</u></b>
         \n1. First boil the water, measure and grind the beans and put a filter in the filter-cap.
         \n\n2. Fasten the filter holder in the mid part of the Aeropress, and place it on a cup.
         \n\n3. Pre-heat the Aeropress and wet the filter by pouring hot water through it before discarding the water.
@@ -54,14 +50,12 @@
 
     <string name="french_press_description">The <b>French Press</b> is a classic <u>immersion</u> brewer, and it uses the most basic principles of brewing to make a rich, enjoyable cup with a lot of body.</string>
 
-    <string name="french_press_dose">
-        <b><u>Recommended dose:</u></b>
+    <string name="french_press_dose"><b><u>Recommended dose:</u></b>
         \n75 grams of coffee to 1000g (1L) of water.
         \nFor a half liter brew, you would use 37,5g of coffee and 500g of water.
     </string>
 
-    <string name="french_press_recipe">
-     <b><u>Steps:</u></b>
+    <string name="french_press_recipe"><b><u>Steps:</u></b>
         \n1. First boil the water, measure and grind the beans.
         \n\n2. Pre-heat the French Press including the plunger with boiling water before discarding the water.
         \n\n3. Take out the plunger, put the French Press on the scale and add the coffee. Remember to tare the scale so it starts at zero.
@@ -73,19 +67,17 @@
         \n\n9. Enjoy a clean, full-bodied cup of coffee!
     </string>
 
-    <string name="iced_coffee_description">
-        <b>Flash brew</b>, or <b>Japanese Iced Coffee</b> is a simple way of making use of all the flavour in the coffee beans and enjoying them chilled.
+    <string name="iced_coffee_description"><b>Flash brew</b>, or <b>Japanese Iced Coffee</b> is a simple way of making use of all the flavour in the coffee beans and enjoying them chilled.
         The name <i>Flash Brew</i> comes from the fact that we brew the coffee as we would brew V60, but we replace some of the water with iced cubes, which the  hot coffee drips down on and gets chilled instantly <i>in a flash.</i>
     </string>
 
-    <string name="iced_coffee_dose">
-        <b><u>Recommended dose:</u></b>
+    <string name="iced_coffee_dose"><b><u>Recommended dose:</u></b>
         \n60 grams of coffee to 1000g (1L) of water.
         \nFor a half liter brew, you would use 30g of coffee and 500g of water.
     </string>
 
-    <string name="icedcoffeerecipe">
-        \n\nI recommend following the instructions for V60, but with these changes:
+    <string name="iced_coffee_recipe"><b><u>Steps:</u></b>
+        \nI recommend following the instructions for V60, but with these changes:
         \n\n1. Grind a little finer than usual, as we use less water we want to extract as much as possible.
         \n\n2. Replace 40% of the water with ice cubes, and put the cubes directly in the server while brewing. One gram of water equals one gram of ice.
         \n\n3. After brewing, swirl or stir the server carefully to chill the coffee and melt all the ice.
@@ -93,8 +85,10 @@
         \n\n5. Enjoy on a hot and sunny day for maximum refreshing effect!
     </string>
 
-    <string name="coffee101text">
-        Great coffee is something everybody can make, and by following some simple guidelines, it will result in great coffee every time.
+    <string name="coffee_tips_description">Great coffee is something everybody can make, and by following some simple guidelines, it will result in great coffee every time.
+    </string>
+
+    <string name="coffee_tips_list">
         \n\n1. Tip number one is always use fresh, clean water. The water going in should be odorless, clear, fresh and good enough to drink.
         \n\n2. Always use clean equipment, as old coffee grounds will produce bad tasting components in your coffee. You only want to taste the fresh beans you just ground and put into your coffee maker.
         \n\n3. I recommend getting a burr coffee grinder. This way you will be able to enjoy your beans in the freshest way possible, and you can grind your beans according to your brewing method. Some methods require finer or courser grind than others.
@@ -105,7 +99,7 @@
         \n\n8. Coffee can get very technical very fast. Don\'t get too hung up on the details when brewing. As long as your coffee tastes great, you have already done a lot right.
     </string>
 
-    <string name="aboutpage">\n\nMy name is <b>Kasander</b>, and I <i>love</i> coffee!
+    <string name="aboutpage">My name is <b>Kasander</b>, and I <i>love</i> coffee!
         \n\nIn this application I have gathered all my favourite recipes for different coffee brewing methods I have experience with. I have not included espresso, as this is a completely different world.
         \n
         \n\nMade by a coffee lover and former barista.
