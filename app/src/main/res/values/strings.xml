@@ -109,6 +109,8 @@
         \n\n
         \n\n\t\t\t\t\t\t\t\t\tHappy Brewing!
     </string>
+    <string name="switch_dose_coffee">Dose coffee 60 g/L or 75 g/L</string>
+    <string name="switch_calculate">Calculate coffee or water</string>
 
 
 </resources>
