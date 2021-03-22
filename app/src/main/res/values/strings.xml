@@ -99,13 +99,13 @@
         \n\n8. Coffee can get very technical very fast. Don\'t get too hung up on the details when brewing. As long as your coffee tastes great, you have already done a lot right.
     </string>
 
-    <string name="aboutpage">My name is <b>Kasander</b>, and I <i>love</i> coffee!
+    <string name="about_page">My name is <b>Kasander</b>, and I <i>love</i> coffee!
         \n\nIn this application I have gathered all my favourite recipes for different coffee brewing methods I have experience with. I have not included espresso, as this is a completely different world.
         \n
         \n\nMade by a coffee lover and former barista.
         \n\nSuggestions and feedback are always welcome!
         \n\nYou can find me at:
-        \n @github: kasanderh  \n @instagram: kaffekas
+        \n <b>@github:</b> kasanderh  \n <b>@instagram:</b> kaffekas
         \n\n
         \n\n\t\t\t\t\t\t\t\t\tHappy Brewing!
     </string>

@@ -142,6 +142,7 @@
                     android:inputType="number"
                     android:singleLine="true"
                     android:textColor="@color/black"
+                    android:textSize="18sp"
                     tools:text="250" />
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -230,6 +231,7 @@
                 android:paddingStart="12dp"
                 android:paddingEnd="12dp"
                 android:text="Dose coffee 60 grams or 75 grams"
+                android:textSize="18sp"
                 app:layout_constraintBottom_toTopOf="@id/switch_coffee_water"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
@@ -244,6 +246,7 @@
                 android:paddingStart="12dp"
                 android:paddingEnd="12dp"
                 android:text="Calculate coffee or water"
+                android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
