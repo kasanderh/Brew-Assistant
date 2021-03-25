@@ -2,7 +2,12 @@ package com.kasanderh.newcoffeeapp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.google.android.material.bottomsheet.BottomSheetBehavior
 import kotlinx.android.synthetic.main.activity_hariov60.*
+import kotlinx.android.synthetic.main.layout_bottom_bar_two.*
+
+private var bottomSheetBehavior: BottomSheetBehavior<*>? = null
+
 
 class Hariov60Activity : AppCompatActivity() {
 
@@ -11,6 +16,21 @@ class Hariov60Activity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hariov60)
 //        setText()
+        bottomBarClick()
+    }
+
+    private fun bottomBarClick() {
+        bottomSheetBehavior = BottomSheetBehavior.from(layout_bottom_bar)
+        bottomSheetBehavior?.peekHeight = 0
+
+        image_view_button_timer.setOnClickListener {
+            if (bottomSheetBehavior?.state != BottomSheetBehavior.STATE_EXPANDED) {
+                bottomSheetBehavior?.state = BottomSheetBehavior.STATE_EXPANDED
+            } else {
+                bottomSheetBehavior?.state = BottomSheetBehavior.STATE_COLLAPSED
+            }
+        }
+
     }
 
 //    private fun setText() {
