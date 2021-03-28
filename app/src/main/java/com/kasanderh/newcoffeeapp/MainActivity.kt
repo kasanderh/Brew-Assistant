@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun onClickListeners() {
         card_view_v60.setOnClickListener {
-            val intent = Intent(this, Hariov60Activity::class.java)
+            val intent = Intent(this, Hariov60ActivityTest::class.java)
             startActivity(intent)
         }
 

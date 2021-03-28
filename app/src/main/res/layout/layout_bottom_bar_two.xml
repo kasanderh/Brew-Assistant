@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/layout_bottom_bar"
+    android:id="@+id/layout_bottom_bar_two"
     android:layout_width="match_parent"
     android:layout_height="140dp"
     app:behavior_peekHeight="40dp"
@@ -18,7 +18,7 @@
     <!--        android:layout_marginStart="24dp">-->
 
     <ImageView
-        android:id="@+id/image_view_button_info"
+        android:id="@+id/image_view_button_info_2"
         android:layout_width="40dp"
         android:layout_height="35dp"
         android:layout_marginStart="24dp"
@@ -28,7 +28,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/image_view_button_timer"
+        android:id="@+id/image_view_button_timer_2"
         android:layout_width="40dp"
         android:layout_height="35dp"
         android:layout_marginTop="10dp"
@@ -38,7 +38,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/image_view_button_home"
+        android:id="@+id/image_view_button_home_2"
         android:layout_width="40dp"
         android:layout_height="35dp"
         android:layout_marginTop="10dp"
@@ -51,7 +51,7 @@
     <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
 
     <Button
-        android:id="@+id/button_bottom_reset"
+        android:id="@+id/button_bottom_reset_2"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:text="Reset"
@@ -64,7 +64,7 @@
         android:gravity="center_horizontal"
         android:textSize="48sp"
         android:textColor="@color/white"
-        android:id="@+id/chronometer_bottom_bar"
+        android:id="@+id/chronometer_bottom_bar_2"
         android:layout_width="0dp"
         android:paddingStart="6dp"
         android:paddingEnd="6dp"
@@ -75,7 +75,7 @@
         app:layout_constraintTop_toBottomOf="@id/image_view_button_timer" />
 
     <Button
-        android:id="@+id/button_bottom_start"
+        android:id="@+id/button_bottom_start_2"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:text="Start"
