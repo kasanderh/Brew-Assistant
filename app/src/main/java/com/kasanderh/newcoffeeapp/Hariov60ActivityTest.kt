@@ -34,7 +34,6 @@ class Hariov60ActivityTest : AppCompatActivity() {
                 override fun onStateChanged(bottomSheet: View, newState: Int) {
                     // may need code here
                 }
-
             }
         )
 
