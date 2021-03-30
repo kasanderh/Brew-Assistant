@@ -4,6 +4,8 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.SystemClock
 import android.view.View
+import android.widget.Chronometer
+import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import kotlinx.android.synthetic.main.activity_hariov60.*
@@ -16,6 +18,7 @@ import kotlinx.android.synthetic.main.layout_bottom_bar_two.*
 class Hariov60ActivityTest : AppCompatActivity() {
 
     private lateinit var bottomSheetBehavior: BottomSheetBehavior<ConstraintLayout>
+//    var stopWatch: Chronometer = chronometer_bottom_bar
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -49,21 +52,31 @@ class Hariov60ActivityTest : AppCompatActivity() {
 
         //onClickListener for BottomSheet buttons
         button_bottom_start.setOnClickListener {
-        }
-        if(!chronometer_bottom_bar.isActivated) {
             chronometer_bottom_bar.base = SystemClock.elapsedRealtime()
             chronometer_bottom_bar.start()
-            button_bottom_start.text = "Stop"
-        } else if(chronometer_bottom_bar.isActivated) {
+//            if(!chronometer_bottom_bar.isActivated) {
+//                chronometer_bottom_bar.base = SystemClock.elapsedRealtime()
+//                chronometer_bottom_bar.start()
+//            } else if(chronometer_bottom_bar.isActivated) {
+//                Toast.makeText(this, "Stopwatch is already started",Toast.LENGTH_SHORT).show()
+//            }
+        }
+
+        button_bottom_stop.setOnClickListener {
             chronometer_bottom_bar.stop()
-            button_bottom_start.text = "Start"
+
+//            if(chronometer_bottom_bar.isActivated) {
+//                chronometer_bottom_bar.stop()
+//            } else if (!chronometer_bottom_bar.isActivated) {
+//                Toast.makeText(this, "Stopwatch is already stopped",Toast.LENGTH_SHORT).show()
+//
+//            }
         }
 
 
 
         button_bottom_reset.setOnClickListener {
             chronometer_bottom_bar.base = SystemClock.elapsedRealtime()
-            button_bottom_start.text = "Start"
         }
 
 

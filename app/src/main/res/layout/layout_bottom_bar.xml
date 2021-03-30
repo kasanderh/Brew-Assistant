@@ -72,11 +72,19 @@
     <Button
         android:id="@+id/button_bottom_start"
         android:layout_width="100dp"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:text="Start"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/button_bottom_stop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/image_view_button_home" />
+    <Button
+        android:id="@+id/button_bottom_stop"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Stop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/button_bottom_start" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
