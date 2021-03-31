@@ -1,5 +1,6 @@
 package com.kasanderh.newcoffeeapp
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.SystemClock
@@ -73,10 +74,18 @@ class Hariov60ActivityTest : AppCompatActivity() {
 //            }
         }
 
-
-
         button_bottom_reset.setOnClickListener {
             chronometer_bottom_bar.base = SystemClock.elapsedRealtime()
+        }
+
+        image_view_button_info.setOnClickListener {
+            val intent = Intent(this, AboutActivity::class.java)
+            startActivity(intent)
+        }
+
+        image_view_button_home.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
 
 
