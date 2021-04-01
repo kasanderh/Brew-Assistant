@@ -7,7 +7,8 @@
     android:layout_width="match_parent"
     android:layout_height="140dp"
     app:behavior_peekHeight="50dp"
-    app:behavior_hideable="true"
+    tools:context=".BottomSheetActivity"
+    app:behavior_hideable="false"
     android:background="@drawable/background_bottom_bar"
     app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
 
