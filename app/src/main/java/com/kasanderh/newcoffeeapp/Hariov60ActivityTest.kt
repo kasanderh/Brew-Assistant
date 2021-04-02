@@ -18,6 +18,7 @@ import kotlinx.android.synthetic.main.layout_bottom_bar_two.*
 class Hariov60ActivityTest : AppCompatActivity() {
 
     private lateinit var bottomSheetBehavior: BottomSheetBehavior<ConstraintLayout>
+    private var timeWhenStopped: Long = 0
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -58,16 +59,28 @@ class Hariov60ActivityTest : AppCompatActivity() {
 
         //onClickListener for BottomSheet buttons
         button_bottom_start.setOnClickListener {
-            chronometer_bottom_bar.base = SystemClock.elapsedRealtime()
-            chronometer_bottom_bar.start()
+            if(chronometer_bottom_bar.isActivated) {
+                Toast.makeText(this, "Stopwatch is already running!", Toast.LENGTH_SHORT).show()
+            } else if (!chronometer_bottom_bar.isActivated) {
+                if(timeWhenStopped.equals(0)) {
+                    chronometer_bottom_bar.text.toString()
+                    chronometer_bottom_bar.base = SystemClock.elapsedRealtime()
+                    chronometer_bottom_bar.start()
+                } else {
+                    chronometer_bottom_bar.base = SystemClock.elapsedRealtime() + timeWhenStopped
+                    chronometer_bottom_bar.start()
+                }
+            }
         }
 
         button_bottom_stop.setOnClickListener {
+            timeWhenStopped = chronometer_bottom_bar.base - SystemClock.elapsedRealtime()
             chronometer_bottom_bar.stop()
         }
 
         button_bottom_reset.setOnClickListener {
             chronometer_bottom_bar.base = SystemClock.elapsedRealtime()
+            timeWhenStopped = 0
         }
 
         image_view_button_info.setOnClickListener {
