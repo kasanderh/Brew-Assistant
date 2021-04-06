@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:background="@drawable/background_fade"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/background_fade"
     tools:context=".CoffeeTipsActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <ImageView
             android:id="@+id/image_view_coffee_tips"
@@ -20,9 +24,9 @@
         <androidx.cardview.widget.CardView
             android:id="@+id/card_view_coffee_tips_description"
             android:layout_width="0dp"
-            android:layout_height="110dp"
+            android:layout_height="100dp"
             android:layout_marginStart="24dp"
-            android:layout_marginTop="12dp"
+            android:layout_marginTop="6dp"
             android:layout_marginEnd="24dp"
             app:cardCornerRadius="6dp"
             app:layout_constraintBottom_toTopOf="@id/card_view_coffee_tips_recipe"
@@ -43,31 +47,31 @@
 
         </androidx.cardview.widget.CardView>
 
-<!--        <androidx.cardview.widget.CardView-->
-<!--            android:id="@+id/card_view_coffee_tips_dose"-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="120dp"-->
-<!--            android:layout_marginStart="24dp"-->
-<!--            android:layout_marginTop="12dp"-->
-<!--            android:layout_marginEnd="24dp"-->
-<!--            app:cardCornerRadius="6dp"-->
-<!--            app:layout_constraintBottom_toTopOf="@id/card_view_coffee_tips_recipe"-->
-<!--            app:layout_constraintEnd_toEndOf="parent"-->
-<!--            app:layout_constraintStart_toStartOf="parent"-->
-<!--            app:layout_constraintTop_toBottomOf="@id/card_view_coffee_tips_description">-->
+        <!--        <androidx.cardview.widget.CardView-->
+        <!--            android:id="@+id/card_view_coffee_tips_dose"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="120dp"-->
+        <!--            android:layout_marginStart="24dp"-->
+        <!--            android:layout_marginTop="12dp"-->
+        <!--            android:layout_marginEnd="24dp"-->
+        <!--            app:cardCornerRadius="6dp"-->
+        <!--            app:layout_constraintBottom_toTopOf="@id/card_view_coffee_tips_recipe"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toBottomOf="@id/card_view_coffee_tips_description">-->
 
-<!--            <TextView-->
-<!--                android:id="@+id/text_view_coffee_tips_dose"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:paddingStart="8dp"-->
-<!--                android:paddingTop="8dp"-->
-<!--                android:paddingEnd="8dp"-->
-<!--                android:paddingBottom="8dp"-->
-<!--                android:text="@string/coffee_tips_dose"-->
-<!--                android:textSize="18sp" />-->
+        <!--            <TextView-->
+        <!--                android:id="@+id/text_view_coffee_tips_dose"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:paddingStart="8dp"-->
+        <!--                android:paddingTop="8dp"-->
+        <!--                android:paddingEnd="8dp"-->
+        <!--                android:paddingBottom="8dp"-->
+        <!--                android:text="@string/coffee_tips_dose"-->
+        <!--                android:textSize="18sp" />-->
 
-<!--        </androidx.cardview.widget.CardView>-->
+        <!--        </androidx.cardview.widget.CardView>-->
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_view_coffee_tips_recipe"
@@ -76,7 +80,7 @@
             android:layout_marginStart="24dp"
             android:layout_marginTop="12dp"
             android:layout_marginEnd="24dp"
-            android:layout_marginBottom="12dp"
+            android:layout_marginBottom="55dp"
             app:cardCornerRadius="6dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -102,5 +106,8 @@
 
         </androidx.cardview.widget.CardView>
 
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <include layout="@layout/layout_bottom_bar" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

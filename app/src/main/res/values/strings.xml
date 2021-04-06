@@ -85,11 +85,11 @@
         \n\n5. Enjoy on a hot and sunny day for maximum refreshing effect!
     </string>
 
-    <string name="coffee_tips_description">Great coffee is something everybody can make, and by following some simple guidelines, it will result in great coffee every time.
+    <string name="coffee_tips_description">Great coffee is something everybody can make, and by following some simple guidelines, it will result in <b>great</b> coffee <i>every</i> time.
     </string>
 
-    <string name="coffee_tips_list">
-        \n\n1. Tip number one is always use fresh, clean water. The water going in should be odorless, clear, fresh and good enough to drink.
+    <string name="coffee_tips_list"> <b><u>Tips:</u></b>
+        \n1. Tip number one is always use fresh, clean water. The water going in should be odorless, clear, fresh and good enough to drink.
         \n\n2. Always use clean equipment, as old coffee grounds will produce bad tasting components in your coffee. You only want to taste the fresh beans you just ground and put into your coffee maker.
         \n\n3. I recommend getting a burr coffee grinder. This way you will be able to enjoy your beans in the freshest way possible, and you can grind your beans according to your brewing method. Some methods require finer or courser grind than others.
         \n\n4. Weigh your coffee. Get a scale and weigh your coffee. Coffee brewing is a precise science, and you would want to know exactly how much coffee you are using so you can use the same dose every time.
@@ -105,7 +105,7 @@
         \n\nMade by a coffee lover and former barista.
         \n\nSuggestions and feedback are always welcome!
         \n\nYou can find me at:
-        \n <b>@github:</b> kasanderh  \n <b>@instagram:</b> kaffekas
+        \n <b>@github:</b> kasanderh  \n <b>@Instagram:</b> kaffekas
         \n\n
         \n\n\t\t\t\t\t\t\t\t\tHappy Brewing!
     </string>
