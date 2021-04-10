@@ -40,7 +40,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="24dp"
-                    android:layout_marginTop="6dp"
+                    android:layout_marginTop="12dp"
                     android:layout_marginEnd="24dp"
                     app:cardCornerRadius="6dp"
                     app:layout_constraintBottom_toTopOf="@id/card_view_coffee_tips_recipe"
