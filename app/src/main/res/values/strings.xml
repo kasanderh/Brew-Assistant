@@ -109,8 +109,7 @@
     <string name="author_contact_info">
         <b><u>You can find me at:</u></b>
         \n\n <b>@github:</b> kasanderh  \n\n <b>@Instagram:</b> kaffekas
-        \n\n
-        \n\n\t\t\t\t\t\t\t\t\t<big>Happy Brewing!</big>
+        \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t<big>Happy Brewing!</big>
     </string>
     <string name="switch_dose_coffee">Dose coffee 60 g/L or 75 g/L</string>
     <string name="switch_calculate">Calculate coffee or water</string>
