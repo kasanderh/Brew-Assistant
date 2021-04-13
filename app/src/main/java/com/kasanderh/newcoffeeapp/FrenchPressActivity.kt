@@ -13,6 +13,7 @@ import com.kasanderh.newcoffeeapp.ChronometerHelper
 class FrenchPressActivity : AppCompatActivity() {
 
     private lateinit var bottomSheetBehavior: BottomSheetBehavior<ConstraintLayout>
+//    private var chronometerHelper: ChronometerHelper = ChronometerHelper()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -51,7 +52,8 @@ class FrenchPressActivity : AppCompatActivity() {
 
         //onClickListener for BottomSheet buttons
         button_bottom_start.setOnClickListener {
-            ChronometerHelper.startChronometer()
+
+            chronometerHelper.startChronometer()
         }
 
         button_bottom_stop.setOnClickListener {
