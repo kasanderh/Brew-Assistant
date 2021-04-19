@@ -3,15 +3,23 @@ package com.kasanderh.newcoffeeapp
 import android.os.SystemClock
 import android.widget.Chronometer
 
-abstract class ChronometerHelper {
+object ChronometerHelper {
 
-    abstract var chronometerHelper: ChronometerHelper
-
+//    abstract var chronometerHelper: ChronometerHelper
     init {
         println("Chronometer initialized")
+        initializeChronometer()
     }
-    private lateinit var counter: Chronometer
-    var timeWhenStopped: Long = 0
+
+    private fun initializeChronometer() {
+        TODO("Not yet implemented")
+    }
+
+    lateinit var counter: Chronometer
+        var timeWhenStopped: Long = 0
+
+
+
 
 
 
@@ -19,7 +27,7 @@ abstract class ChronometerHelper {
         if (counter.isActivated) {
             println("Stopwatch is already running!")
         } else if (!counter.isActivated) {
-            if (timeWhenStopped.equals(0)) {
+            if (timeWhenStopped == 0L) {
                 counter.text.toString()
                 counter.base = SystemClock.elapsedRealtime()
                 counter.start()
@@ -45,5 +53,4 @@ abstract class ChronometerHelper {
     }
 
 
-}
 }
