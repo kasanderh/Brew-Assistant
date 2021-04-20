@@ -10,6 +10,7 @@ object ChronometerHelper {
     init {
         println("Chronometer initialized")
         initializeChronometer()
+        var counter: Chronometer = Chronometer()
     }
 
     private fun initializeChronometer() {
