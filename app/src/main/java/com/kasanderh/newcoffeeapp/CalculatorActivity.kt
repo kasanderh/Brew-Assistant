@@ -1,18 +1,15 @@
 package com.kasanderh.newcoffeeapp
 
 import android.content.Intent
-import android.opengl.Visibility
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.SystemClock
 import android.view.View
 import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.core.view.isVisible
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import kotlinx.android.synthetic.main.activity_calculator.*
 import kotlinx.android.synthetic.main.layout_bottom_bar.*
-import java.lang.Double.valueOf
 import kotlin.math.roundToInt
 
 class CalculatorActivity : AppCompatActivity() {
@@ -51,7 +48,7 @@ class CalculatorActivity : AppCompatActivity() {
 
                 image_view_calculator_water.visibility = View.GONE
                 text_edit_water.visibility = View.GONE
-                image_view_result_card.setImageResource(R.drawable.water_drop)
+                image_view_result_card.setImageResource(R.drawable.ic_water_drop)
 
 
 //            image_view_result_card.setImageResource(coffee_bean)
@@ -62,7 +59,7 @@ class CalculatorActivity : AppCompatActivity() {
 
                 image_view_calculator_water.visibility = View.VISIBLE
                 text_edit_water.visibility = View.VISIBLE
-                image_view_result_card.setImageResource(R.drawable.coffee_bean)
+                image_view_result_card.setImageResource(R.drawable.ic_coffee_beans)
 
             }
         }

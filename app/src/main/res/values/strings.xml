@@ -111,7 +111,7 @@
         \n\n <b>@github:</b> kasanderh  \n\n <b>@Instagram:</b> kaffekas
         \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t<big>Happy Brewing!</big>
     </string>
-    <string name="switch_dose_coffee">Dose coffee 60 g/L or 75 g/L</string>
+    <string name="switch_dose_coffee">Dose coffee 60 or 75 g/L</string>
     <string name="switch_calculate">Calculate coffee or water</string>
 
 

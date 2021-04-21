@@ -122,7 +122,7 @@
                 android:layout_marginStart="24dp"
                 android:layout_below="@id/image_view_calculator_coffee"
                 android:layout_toLeftOf="@id/text_edit_coffee"
-                android:src="@drawable/ic_cup_water"
+                android:src="@drawable/ic_water_drop"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/text_edit_water"
                 app:layout_constraintStart_toStartOf="parent"
@@ -150,7 +150,7 @@
                     android:singleLine="true"
                     android:textSize="18sp"
                     android:textColor="@color/black"
-                    tools:text="250" />
+                     />
 
             </com.google.android.material.textfield.TextInputLayout>
 
@@ -181,7 +181,7 @@
                 android:layout_width="50dp"
                 android:layout_height="50dp"
                 android:layout_marginStart="24dp"
-                android:src="@drawable/coffee_bean"
+                android:src="@drawable/ic_coffee_beans"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/text_view_calculator_result"
                 app:layout_constraintStart_toStartOf="parent"
@@ -237,6 +237,8 @@
                 android:layout_marginEnd="48dp"
                 android:paddingStart="12dp"
                 android:paddingEnd="12dp"
+                android:layout_marginTop="12dp"
+
                 android:text="@string/switch_dose_coffee"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toTopOf="@id/switch_coffee_water"
@@ -252,6 +254,7 @@
                 android:layout_marginEnd="48dp"
                 android:paddingStart="12dp"
                 android:paddingEnd="12dp"
+                android:layout_marginBottom="12dp"
                 android:text="@string/switch_calculate"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="parent"
