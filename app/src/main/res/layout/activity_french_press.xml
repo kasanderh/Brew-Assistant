@@ -55,6 +55,7 @@
                         android:paddingTop="8dp"
                         android:paddingEnd="8dp"
                         android:paddingBottom="8dp"
+                        android:textColor="@color/off_black"
                         android:text="@string/french_press_description"
                         android:textSize="18sp" />
 
@@ -80,6 +81,7 @@
                         android:paddingStart="8dp"
                         android:paddingTop="8dp"
                         android:paddingEnd="8dp"
+                        android:textColor="@color/off_black"
                         android:paddingBottom="8dp"
                         android:text="@string/french_press_dose"
                         android:textSize="18sp" />
@@ -109,6 +111,7 @@
                         android:paddingTop="8dp"
                         android:paddingEnd="8dp"
                         android:paddingBottom="8dp"
+                        android:textColor="@color/off_black"
                         android:text="@string/french_press_recipe"
                         android:textSize="18sp" />
 

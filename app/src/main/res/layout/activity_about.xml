@@ -42,6 +42,7 @@
                 android:paddingTop="8dp"
                 android:paddingEnd="8dp"
                 android:paddingBottom="8dp"
+                android:textColor="@color/off_black"
                 android:text="@string/about_page"
                 android:textSize="18sp" />
 
@@ -69,6 +70,7 @@
                 android:paddingTop="8dp"
                 android:paddingEnd="8dp"
                 android:paddingBottom="8dp"
+                android:textColor="@color/off_black"
                 android:text="@string/author_contact_info"
                 android:textSize="18sp" />
 

@@ -42,6 +42,7 @@
             android:paddingTop="8dp"
             android:paddingEnd="8dp"
             android:paddingBottom="8dp"
+            android:textColor="@color/off_black"
             android:text="@string/v60_description"
             android:textSize="18sp" />
 
@@ -68,6 +69,7 @@
             android:paddingTop="8dp"
             android:paddingEnd="8dp"
             android:paddingBottom="8dp"
+            android:textColor="@color/off_black"
             android:text="@string/v60_dose"
             android:textSize="18sp" />
 
@@ -99,6 +101,7 @@
                 android:paddingTop="8dp"
                 android:paddingEnd="8dp"
                 android:paddingBottom="8dp"
+                android:textColor="@color/off_black"
                 android:text="@string/v60_recipe"
                 android:textSize="18sp" />
 

@@ -55,6 +55,7 @@
                         android:paddingTop="8dp"
                         android:paddingEnd="8dp"
                         android:paddingBottom="8dp"
+                        android:textColor="@color/off_black"
                         android:text="@string/iced_coffee_description"
                         android:textSize="18sp" />
 
@@ -81,6 +82,7 @@
                         android:paddingTop="8dp"
                         android:paddingEnd="8dp"
                         android:paddingBottom="8dp"
+                        android:textColor="@color/off_black"
                         android:text="@string/iced_coffee_dose"
                         android:textSize="18sp" />
 
@@ -108,6 +110,7 @@
                         android:paddingTop="8dp"
                         android:paddingEnd="8dp"
                         android:paddingBottom="8dp"
+                        android:textColor="@color/off_black"
                         android:text="@string/iced_coffee_recipe"
                         android:textSize="18sp" />
 
