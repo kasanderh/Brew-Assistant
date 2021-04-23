@@ -7,16 +7,29 @@ object ChronometerHelper {
 
 //    abstract var chronometerHelper: ChronometerHelper
 
+    private var currentTime: Double = 0.0
+
+
     init {
         println("Chronometer initialized")
         initializeChronometer()
-        var counter: Chronometer = Chronometer()
+//        var counter: Chronometer = Chronometer()
     }
 
+
     private fun initializeChronometer() {
+
         TODO("Not yet implemented")
         // initialize here
 
+    }
+
+    fun getCurrentTime(): Double {
+         return currentTime
+    }
+
+    fun setCurrentTime(newTime: Double) {
+        this.currentTime = newTime
     }
 
 //    lateinit var counter: Chronometer
