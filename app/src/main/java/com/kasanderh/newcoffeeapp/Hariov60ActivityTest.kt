@@ -55,6 +55,8 @@ class Hariov60ActivityTest : AppCompatActivity() {
                 else
                     BottomSheetBehavior.STATE_EXPANDED
             bottomSheetBehavior.state = state
+
+            CustomBottomSheetDialogFragment().apply { show(supportFragmentManager, CustomBottomSheetDialogFragment.TAG) }
         }
 
 //        //onClickListener for BottomSheet buttons
