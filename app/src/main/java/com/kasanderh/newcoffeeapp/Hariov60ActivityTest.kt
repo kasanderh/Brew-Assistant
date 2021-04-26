@@ -30,6 +30,9 @@ class Hariov60ActivityTest : AppCompatActivity() {
     }
 
     private fun setupBottomSheet() {
+
+        CustomBottomSheetDialogFragment().apply { show(supportFragmentManager, CustomBottomSheetDialogFragment.TAG) }
+
         // Initializing bottomSheetBehavior
         bottomSheetBehavior = BottomSheetBehavior.from(layout_bottom_sheet_test)
 
@@ -48,7 +51,7 @@ class Hariov60ActivityTest : AppCompatActivity() {
 
     private fun onClickListeners() {
         // Change state when clicked
-        image_view_button_timer.setOnClickListener {
+        image_view_button_timer_test.setOnClickListener {
             val state =
                 if (bottomSheetBehavior.state == BottomSheetBehavior.STATE_EXPANDED)
                     BottomSheetBehavior.STATE_COLLAPSED
@@ -56,7 +59,7 @@ class Hariov60ActivityTest : AppCompatActivity() {
                     BottomSheetBehavior.STATE_EXPANDED
             bottomSheetBehavior.state = state
 
-            CustomBottomSheetDialogFragment().apply { show(supportFragmentManager, CustomBottomSheetDialogFragment.TAG) }
+//            CustomBottomSheetDialogFragment().apply { show(supportFragmentManager, CustomBottomSheetDialogFragment.TAG) }
         }
 
 //        //onClickListener for BottomSheet buttons
@@ -85,12 +88,12 @@ class Hariov60ActivityTest : AppCompatActivity() {
 //            timeWhenStopped = 0
 //        }
 
-        image_view_button_info.setOnClickListener {
+        image_view_button_info_test.setOnClickListener {
             val intent = Intent(this, AboutActivity::class.java)
             startActivity(intent)
         }
 
-        image_view_button_home.setOnClickListener {
+        image_view_button_home_test.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }

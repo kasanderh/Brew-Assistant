@@ -13,7 +13,7 @@ import kotlinx.android.synthetic.main.layout_bottom_bar_two.*
 
 class CustomBottomSheetDialogFragment: BottomSheetDialogFragment() {
 
-    val counter: Chronometer = Chronometer(this.context)
+    lateinit var counter: Chronometer
     private var timeWhenStopped: Long = 0L
 
     companion object {
@@ -31,6 +31,7 @@ class CustomBottomSheetDialogFragment: BottomSheetDialogFragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
+        counter = Chronometer(this.context)
 
         // onclickListeners here
         //start timer

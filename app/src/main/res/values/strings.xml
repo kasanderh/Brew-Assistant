@@ -113,6 +113,9 @@
     </string>
     <string name="switch_dose_coffee">Dose coffee 60 or 75 g/L</string>
     <string name="switch_calculate">Calculate coffee or water</string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="reset">Reset</string>
 
 
 </resources>

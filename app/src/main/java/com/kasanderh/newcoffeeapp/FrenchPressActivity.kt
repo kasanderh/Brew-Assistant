@@ -53,7 +53,7 @@ class FrenchPressActivity : AppCompatActivity() {
         //onClickListener for BottomSheet buttons
         button_bottom_start.setOnClickListener {
 
-            chronometerHelper.startChronometer()
+//            chronometerHelper.startChronometer()
         }
 
         button_bottom_stop.setOnClickListener {

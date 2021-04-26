@@ -43,13 +43,12 @@
         app:layout_constraintLeft_toRightOf="@id/image_view_button_timer_test"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
 
     <Button
         android:id="@+id/button_bottom_reset_test"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:text="Reset"
+        android:text="@string/reset"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/image_view_button_info_test" />
@@ -73,7 +72,7 @@
         android:id="@+id/button_bottom_start_test"
         android:layout_width="100dp"
         android:layout_height="40dp"
-        android:text="Start"
+        android:text="@string/start"
         app:layout_constraintBottom_toTopOf="@id/button_bottom_stop_test"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/image_view_button_home_test" />
@@ -82,7 +81,7 @@
         android:id="@+id/button_bottom_stop_test"
         android:layout_width="100dp"
         android:layout_height="40dp"
-        android:text="Stop"
+        android:text="@string/stop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button_bottom_start_test" />
