@@ -31,7 +31,7 @@ class Hariov60ActivityTest : AppCompatActivity() {
 
     private fun setupBottomSheet() {
         // Initializing bottomSheetBehavior
-        bottomSheetBehavior = BottomSheetBehavior.from(layout_bottom_sheet)
+        bottomSheetBehavior = BottomSheetBehavior.from(layout_bottom_sheet_test)
 
         // OnClickListener for bottomSheetBehavior
         bottomSheetBehavior.addBottomSheetCallback(
@@ -57,31 +57,31 @@ class Hariov60ActivityTest : AppCompatActivity() {
             bottomSheetBehavior.state = state
         }
 
-        //onClickListener for BottomSheet buttons
-        button_bottom_start.setOnClickListener {
-            if(chronometer_bottom_bar.isActivated) {
-                Toast.makeText(this, "Stopwatch is already running!", Toast.LENGTH_SHORT).show()
-            } else if (!chronometer_bottom_bar.isActivated) {
-                if(timeWhenStopped.equals(0)) {
-                    chronometer_bottom_bar.text.toString()
-                    chronometer_bottom_bar.base = SystemClock.elapsedRealtime()
-                    chronometer_bottom_bar.start()
-                } else {
-                    chronometer_bottom_bar.base = SystemClock.elapsedRealtime() + timeWhenStopped
-                    chronometer_bottom_bar.start()
-                }
-            }
-        }
-
-        button_bottom_stop.setOnClickListener {
-            timeWhenStopped = chronometer_bottom_bar.base - SystemClock.elapsedRealtime()
-            chronometer_bottom_bar.stop()
-        }
-
-        button_bottom_reset.setOnClickListener {
-            chronometer_bottom_bar.base = SystemClock.elapsedRealtime()
-            timeWhenStopped = 0
-        }
+//        //onClickListener for BottomSheet buttons
+//        button_bottom_start.setOnClickListener {
+//            if(chronometer_bottom_bar.isActivated) {
+//                Toast.makeText(this, "Stopwatch is already running!", Toast.LENGTH_SHORT).show()
+//            } else if (!chronometer_bottom_bar.isActivated) {
+//                if(timeWhenStopped.equals(0)) {
+//                    chronometer_bottom_bar.text.toString()
+//                    chronometer_bottom_bar.base = SystemClock.elapsedRealtime()
+//                    chronometer_bottom_bar.start()
+//                } else {
+//                    chronometer_bottom_bar.base = SystemClock.elapsedRealtime() + timeWhenStopped
+//                    chronometer_bottom_bar.start()
+//                }
+//            }
+//        }
+//
+//        button_bottom_stop.setOnClickListener {
+//            timeWhenStopped = chronometer_bottom_bar.base - SystemClock.elapsedRealtime()
+//            chronometer_bottom_bar.stop()
+//        }
+//
+//        button_bottom_reset.setOnClickListener {
+//            chronometer_bottom_bar.base = SystemClock.elapsedRealtime()
+//            timeWhenStopped = 0
+//        }
 
         image_view_button_info.setOnClickListener {
             val intent = Intent(this, AboutActivity::class.java)

@@ -1,87 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/layout_bottom_bar_two"
+    android:id="@+id/layout_bottom_sheet_test"
     android:layout_width="match_parent"
     android:layout_height="140dp"
-    app:behavior_peekHeight="40dp"
     android:background="@drawable/background_bottom_bar"
-    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="50dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    tools:context=".BottomSheetActivity">
 
-<!--    app:behaviour_peekHeight="40dp"-->
-
-    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
-    <!--        android:layout_width="match_parent"-->
-    <!--        android:layout_height="40dp"-->
-    <!--        android:layout_marginEnd="24dp"-->
-    <!--        android:layout_marginStart="24dp">-->
 
     <ImageView
-        android:id="@+id/image_view_button_info_2"
+        android:id="@+id/image_view_button_home_test"
         android:layout_width="40dp"
         android:layout_height="35dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="10dp"
-        android:src="@drawable/ic_coffee_cup"
+        android:src="@drawable/ic_home"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/image_view_button_timer_2"
+        android:id="@+id/image_view_button_timer_test"
         android:layout_width="40dp"
         android:layout_height="35dp"
         android:layout_marginTop="10dp"
-        android:src="@drawable/ic_coffee_cup"
-        app:layout_constraintLeft_toRightOf="@id/image_view_button_info"
-        app:layout_constraintRight_toLeftOf="@id/image_view_button_home"
+        android:src="@drawable/ic_stopwatch"
+        app:layout_constraintLeft_toRightOf="@id/image_view_button_home_test"
+        app:layout_constraintRight_toLeftOf="@id/image_view_button_info_test"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/image_view_button_home_2"
+        android:id="@+id/image_view_button_info_test"
         android:layout_width="40dp"
         android:layout_height="35dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="24dp"
-        android:src="@drawable/ic_coffee_cup"
+        android:src="@drawable/ic_info"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintLeft_toRightOf="@id/image_view_button_timer"
+        app:layout_constraintLeft_toRightOf="@id/image_view_button_timer_test"
         app:layout_constraintTop_toTopOf="parent" />
 
     <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
 
     <Button
-        android:id="@+id/button_bottom_reset_2"
+        android:id="@+id/button_bottom_reset_test"
         android:layout_width="100dp"
         android:layout_height="50dp"
         android:text="Reset"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/image_view_button_info" />
+        app:layout_constraintTop_toBottomOf="@id/image_view_button_info_test" />
 
     <Chronometer
-        android:countDown="false"
-        android:gravity="center_horizontal"
-        android:textSize="48sp"
-        android:textColor="@color/white"
-        android:id="@+id/chronometer_bottom_bar_2"
+        android:id="@+id/chronometer_bottom_bar_test"
         android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:format="%s"
+        android:gravity="center_horizontal"
         android:paddingStart="6dp"
         android:paddingEnd="6dp"
-        android:layout_height="60dp"
+        android:textColor="@color/white"
+        android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/button_bottom_start"
-        app:layout_constraintStart_toEndOf="@id/button_bottom_reset"
-        app:layout_constraintTop_toBottomOf="@id/image_view_button_timer" />
+        app:layout_constraintEnd_toStartOf="@id/button_bottom_start_test"
+        app:layout_constraintStart_toEndOf="@id/button_bottom_reset_test"
+        app:layout_constraintTop_toBottomOf="@id/image_view_button_timer_test" />
 
     <Button
-        android:id="@+id/button_bottom_start_2"
+        android:id="@+id/button_bottom_start_test"
         android:layout_width="100dp"
-        android:layout_height="50dp"
+        android:layout_height="40dp"
         android:text="Start"
+        app:layout_constraintBottom_toTopOf="@id/button_bottom_stop_test"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_view_button_home_test" />
+
+    <Button
+        android:id="@+id/button_bottom_stop_test"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Stop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/image_view_button_home" />
+        app:layout_constraintTop_toBottomOf="@id/button_bottom_start_test" />
 
 
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
