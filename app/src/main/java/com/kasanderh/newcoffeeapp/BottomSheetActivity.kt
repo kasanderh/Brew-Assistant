@@ -4,6 +4,8 @@ import android.os.Bundle
 import android.os.PersistableBundle
 import android.os.SystemClock
 import android.view.View
+import android.widget.Chronometer
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.google.android.material.bottomsheet.BottomSheetBehavior
@@ -12,6 +14,8 @@ import kotlinx.android.synthetic.main.layout_bottom_bar.*
 class BottomSheetActivity: AppCompatActivity() {
 
     private lateinit var bottomSheetBehavior: BottomSheetBehavior<ConstraintLayout>
+    private lateinit var chronometer: Chronometer
+    var timeWhenStopped: Long = 0
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,6 +35,9 @@ class BottomSheetActivity: AppCompatActivity() {
                 }
             }
         )
+
+        // initialize chronometer
+        chronometer = chronometer_bottom_bar
 
 
 
@@ -59,6 +66,32 @@ class BottomSheetActivity: AppCompatActivity() {
     button_bottom_reset.setOnClickListener {
         chronometer_bottom_bar.base = SystemClock.elapsedRealtime()
     }
-}
+
+            //onClickListener for BottomSheet buttons
+        button_bottom_start.setOnClickListener {
+            if(chronometer.isActivated) {
+                Toast.makeText(this, "Stopwatch is already running!", Toast.LENGTH_SHORT).show()
+            } else if (!chronometer.isActivated) {
+                if(timeWhenStopped == 0L) {
+                    chronometer.text.toString()
+                    chronometer.base = SystemClock.elapsedRealtime()
+                    chronometer.start()
+                } else {
+                    chronometer.base = SystemClock.elapsedRealtime() + timeWhenStopped
+                    chronometer.start()
+                }
+            }
+        }
+
+        button_bottom_stop.setOnClickListener {
+            timeWhenStopped = chronometer.base - SystemClock.elapsedRealtime()
+            chronometer.stop()
+        }
+
+        button_bottom_reset.setOnClickListener {
+            chronometer.base = SystemClock.elapsedRealtime()
+            timeWhenStopped = 0
+        }
+    }
 
 }

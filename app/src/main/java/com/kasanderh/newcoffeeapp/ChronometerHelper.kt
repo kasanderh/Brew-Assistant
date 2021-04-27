@@ -8,17 +8,19 @@ object ChronometerHelper {
 //    abstract var chronometerHelper: ChronometerHelper
 
     private var currentTime: Double = 0.0
+//    private var chronometerBottomDialog = findViewBy
 
 
     init {
         println("Chronometer initialized")
         initializeChronometer()
-//        var counter: Chronometer = Chronometer()
+//        var counter: Chronometer = R.id.chronometer_bottom_bar as Chronometer
+
+
     }
 
 
     private fun initializeChronometer() {
-
         TODO("Not yet implemented")
         // initialize here
 

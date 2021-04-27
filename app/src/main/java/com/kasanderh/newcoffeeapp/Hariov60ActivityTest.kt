@@ -31,7 +31,7 @@ class Hariov60ActivityTest : AppCompatActivity() {
 
     private fun setupBottomSheet() {
 
-        CustomBottomSheetDialogFragment().apply { show(supportFragmentManager, CustomBottomSheetDialogFragment.TAG) }
+//        CustomBottomSheetDialogFragment().apply { show(supportFragmentManager, CustomBottomSheetDialogFragment.TAG) }
 
         // Initializing bottomSheetBehavior
         bottomSheetBehavior = BottomSheetBehavior.from(layout_bottom_sheet_test)
