@@ -41,7 +41,6 @@ class BottomSheetActivity: AppCompatActivity() {
         chronometer = chronometer_bottom_bar_test
 
 
-
     // Change state when clicked
     image_view_button_timer.setOnClickListener {
         val state =
