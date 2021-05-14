@@ -50,7 +50,7 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_centerInParent="true"
-                        android:src="@drawable/ic_coffee_cup" />
+                        android:src="@drawable/icon_hario_v60_new" />
 
                     <TextView
                         android:id="@+id/text_view_v60"
@@ -86,7 +86,7 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_centerInParent="true"
-                        android:src="@drawable/ic_coffee_cup" />
+                        android:src="@drawable/icon_aeropress" />
 
                     <TextView
                         android:layout_width="wrap_content"

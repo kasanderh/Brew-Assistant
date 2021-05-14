@@ -10,12 +10,13 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import kotlinx.android.synthetic.main.layout_bottom_bar.*
+import kotlinx.android.synthetic.main.layout_bottom_bar_two.*
 
 class BottomSheetActivity: AppCompatActivity() {
 
     private lateinit var bottomSheetBehavior: BottomSheetBehavior<ConstraintLayout>
     private lateinit var chronometer: Chronometer
-    var timeWhenStopped: Long = 0
+    var timeWhenStopped: Long = 0L
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,8 +38,7 @@ class BottomSheetActivity: AppCompatActivity() {
         )
 
         // initialize chronometer
-        chronometer = chronometer_bottom_bar
-
+        chronometer = chronometer_bottom_bar_test
 
 
     // Change state when clicked
@@ -52,20 +52,20 @@ class BottomSheetActivity: AppCompatActivity() {
     }
 
     //onClickListener for BottomSheet buttons
-    button_bottom_start.setOnClickListener {
-        chronometer_bottom_bar.base = SystemClock.elapsedRealtime()
-        chronometer_bottom_bar.start()
-
-    }
-
-    button_bottom_stop.setOnClickListener {
-        chronometer_bottom_bar.stop()
-    }
-
-
-    button_bottom_reset.setOnClickListener {
-        chronometer_bottom_bar.base = SystemClock.elapsedRealtime()
-    }
+//    button_bottom_start.setOnClickListener {
+//        chronometer_bottom_bar.base = SystemClock.elapsedRealtime()
+//        chronometer_bottom_bar.start()
+//
+//    }
+//
+//    button_bottom_stop.setOnClickListener {
+//        chronometer_bottom_bar.stop()
+//    }
+//
+//
+//    button_bottom_reset.setOnClickListener {
+//        chronometer_bottom_bar.base = SystemClock.elapsedRealtime()
+//    }
 
             //onClickListener for BottomSheet buttons
         button_bottom_start.setOnClickListener {
@@ -76,6 +76,7 @@ class BottomSheetActivity: AppCompatActivity() {
                     chronometer.text.toString()
                     chronometer.base = SystemClock.elapsedRealtime()
                     chronometer.start()
+                    Toast.makeText(this, "${chronometer.text}", Toast.LENGTH_SHORT).show()
                 } else {
                     chronometer.base = SystemClock.elapsedRealtime() + timeWhenStopped
                     chronometer.start()
