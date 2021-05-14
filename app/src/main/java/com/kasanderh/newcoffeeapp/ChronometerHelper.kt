@@ -5,6 +5,11 @@ import android.widget.Chronometer
 
 object ChronometerHelper {
 
+    // In this class, we will save the Chronometer values.
+    // This way, we can switch between activities, and the Chronometer will continue counting.
+    // This creates a seamless UX and created an illusion that the activity changes, but the
+    // bottomSheet stays the same.
+
 //    abstract var chronometerHelper: ChronometerHelper
 
     private var currentTime: Double = 0.0
