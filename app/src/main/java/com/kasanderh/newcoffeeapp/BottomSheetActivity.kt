@@ -14,6 +14,10 @@ import kotlinx.android.synthetic.main.layout_bottom_bar_two.*
 
 class BottomSheetActivity: AppCompatActivity() {
 
+    // The BottomSheet creates a small element in each View where the user can return to the main
+    // activity, or go to the information page or open the BottomSheet an access the Stopwatch to
+    // time their coffee brewing.
+
     private lateinit var bottomSheetBehavior: BottomSheetBehavior<ConstraintLayout>
     private lateinit var chronometer: Chronometer
     var timeWhenStopped: Long = 0L
