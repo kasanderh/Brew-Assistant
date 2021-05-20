@@ -14,6 +14,8 @@ import kotlinx.android.synthetic.main.layout_bottom_bar.*
 import kotlinx.android.synthetic.main.layout_bottom_bar_two.*
 
 
+// This class is for testing out new ideas before implementing them and adding them to
+// the other activities
 
 class Hariov60ActivityTest : AppCompatActivity() {
 
