@@ -3,7 +3,7 @@ package com.kasanderh.newcoffeeapp
 import android.os.SystemClock
 import android.widget.Chronometer
 
-object ChronometerHelper {
+object ChronometerSingleton {
 
     // In this class, we will save the Chronometer values.
     // This way, we can switch between activities, and the Chronometer will continue counting.

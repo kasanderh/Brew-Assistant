@@ -8,7 +8,6 @@ import android.view.View
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import kotlinx.android.synthetic.main.layout_bottom_bar.*
-import com.kasanderh.newcoffeeapp.ChronometerHelper
 
 class FrenchPressActivity : AppCompatActivity() {
 
