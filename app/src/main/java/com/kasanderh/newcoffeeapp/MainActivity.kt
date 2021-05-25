@@ -3,16 +3,15 @@ package com.kasanderh.newcoffeeapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import kotlinx.android.synthetic.main.activity_main.*
+import com.kasanderh.newcoffeeapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var binding: ResultProfileBinding
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-//        setContentView(R.layout.activity_main)
-        binding = ResultProfileBinding.inflate(layoutInflater)
+        binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
         setContentView(view)
 
@@ -20,32 +19,32 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun onClickListeners() {
-        card_view_v60.setOnClickListener {
+        binding.cardViewV60.setOnClickListener {
             val intent = Intent(this, Hariov60ActivityTest::class.java)
             startActivity(intent)
         }
 
-        card_view_aeropress.setOnClickListener {
+        binding.cardViewAeropress.setOnClickListener {
             val intent = Intent(this, AeropressActivity::class.java)
             startActivity(intent)
         }
 
-        card_view_iced_coffee.setOnClickListener {
+        binding.cardViewIcedCoffee.setOnClickListener {
             val intent = Intent(this, IcedCoffeeActivity::class.java)
             startActivity(intent)
         }
 
-        card_view_french_press.setOnClickListener {
+        binding.cardViewFrenchPress.setOnClickListener {
             val intent = Intent(this, FrenchPressActivity::class.java)
             startActivity(intent)
         }
 
-        card_view_calculator.setOnClickListener {
+        binding.cardViewCalculator.setOnClickListener {
             val intent = Intent(this, CalculatorActivity::class.java)
             startActivity(intent)
         }
 
-        card_view_coffee_tips.setOnClickListener {
+        binding.cardViewCoffeeTips.setOnClickListener {
             val intent = Intent(this, CoffeeTipsActivity::class.java)
             startActivity(intent)
         }

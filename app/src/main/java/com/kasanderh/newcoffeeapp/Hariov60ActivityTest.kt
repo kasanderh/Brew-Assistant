@@ -9,6 +9,8 @@ import android.widget.Chronometer
 import android.widget.Toast
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.google.android.material.bottomsheet.BottomSheetBehavior
+import com.kasanderh.newcoffeeapp.databinding.ActivityHariov60Binding
+import com.kasanderh.newcoffeeapp.databinding.ActivityMainBinding
 import kotlinx.android.synthetic.main.activity_hariov60.*
 import kotlinx.android.synthetic.main.layout_bottom_bar.*
 import kotlinx.android.synthetic.main.layout_bottom_bar_two.*
@@ -19,17 +21,21 @@ import kotlinx.android.synthetic.main.layout_bottom_bar_two.*
 
 class Hariov60ActivityTest : AppCompatActivity() {
 
+    private lateinit var binding: ActivityHariov60Binding
+
     private lateinit var bottomSheetBehavior: BottomSheetBehavior<ConstraintLayout>
     private var timeWhenStopped: Long = 0
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_hariov60_testing)
+
+        binding = ActivityHariov60Binding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
+
         setupBottomSheet()
         onClickListeners()
-
-
     }
 
     private fun setupBottomSheet() {

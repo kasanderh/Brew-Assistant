@@ -22,6 +22,9 @@ class BottomSheetActivity: AppCompatActivity() {
     private lateinit var chronometer: Chronometer
     var timeWhenStopped: Long = 0L
 
+    private lateinit var binding: ResultProfileBinding
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout_bottom_bar)
