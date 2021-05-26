@@ -1,29 +1,43 @@
 package com.kasanderh.newcoffeeapp
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.SystemClock
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.google.android.material.bottomsheet.BottomSheetBehavior
-import kotlinx.android.synthetic.main.layout_bottom_bar.*
+import com.kasanderh.newcoffeeapp.databinding.ActivityAboutBinding
+import com.kasanderh.newcoffeeapp.databinding.LayoutBottomBarBinding
 
 class AboutActivity : AppCompatActivity() {
 
     private lateinit var bottomSheetBehavior: BottomSheetBehavior<ConstraintLayout>
+    private lateinit var binding: ActivityAboutBinding
+    private lateinit var bindingBottomBar: LayoutBottomBarBinding
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_about)
+
+        // View binding for the activity_about
+        binding = ActivityAboutBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
+
+        // View binding for the bottom sheet
+        bindingBottomBar = LayoutBottomBarBinding.inflate(layoutInflater)
+
         setupBottomSheet()
         onClickListeners()
     }
 
     private fun setupBottomSheet() {
         // Initializing bottomSheetBehavior
-        bottomSheetBehavior = BottomSheetBehavior.from(layout_bottom_sheet)
+        bottomSheetBehavior = BottomSheetBehavior.from(bindingBottomBar.layoutBottomSheet)
 
         // OnClickListener for bottomSheetBehavior
         bottomSheetBehavior.addBottomSheetCallback(
@@ -40,7 +54,7 @@ class AboutActivity : AppCompatActivity() {
 
     private fun onClickListeners() {
         // Change state when clicked
-        image_view_button_timer.setOnClickListener {
+        bindingBottomBar.imageViewButtonTimer.setOnClickListener {
             val state =
                 if (bottomSheetBehavior.state == BottomSheetBehavior.STATE_EXPANDED)
                     BottomSheetBehavior.STATE_COLLAPSED
@@ -50,24 +64,24 @@ class AboutActivity : AppCompatActivity() {
         }
 
         //onClickListener for BottomSheet buttons
-        button_bottom_start.setOnClickListener {
-            chronometer_bottom_bar.base = SystemClock.elapsedRealtime()
-            chronometer_bottom_bar.start()
+        bindingBottomBar.buttonBottomStart.setOnClickListener {
+            bindingBottomBar.chronometerBottomBar.base = SystemClock.elapsedRealtime()
+            bindingBottomBar.chronometerBottomBar.start()
         }
 
-        button_bottom_stop.setOnClickListener {
-            chronometer_bottom_bar.stop()
+        bindingBottomBar.buttonBottomStop.setOnClickListener {
+            bindingBottomBar.chronometerBottomBar.stop()
         }
 
-        button_bottom_reset.setOnClickListener {
-            chronometer_bottom_bar.base = SystemClock.elapsedRealtime()
+        bindingBottomBar.buttonBottomReset.setOnClickListener {
+            bindingBottomBar.chronometerBottomBar.base = SystemClock.elapsedRealtime()
         }
 
-        image_view_button_info.setOnClickListener {
+        bindingBottomBar.imageViewButtonInfo.setOnClickListener {
             Toast.makeText(this, "You are already on this page!", Toast.LENGTH_LONG).show()
         }
 
-        image_view_button_home.setOnClickListener {
+        bindingBottomBar.imageViewButtonHome.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
