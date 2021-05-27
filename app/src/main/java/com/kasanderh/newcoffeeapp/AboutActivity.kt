@@ -21,7 +21,7 @@ class AboutActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_about)
+//        setContentView(R.layout.activity_about)
 
         // View binding for the activity_about
         binding = ActivityAboutBinding.inflate(layoutInflater)

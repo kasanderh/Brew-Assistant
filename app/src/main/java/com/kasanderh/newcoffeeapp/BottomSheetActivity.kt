@@ -1,7 +1,6 @@
 package com.kasanderh.newcoffeeapp
 
 import android.os.Bundle
-import android.os.PersistableBundle
 import android.os.SystemClock
 import android.view.View
 import android.widget.Chronometer
@@ -9,8 +8,7 @@ import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.google.android.material.bottomsheet.BottomSheetBehavior
-import kotlinx.android.synthetic.main.layout_bottom_bar.*
-import kotlinx.android.synthetic.main.layout_bottom_bar_two.*
+import com.kasanderh.newcoffeeapp.databinding.LayoutBottomBarBinding
 
 class BottomSheetActivity: AppCompatActivity() {
 
@@ -22,15 +20,19 @@ class BottomSheetActivity: AppCompatActivity() {
     private lateinit var chronometer: Chronometer
     var timeWhenStopped: Long = 0L
 
-    private lateinit var binding: ResultProfileBinding
+    private lateinit var binding: LayoutBottomBarBinding
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.layout_bottom_bar)
+//        setContentView(R.layout.layout_bottom_bar)
+
+        binding = LayoutBottomBarBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
 
         // Initializing bottomSheetBehavior
-        bottomSheetBehavior = BottomSheetBehavior.from(layout_bottom_sheet)
+        bottomSheetBehavior = BottomSheetBehavior.from(binding.layoutBottomSheet)
 
         // OnClickListener for bottomSheetBehavior
         bottomSheetBehavior.addBottomSheetCallback(
@@ -45,11 +47,11 @@ class BottomSheetActivity: AppCompatActivity() {
         )
 
         // initialize chronometer
-        chronometer = chronometer_bottom_bar_test
+        chronometer = binding.chronometerBottomBar
 
 
     // Change state when clicked
-    image_view_button_timer.setOnClickListener {
+    binding.imageViewButtonTimer.setOnClickListener {
         val state =
             if (bottomSheetBehavior.state == BottomSheetBehavior.STATE_EXPANDED)
                 BottomSheetBehavior.STATE_COLLAPSED
@@ -75,7 +77,7 @@ class BottomSheetActivity: AppCompatActivity() {
 //    }
 
             //onClickListener for BottomSheet buttons
-        button_bottom_start.setOnClickListener {
+        binding.buttonBottomStart.setOnClickListener {
             if(chronometer.isActivated) {
                 Toast.makeText(this, "Stopwatch is already running!", Toast.LENGTH_SHORT).show()
             } else if (!chronometer.isActivated) {
@@ -91,12 +93,12 @@ class BottomSheetActivity: AppCompatActivity() {
             }
         }
 
-        button_bottom_stop.setOnClickListener {
+        binding.buttonBottomStop.setOnClickListener {
             timeWhenStopped = chronometer.base - SystemClock.elapsedRealtime()
             chronometer.stop()
         }
 
-        button_bottom_reset.setOnClickListener {
+        binding.buttonBottomReset.setOnClickListener {
             chronometer.base = SystemClock.elapsedRealtime()
             timeWhenStopped = 0
         }

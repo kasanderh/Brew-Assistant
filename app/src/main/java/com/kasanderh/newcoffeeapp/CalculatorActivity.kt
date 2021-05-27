@@ -1,31 +1,42 @@
 package com.kasanderh.newcoffeeapp
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.SystemClock
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.google.android.material.bottomsheet.BottomSheetBehavior
-import kotlinx.android.synthetic.main.activity_calculator.*
-import kotlinx.android.synthetic.main.layout_bottom_bar.*
+import com.kasanderh.newcoffeeapp.databinding.ActivityCalculatorBinding
+import com.kasanderh.newcoffeeapp.databinding.LayoutBottomBarBinding
 import kotlin.math.roundToInt
 
 class CalculatorActivity : AppCompatActivity() {
 
     private lateinit var bottomSheetBehavior: BottomSheetBehavior<ConstraintLayout>
+    private lateinit var binding: ActivityCalculatorBinding
+    private lateinit var bindingBottomBar: LayoutBottomBarBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_calculator)
+//        setContentView(R.layout.activity_calculator)
+
+        // View binding for the activity_aeropress
+        binding = ActivityCalculatorBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
+
+        // View binding for the bottom sheet
+        bindingBottomBar = LayoutBottomBarBinding.inflate(layoutInflater)
+
         setupBottomSheet()
         onClickListeners()
     }
 
     private fun setupBottomSheet() {
         // Initializing bottomSheetBehavior
-        bottomSheetBehavior = BottomSheetBehavior.from(layout_bottom_sheet)
+        bottomSheetBehavior = BottomSheetBehavior.from(bindingBottomBar.layoutBottomSheet)
 
         // OnClickListener for bottomSheetBehavior
         bottomSheetBehavior.addBottomSheetCallback(
@@ -41,33 +52,57 @@ class CalculatorActivity : AppCompatActivity() {
     }
 
     private fun onClickListeners() {
-        switch_coffee_water.setOnClickListener {
-            if (switch_coffee_water.isChecked) {
-                image_view_calculator_coffee.visibility = View.VISIBLE
-                text_edit_coffee.visibility = View.VISIBLE
+        binding.switchCoffeeWater.setOnClickListener {
+            if (binding.switchCoffeeWater.isChecked) {
+                binding.imageViewCalculatorCoffee.visibility = View.VISIBLE
+                binding.textEditCoffee.visibility = View.VISIBLE
 
-                image_view_calculator_water.visibility = View.GONE
-                text_edit_water.visibility = View.GONE
-                image_view_result_card.setImageResource(R.drawable.ic_water_drop)
+                binding.imageViewCalculatorWater.visibility = View.GONE
+                binding.textEditWater.visibility = View.GONE
+                binding.imageViewResultCard.setImageResource(R.drawable.ic_water_drop)
 
 
 //            image_view_result_card.setImageResource(coffee_bean)
 
-            } else if (!switch_coffee_water.isChecked) {
-                image_view_calculator_coffee.visibility = View.GONE
-                text_edit_coffee.visibility = View.GONE
+            } else if (!binding.switchCoffeeWater.isChecked) {
+                binding.imageViewCalculatorCoffee.visibility = View.GONE
+                binding.textEditCoffee.visibility = View.GONE
 
-                image_view_calculator_water.visibility = View.VISIBLE
-                text_edit_water.visibility = View.VISIBLE
-                image_view_result_card.setImageResource(R.drawable.ic_coffee_beans)
+                binding.imageViewCalculatorWater.visibility = View.VISIBLE
+                binding.textEditWater.visibility = View.VISIBLE
+                binding.imageViewResultCard.setImageResource(R.drawable.ic_coffee_beans)
 
             }
         }
 
-        button_clear.setOnClickListener {
-            text_edit_box_coffee.setText("")
-            text_edit_box_water.setText("")
-            text_view_calculator_result.setText("")
+//    private fun onClickListeners() {
+//        switch_coffee_water.setOnClickListener {
+//            if (switch_coffee_water.isChecked) {
+//                image_view_calculator_coffee.visibility = View.VISIBLE
+//                text_edit_coffee.visibility = View.VISIBLE
+//
+//                image_view_calculator_water.visibility = View.GONE
+//                text_edit_water.visibility = View.GONE
+//                image_view_result_card.setImageResource(R.drawable.ic_water_drop)
+//
+//
+////            image_view_result_card.setImageResource(coffee_bean)
+//
+//            } else if (!switch_coffee_water.isChecked) {
+//                image_view_calculator_coffee.visibility = View.GONE
+//                text_edit_coffee.visibility = View.GONE
+//
+//                image_view_calculator_water.visibility = View.VISIBLE
+//                text_edit_water.visibility = View.VISIBLE
+//                image_view_result_card.setImageResource(R.drawable.ic_coffee_beans)
+//
+//            }
+//        }
+
+        binding.buttonClear.setOnClickListener {
+            binding.textEditBoxCoffee.setText("")
+            binding.textEditBoxWater.setText("")
+            binding.textViewCalculatorResult.setText("")
         }
 
 //        switch_coffee_water.setOnClickListener {
@@ -86,44 +121,44 @@ class CalculatorActivity : AppCompatActivity() {
 //        }
 
 
-        button_calculate.setOnClickListener {
+        binding.buttonCalculate.setOnClickListener {
             var coffeeNeeded: Double
             var waterNeeded: Double
 
-            var calculateCoffee: Boolean = !switch_coffee_water.isChecked
-            var doseIsSixty: Boolean = !switch_dose.isChecked
+            var calculateCoffee: Boolean = !binding.switchCoffeeWater.isChecked
+            var doseIsSixty: Boolean = !binding.switchDose.isChecked
 
-            if ((text_edit_box_coffee.text.toString().isNotEmpty()) || (text_edit_box_water.text.toString().isNotEmpty())) {
+            if ((binding.textEditBoxCoffee.text.toString().isNotEmpty()) || (binding.textEditBoxWater.text.toString().isNotEmpty())) {
                 if (calculateCoffee) {
                     // calculateCoffee is boolean
                     // if switch is at coffee, input water
                     // set the imageview and textview to "gone"
                     if (doseIsSixty) {
-                        waterNeeded = text_edit_box_water.text.toString().toDouble() * 0.06
+                        waterNeeded = binding.textEditBoxWater.text.toString().toDouble() * 0.06
 //                    text_edit_box_coffee.setText(waterNeeded.toString())
                         var resultText = "You need ${waterNeeded.roundToInt()} grams of coffee!"
-                        text_view_calculator_result.text = resultText
+                        binding.textViewCalculatorResult.text = resultText
                         // "You need $waterNeeded grams of water!"
 
                     } else {
-                        waterNeeded = text_edit_box_water.text.toString().toDouble() * 0.075
+                        waterNeeded = binding.textEditBoxWater.text.toString().toDouble() * 0.075
 //                    text_edit_box_coffee.setText(waterNeeded.toString())
                         var resultText = "You need ${waterNeeded.roundToInt()} grams of coffee!"
-                        text_view_calculator_result.text = resultText
+                        binding.textViewCalculatorResult.text = resultText
                     }
                 } else {
                     // switch is at water, so input coffee dose
                     //showCoffee true, so the input for coffee shows and input for water does not show
                     if (doseIsSixty) {
-                        coffeeNeeded = text_edit_box_coffee.text.toString().toDouble() * 16.666667
+                        coffeeNeeded = binding.textEditBoxCoffee.text.toString().toDouble() * 16.666667
 //                    text_edit_box_water.setText(coffeeNeeded.toString())
                         var resultText = "You need ${coffeeNeeded.roundToInt()} grams of water!"
-                        text_view_calculator_result.text = resultText
+                        binding.textViewCalculatorResult.text = resultText
                     } else {
-                        coffeeNeeded = text_edit_box_coffee.text.toString().toDouble() * 13.333333
+                        coffeeNeeded = binding.textEditBoxCoffee.text.toString().toDouble() * 13.333333
 //                    text_edit_box_water.setText(coffeeNeeded.toString())
                         var resultText = "You need ${coffeeNeeded.roundToInt()} grams of water!"
-                        text_view_calculator_result.text = resultText
+                        binding.textViewCalculatorResult.text = resultText
                     }
                 }
             } else {
@@ -154,7 +189,7 @@ class CalculatorActivity : AppCompatActivity() {
         }
 
         // Change state when clicked
-        image_view_button_timer.setOnClickListener {
+        bindingBottomBar.imageViewButtonTimer.setOnClickListener {
             val state =
                 if (bottomSheetBehavior.state == BottomSheetBehavior.STATE_EXPANDED)
                     BottomSheetBehavior.STATE_COLLAPSED
@@ -164,25 +199,25 @@ class CalculatorActivity : AppCompatActivity() {
         }
 
         //onClickListener for BottomSheet buttons
-        button_bottom_start.setOnClickListener {
-            chronometer_bottom_bar.base = SystemClock.elapsedRealtime()
-            chronometer_bottom_bar.start()
+        bindingBottomBar.buttonBottomStart.setOnClickListener {
+            bindingBottomBar.chronometerBottomBar.base = SystemClock.elapsedRealtime()
+            bindingBottomBar.chronometerBottomBar.start()
         }
 
-        button_bottom_stop.setOnClickListener {
-            chronometer_bottom_bar.stop()
+        bindingBottomBar.buttonBottomStop.setOnClickListener {
+            bindingBottomBar.chronometerBottomBar.stop()
         }
 
-        button_bottom_reset.setOnClickListener {
-            chronometer_bottom_bar.base = SystemClock.elapsedRealtime()
+        bindingBottomBar.buttonBottomReset.setOnClickListener {
+            bindingBottomBar.chronometerBottomBar.base = SystemClock.elapsedRealtime()
         }
 
-        image_view_button_info.setOnClickListener {
+        bindingBottomBar.imageViewButtonInfo.setOnClickListener {
             val intent = Intent(this, AboutActivity::class.java)
             startActivity(intent)
         }
 
-        image_view_button_home.setOnClickListener {
+        bindingBottomBar.imageViewButtonHome.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
