@@ -1,16 +1,15 @@
 package com.kasanderh.newcoffeeapp
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.SystemClock
 import android.view.View
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.google.android.material.bottomsheet.BottomSheetBehavior
-import kotlinx.android.synthetic.main.activity_hariov60.*
-import kotlinx.android.synthetic.main.layout_bottom_bar.*
-import kotlinx.android.synthetic.main.layout_bottom_bar_two.*
+import com.kasanderh.newcoffeeapp.databinding.ActivityHariov60Binding
+import com.kasanderh.newcoffeeapp.databinding.LayoutBottomBarBinding
 
 //private var bottomSheetBehavior: BottomSheetBehavior<*>? = null
 
@@ -19,16 +18,27 @@ class Hariov60Activity : AppCompatActivity() {
 
     private lateinit var bottomSheetBehavior: BottomSheetBehavior<ConstraintLayout>
     private var timeWhenStopped: Long = 0
+    private lateinit var binding: ActivityHariov60Binding
+    private lateinit var bindingBottomBar: LayoutBottomBarBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_hariov60)
+//        setContentView(R.layout.activity_hariov60)
+
+        // View binding for the activity_aeropress
+        binding = ActivityHariov60Binding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
+
+        // View binding for the bottom sheet
+        bindingBottomBar = LayoutBottomBarBinding.inflate(layoutInflater)
+
         setupBottomSheet()
         onClickListeners()
     }
     private fun setupBottomSheet() {
         // Initializing bottomSheetBehavior
-        bottomSheetBehavior = BottomSheetBehavior.from(layout_bottom_sheet)
+        bottomSheetBehavior = BottomSheetBehavior.from(bindingBottomBar.layoutBottomSheet)
 
         // OnClickListener for bottomSheetBehavior
         bottomSheetBehavior.addBottomSheetCallback(
@@ -45,7 +55,7 @@ class Hariov60Activity : AppCompatActivity() {
 
     private fun onClickListeners() {
         // Change state when clicked
-        image_view_button_timer.setOnClickListener {
+        bindingBottomBar.imageViewButtonTimer.setOnClickListener {
             val state =
                 if (bottomSheetBehavior.state == BottomSheetBehavior.STATE_EXPANDED)
                     BottomSheetBehavior.STATE_COLLAPSED
@@ -55,37 +65,37 @@ class Hariov60Activity : AppCompatActivity() {
         }
 
         //onClickListener for BottomSheet buttons
-        button_bottom_start.setOnClickListener {
-            if(chronometer_bottom_bar.isActivated) {
+        bindingBottomBar.buttonBottomStart.setOnClickListener {
+            if(bindingBottomBar.chronometerBottomBar.isActivated) {
                 Toast.makeText(this, "Stopwatch is already running!", Toast.LENGTH_SHORT).show()
-            } else if (!chronometer_bottom_bar.isActivated) {
+            } else if (!bindingBottomBar.chronometerBottomBar.isActivated) {
                 if(timeWhenStopped.equals(0)) {
-                    chronometer_bottom_bar.text.toString()
-                    chronometer_bottom_bar.base = SystemClock.elapsedRealtime()
-                    chronometer_bottom_bar.start()
+                    bindingBottomBar.chronometerBottomBar.text.toString()
+                    bindingBottomBar.chronometerBottomBar.base = SystemClock.elapsedRealtime()
+                    bindingBottomBar.chronometerBottomBar.start()
                 } else {
-                    chronometer_bottom_bar.base = SystemClock.elapsedRealtime() + timeWhenStopped
-                    chronometer_bottom_bar.start()
+                    bindingBottomBar.chronometerBottomBar.base = SystemClock.elapsedRealtime() + timeWhenStopped
+                    bindingBottomBar.chronometerBottomBar.start()
                 }
             }
         }
 
-        button_bottom_stop.setOnClickListener {
-            timeWhenStopped = chronometer_bottom_bar.base - SystemClock.elapsedRealtime()
-            chronometer_bottom_bar.stop()
+        bindingBottomBar.buttonBottomStop.setOnClickListener {
+            timeWhenStopped = bindingBottomBar.chronometerBottomBar.base - SystemClock.elapsedRealtime()
+            bindingBottomBar.chronometerBottomBar.stop()
         }
 
-        button_bottom_reset.setOnClickListener {
-            chronometer_bottom_bar.base = SystemClock.elapsedRealtime()
+        bindingBottomBar.buttonBottomReset.setOnClickListener {
+            bindingBottomBar.chronometerBottomBar.base = SystemClock.elapsedRealtime()
             timeWhenStopped = 0
         }
 
-        image_view_button_info.setOnClickListener {
+        bindingBottomBar.imageViewButtonInfo.setOnClickListener {
             val intent = Intent(this, AboutActivity::class.java)
             startActivity(intent)
         }
 
-        image_view_button_home.setOnClickListener {
+        bindingBottomBar.imageViewButtonHome.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }

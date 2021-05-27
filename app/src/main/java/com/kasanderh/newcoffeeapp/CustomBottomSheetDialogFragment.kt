@@ -8,8 +8,6 @@ import android.view.ViewGroup
 import android.widget.Chronometer
 import android.widget.Toast
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment
-import kotlinx.android.synthetic.main.layout_bottom_bar.*
-import kotlinx.android.synthetic.main.layout_bottom_bar_two.*
 
 //class CustomBottomSheetDialogFragment: BottomSheetDialogFragment() {
 //
