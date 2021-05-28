@@ -1,11 +1,17 @@
 package com.kasanderh.newcoffeeapp
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.kasanderh.newcoffeeapp.databinding.ActivityMainBinding
 
+/*
+    In the MainActivity, the user can click on a coffee brewer to open up a page containing info,
+    tips, dose recommendation and a brewing guide.
+ */
+
 class MainActivity : AppCompatActivity() {
+
 
     private lateinit var binding: ActivityMainBinding
 
