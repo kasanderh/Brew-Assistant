@@ -1,8 +1,5 @@
 package com.kasanderh.newcoffeeapp
 
-import android.os.SystemClock
-import android.widget.Chronometer
-
 object ChronometerSingleton {
 
     // In this class, we will save the Chronometer values.
@@ -13,32 +10,35 @@ object ChronometerSingleton {
 
 //    abstract var chronometerHelper: ChronometerHelper
 
-    private var currentTime: Double = 0.0
+    private var startTime: Long = 0L
 //    private var chronometerBottomDialog = findViewBy
 
 
     init {
         println("Chronometer initialized")
-        initializeChronometer()
+//        initializeChronometer()
 //        var counter: Chronometer = R.id.chronometer_bottom_bar as Chronometer
 
 
     }
-
-
-    private fun initializeChronometer() {
-        TODO("Not yet implemented")
-        // initialize here
-
+    fun getStartTime(): Long {
+        return startTime
     }
 
-    fun getCurrentTime(): Double {
-         return currentTime
+    fun setStartTime(newTime: Long) {
+        this.startTime = newTime
     }
 
-    fun setCurrentTime(newTime: Double) {
-        this.currentTime = newTime
-    }
+
+//    private fun initializeChronometer() {
+//        TODO("Not yet implemented")
+//        // initialize here
+//
+//    }
+
+
+
+
 
 //    lateinit var counter: Chronometer
 //        var timeWhenStopped: Long = 0

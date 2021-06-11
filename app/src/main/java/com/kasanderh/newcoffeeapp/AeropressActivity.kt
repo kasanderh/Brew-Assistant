@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.os.SystemClock
 import android.view.View
+import android.widget.Chronometer
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.google.android.material.bottomsheet.BottomSheetBehavior
@@ -15,6 +16,7 @@ class AeropressActivity : AppCompatActivity() {
     private lateinit var bottomSheetBehavior: BottomSheetBehavior<ConstraintLayout>
     private lateinit var binding: ActivityAeropressBinding
     private lateinit var bindingBottomBar: LayoutBottomBarBinding
+    private lateinit var chronometer: Chronometer
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -30,6 +32,9 @@ class AeropressActivity : AppCompatActivity() {
 
         setupBottomSheet()
         onClickListeners()
+
+        // Create variable for the chronometer for easier reference
+        val chronometer = bindingBottomBar.chronometerBottomBar
     }
 
     private fun setupBottomSheet() {
@@ -62,16 +67,33 @@ class AeropressActivity : AppCompatActivity() {
 
         //onClickListener for BottomSheet buttons
         bindingBottomBar.buttonBottomStart.setOnClickListener {
-            bindingBottomBar.chronometerBottomBar.base = SystemClock.elapsedRealtime()
-            bindingBottomBar.chronometerBottomBar.start()
+           // if statement to check if startTime is 0 or not in the ChronometerSingleton
+
+            if(ChronometerSingleton.getStartTime() == 0L) {
+                // here we set the startTime if the startTime in the ChronometerSingleton is 0L
+                var startTime: Long = SystemClock.elapsedRealtime()
+                ChronometerSingleton.setStartTime(startTime)
+                chronometer.base = startTime
+            } else {
+                // This means the startTime is not 0 and we retrieve the saved startTime in the ChronometerSingleton and set the base time to this
+                chronometer.base = ChronometerSingleton.getStartTime()
+            }
+            chronometer.start()
+//            bindingBottomBar.chronometerBottomBar.base = SystemClock.elapsedRealtime()
+//            bindingBottomBar.chronometerBottomBar.start()
         }
 
         bindingBottomBar.buttonBottomStop.setOnClickListener {
-            bindingBottomBar.chronometerBottomBar.stop()
+//            bindingBottomBar.chronometerBottomBar.stop()
+            // we save the time and reset the clock
+            var startTime: Long = SystemClock.elapsedRealtime()
+            ChronometerSingleton.setStartTime(startTime)
+            chronometer.base = startTime
+            chronometer.stop()
         }
 
         bindingBottomBar.buttonBottomReset.setOnClickListener {
-            bindingBottomBar.chronometerBottomBar.base = SystemClock.elapsedRealtime()
+            chronometer.base = SystemClock.elapsedRealtime()
         }
 
         bindingBottomBar.imageViewButtonInfo.setOnClickListener {
