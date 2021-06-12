@@ -27,19 +27,28 @@ class AeropressActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
+        this.bindingBottomBar = LayoutBottomBarBinding.inflate(layoutInflater, null, false)
+
+
+
         // View binding for the bottom sheet
+/*
         bindingBottomBar = LayoutBottomBarBinding.inflate(layoutInflater)
+*/
 
         setupBottomSheet()
         onClickListeners()
 
         // Create variable for the chronometer for easier reference
-        val chronometer = bindingBottomBar.chronometerBottomBar
+//        val chronometer = bindingBottomBar.chronometerBottomBar
+
     }
 
     private fun setupBottomSheet() {
         // Initializing bottomSheetBehavior
-        bottomSheetBehavior = BottomSheetBehavior.from(bindingBottomBar.layoutBottomSheet)
+//        bindingBottomBar = LayoutBottomBarBinding.inflate(layoutInflater)
+
+        bottomSheetBehavior = BottomSheetBehavior.from(findViewById(R.id.layout_bottom_sheet))
 
         // OnClickListener for bottomSheetBehavior
         bottomSheetBehavior.addBottomSheetCallback(
@@ -71,7 +80,7 @@ class AeropressActivity : AppCompatActivity() {
 
             if(ChronometerSingleton.getStartTime() == 0L) {
                 // here we set the startTime if the startTime in the ChronometerSingleton is 0L
-                var startTime: Long = SystemClock.elapsedRealtime()
+                val startTime: Long = SystemClock.elapsedRealtime()
                 ChronometerSingleton.setStartTime(startTime)
                 chronometer.base = startTime
             } else {
@@ -86,7 +95,7 @@ class AeropressActivity : AppCompatActivity() {
         bindingBottomBar.buttonBottomStop.setOnClickListener {
 //            bindingBottomBar.chronometerBottomBar.stop()
             // we save the time and reset the clock
-            var startTime: Long = SystemClock.elapsedRealtime()
+            val startTime: Long = SystemClock.elapsedRealtime()
             ChronometerSingleton.setStartTime(startTime)
             chronometer.base = startTime
             chronometer.stop()
