@@ -24,10 +24,13 @@ class AeropressActivity : AppCompatActivity() {
 
         // View binding for the activity_aeropress
         binding = ActivityAeropressBinding.inflate(layoutInflater)
-        val view = binding.root
-        setContentView(view)
+        setContentView(binding.root)
 
-        this.bindingBottomBar = LayoutBottomBarBinding.inflate(layoutInflater, null, false)
+//        bindingBottomBar = LayoutBottomBarBinding.inflate(layoutInflater, null, false)
+        bindingBottomBar = LayoutBottomBarBinding.inflate(layoutInflater)
+//        addContentView(bindingBottomBar.root)
+//        addC
+//        setContentView(bindingBottomBar.root)
 
 
 
@@ -44,11 +47,13 @@ class AeropressActivity : AppCompatActivity() {
 
     }
 
+
     private fun setupBottomSheet() {
         // Initializing bottomSheetBehavior
 //        bindingBottomBar = LayoutBottomBarBinding.inflate(layoutInflater)
 
-        bottomSheetBehavior = BottomSheetBehavior.from(findViewById(R.id.layout_bottom_sheet))
+//        bottomSheetBehavior = BottomSheetBehavior.from(findViewById(R.id.layout_bottom_sheet))
+        bottomSheetBehavior = BottomSheetBehavior.from(bindingBottomBar.root)
 
         // OnClickListener for bottomSheetBehavior
         bottomSheetBehavior.addBottomSheetCallback(
@@ -65,6 +70,7 @@ class AeropressActivity : AppCompatActivity() {
 
     private fun onClickListeners() {
         // Change state when clicked
+//        bindingBottomBar.imageViewButtonTimer.setOnClickListener {
         bindingBottomBar.imageViewButtonTimer.setOnClickListener {
             val state =
                 if (bottomSheetBehavior.state == BottomSheetBehavior.STATE_EXPANDED)
