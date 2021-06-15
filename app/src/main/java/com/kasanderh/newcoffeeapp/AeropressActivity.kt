@@ -115,15 +115,26 @@ class AeropressActivity : AppCompatActivity() {
         buttonStop.setOnClickListener {
 //            bindingBottomBar.chronometerBottomBar.stop()
             // we save the time and reset the clock
-            val startTime: Long = SystemClock.elapsedRealtime()
-            ChronometerSingleton.setStartTime(startTime)
-            chronometer.base = startTime
+//            val startTime: Long = SystemClock.elapsedRealtime()
+
             chronometer.stop()
+            // Here we pause the counting. But it only stops the counting on the View. It still keeps on counting in the background.
+
+            ChronometerSingleton.setStartTime(chronometer.base)
+            // this line resets the counter to 00:00
+//            chronometer.base = SystemClock.elapsedRealtime()
+
         }
 
 //        bindingBottomBar.buttonBottomReset.setOnClickListener {
         buttonReset.setOnClickListener {
+            // if statement if the chronometer is running?
+            if (chronometer.isActivated) {
+                chronometer.stop()
+            }
             chronometer.base = SystemClock.elapsedRealtime()
+            ChronometerSingleton.setStartTime(0L)
+
         }
 
         bindingBottomBar.imageViewButtonInfo.setOnClickListener {
