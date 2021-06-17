@@ -22,6 +22,8 @@ class AeropressActivity : AppCompatActivity() {
     private lateinit var buttonStart: Button
     private lateinit var buttonStop: Button
     private lateinit var buttonReset: Button
+    private lateinit var buttonInfo: Button
+    private lateinit var buttonHome: Button
     private lateinit var chronometer: Chronometer
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -34,6 +36,7 @@ class AeropressActivity : AppCompatActivity() {
 
 //        bindingBottomBar = LayoutBottomBarBinding.inflate(layoutInflater, null, false)
         bindingBottomBar = LayoutBottomBarBinding.inflate(layoutInflater)
+
 //        addContentView(bindingBottomBar.root)
 //        addC
 //        setContentView(bindingBottomBar.root)
@@ -44,12 +47,20 @@ class AeropressActivity : AppCompatActivity() {
 /*
         bindingBottomBar = LayoutBottomBarBinding.inflate(layoutInflater)
 */
+
+
+
+
         buttonTimer = findViewById(R.id.image_view_button_timer)
 
         buttonStart = findViewById(R.id.button_bottom_start)
         buttonStop = findViewById(R.id.button_bottom_stop)
         buttonReset = findViewById(R.id.button_bottom_reset)
         chronometer = findViewById(R.id.chronometer_bottom_bar)
+
+        buttonInfo = findViewById(R.id.button_bottom_stop)
+        buttonHome = findViewById(R.id.button_bottom_stop)
+
 
         setupBottomSheet()
         onClickListeners()
@@ -58,6 +69,7 @@ class AeropressActivity : AppCompatActivity() {
 //        val chronometer = bindingBottomBar.chronometerBottomBar
 
     }
+
 
 
     private fun setupBottomSheet() {
@@ -184,3 +196,4 @@ class AeropressActivity : AppCompatActivity() {
 //        }
 //    }
 }
+
