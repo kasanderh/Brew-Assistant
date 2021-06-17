@@ -44,7 +44,6 @@
         app:layout_constraintLeft_toRightOf="@id/image_view_button_timer"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
 
     <Button
         android:id="@+id/button_bottom_reset"

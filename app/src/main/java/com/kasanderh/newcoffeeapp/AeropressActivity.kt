@@ -11,19 +11,16 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.kasanderh.newcoffeeapp.databinding.ActivityAeropressBinding
-import com.kasanderh.newcoffeeapp.databinding.LayoutBottomBarBinding
 
 class AeropressActivity : AppCompatActivity() {
 
     private lateinit var bottomSheetBehavior: BottomSheetBehavior<ConstraintLayout>
     private lateinit var binding: ActivityAeropressBinding
-    private lateinit var bindingBottomBar: LayoutBottomBarBinding
+
     private lateinit var buttonTimer: ImageView
     private lateinit var buttonStart: Button
     private lateinit var buttonStop: Button
     private lateinit var buttonReset: Button
-    private lateinit var buttonInfo: Button
-    private lateinit var buttonHome: Button
     private lateinit var chronometer: Chronometer
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,12 +32,12 @@ class AeropressActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 //        bindingBottomBar = LayoutBottomBarBinding.inflate(layoutInflater, null, false)
-        bindingBottomBar = LayoutBottomBarBinding.inflate(layoutInflater)
+//        bindingBottomBar = LayoutBottomBarBinding.inflate(layoutInflater)
+
 
 //        addContentView(bindingBottomBar.root)
 //        addC
 //        setContentView(bindingBottomBar.root)
-
 
 
         // View binding for the bottom sheet
@@ -49,17 +46,16 @@ class AeropressActivity : AppCompatActivity() {
 */
 
 
-
-
         buttonTimer = findViewById(R.id.image_view_button_timer)
+
 
         buttonStart = findViewById(R.id.button_bottom_start)
         buttonStop = findViewById(R.id.button_bottom_stop)
         buttonReset = findViewById(R.id.button_bottom_reset)
         chronometer = findViewById(R.id.chronometer_bottom_bar)
 
-        buttonInfo = findViewById(R.id.button_bottom_stop)
-        buttonHome = findViewById(R.id.button_bottom_stop)
+
+
 
 
         setupBottomSheet()
@@ -71,13 +67,13 @@ class AeropressActivity : AppCompatActivity() {
     }
 
 
-
     private fun setupBottomSheet() {
         // Initializing bottomSheetBehavior
 //        bindingBottomBar = LayoutBottomBarBinding.inflate(layoutInflater)
 
-        bottomSheetBehavior = BottomSheetBehavior.from(findViewById(R.id.layout_bottom_sheet))
-//        bottomSheetBehavior = BottomSheetBehavior.from(bindingBottomBar.root)
+//        bottomSheetBehavior = BottomSheetBehavior.from(findViewById(R.id.layout_bottom_sheet))
+        bottomSheetBehavior = BottomSheetBehavior.from(binding.bottomSheet.root)
+//        bottomSheetBehavior = BottomSheetBehavior.from(binding.bottomSheet.root)
 
         // OnClickListener for bottomSheetBehavior
         bottomSheetBehavior.addBottomSheetCallback(
@@ -107,9 +103,9 @@ class AeropressActivity : AppCompatActivity() {
         //onClickListener for BottomSheet buttons
 //        bindingBottomBar.buttonBottomStart.setOnClickListener {
         buttonStart.setOnClickListener {
-           // if statement to check if startTime is 0 or not in the ChronometerSingleton
+            // if statement to check if startTime is 0 or not in the ChronometerSingleton
 
-            if(ChronometerSingleton.getStartTime() == 0L) {
+            if (ChronometerSingleton.getStartTime() == 0L) {
                 // here we set the startTime if the startTime in the ChronometerSingleton is 0L
                 val startTime: Long = SystemClock.elapsedRealtime()
                 ChronometerSingleton.setStartTime(startTime)
@@ -149,12 +145,12 @@ class AeropressActivity : AppCompatActivity() {
 
         }
 
-        bindingBottomBar.imageViewButtonInfo.setOnClickListener {
+        binding.bottomSheet.imageViewButtonInfo.setOnClickListener {
             val intent = Intent(this, AboutActivity::class.java)
             startActivity(intent)
         }
 
-        bindingBottomBar.imageViewButtonHome.setOnClickListener {
+        binding.bottomSheet.imageViewButtonHome.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
