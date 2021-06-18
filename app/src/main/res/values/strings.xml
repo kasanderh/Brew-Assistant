@@ -41,8 +41,8 @@
         \n1. First boil the water, measure and grind the beans and put a filter in the filter-cap.
         \n\n2. Fasten the filter holder in the mid part of the Aeropress, and place it on a cup.
         \n\n3. Pre-heat the Aeropress and wet the filter by pouring hot water through it before discarding the water.
-        \n\n4. Place the cup with the Aeroress on the scale. Add the coffee in to the Aeropress, start the timer and pour water until 250mL. Fasten the piston carefully into the mid part to create a vacuum.
-        \n\n5. At the 1:00 mark, remove the piston, stir around with a spoon and put the piston back on.
+        \n\n4. Place the cup with the Aeroress on the scale. Add the coffee in to the Aeropress, start the timer and pour water until 250mL. Insert the piston carefully into the middle part to create a vacuum.
+        \n\n5. At the 1:00 mark, remove the piston, stir around with a spoon and put the piston back in.
         \n\n6. At 1:30 minutes, remove the cup from the scale, and then start pressing down gently without using force. Stop when you hear a "hissing" sound.
         \n\n7. Remove the Aeropress from the cup, and press out the remaining water in to a sink, and discard the coffee puck in to the recycling bin. Clean the Aeropress by rinsing it well under warm water.
         \n\n8. Enjoy your fresh cup of coffee!
@@ -116,6 +116,9 @@
     <string name="start">Start</string>
     <string name="stop">Stop</string>
     <string name="reset">Reset</string>
+    <string name="image_view_home_description">Home Button</string>
+    <string name="image_view_stopwatch">Stopwatch</string>
+    <string name="image_view_info_description">Home Button</string>
 
 
 </resources>

@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/layout_bottom_sheet"
     android:layout_width="match_parent"
     android:layout_height="140dp"
-    app:behavior_peekHeight="50dp"
-    tools:context=".BottomSheetActivity"
-    app:behavior_hideable="false"
     android:background="@drawable/background_bottom_bar"
-    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+    app:behavior_hideable="false"
+    app:behavior_peekHeight="50dp"
+    app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior"
+    tools:context=".BottomSheetActivity">
 
 
     <ImageView
         android:id="@+id/image_view_button_home"
-        android:src="@drawable/ic_home"
         android:layout_width="40dp"
         android:layout_height="35dp"
         android:layout_marginStart="24dp"
         android:layout_marginTop="10dp"
+        android:contentDescription="@string/image_view_home_description"
+        android:src="@drawable/ic_home"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -29,17 +29,19 @@
         android:layout_height="35dp"
         android:layout_marginTop="10dp"
         android:src="@drawable/ic_stopwatch"
+        android:contentDescription="@string/image_view_stopwatch"
         app:layout_constraintLeft_toRightOf="@id/image_view_button_home"
         app:layout_constraintRight_toLeftOf="@id/image_view_button_info"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:src="@drawable/ic_info"
         android:id="@+id/image_view_button_info"
         android:layout_width="40dp"
         android:layout_height="35dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="24dp"
+        android:contentDescription="@string/image_view_info_description"
+        android:src="@drawable/ic_info"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toRightOf="@id/image_view_button_timer"
         app:layout_constraintTop_toTopOf="parent" />
@@ -49,21 +51,21 @@
         android:id="@+id/button_bottom_reset"
         android:layout_width="100dp"
         android:layout_height="50dp"
-        android:text="Reset"
+        android:text="@string/reset"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/image_view_button_info" />
 
     <Chronometer
-        android:gravity="center_horizontal"
-        android:textSize="48sp"
-        android:textColor="@color/white"
-        android:format="%s"
         android:id="@+id/chronometer_bottom_bar"
         android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:format="%s"
+        android:gravity="center_horizontal"
         android:paddingStart="6dp"
         android:paddingEnd="6dp"
-        android:layout_height="60dp"
+        android:textColor="@color/white"
+        android:textSize="48sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/button_bottom_start"
         app:layout_constraintStart_toEndOf="@id/button_bottom_reset"
@@ -73,15 +75,16 @@
         android:id="@+id/button_bottom_start"
         android:layout_width="100dp"
         android:layout_height="40dp"
-        android:text="Start"
+        android:text="@string/start"
         app:layout_constraintBottom_toTopOf="@id/button_bottom_stop"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/image_view_button_home" />
+
     <Button
         android:id="@+id/button_bottom_stop"
         android:layout_width="100dp"
         android:layout_height="40dp"
-        android:text="Stop"
+        android:text="@string/stop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@id/button_bottom_start" />

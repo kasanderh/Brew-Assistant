@@ -3,10 +3,9 @@ package com.kasanderh.newcoffeeapp
 import android.content.Intent
 import android.os.Bundle
 import android.os.SystemClock
+import android.util.Log
 import android.view.View
-import android.widget.Button
 import android.widget.Chronometer
-import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.google.android.material.bottomsheet.BottomSheetBehavior
@@ -17,63 +16,43 @@ class AeropressActivity : AppCompatActivity() {
     private lateinit var bottomSheetBehavior: BottomSheetBehavior<ConstraintLayout>
     private lateinit var binding: ActivityAeropressBinding
 
-    private lateinit var buttonTimer: ImageView
-    private lateinit var buttonStart: Button
-    private lateinit var buttonStop: Button
-    private lateinit var buttonReset: Button
+//    private lateinit var buttonTimer: ImageView
+//    private lateinit var buttonStart: Button
+//    private lateinit var buttonStop: Button
+//    private lateinit var buttonReset: Button
     private lateinit var chronometer: Chronometer
+    private val log: String = "AEROPRESS_ACTIVITY"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-//        setContentView(R.layout.activity_aeropress)
 
-        // View binding for the activity_aeropress
+        // View binding for the activity_aeropress which includes bottom sheet layout
         binding = ActivityAeropressBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-//        bindingBottomBar = LayoutBottomBarBinding.inflate(layoutInflater, null, false)
-//        bindingBottomBar = LayoutBottomBarBinding.inflate(layoutInflater)
 
-
-//        addContentView(bindingBottomBar.root)
-//        addC
-//        setContentView(bindingBottomBar.root)
-
-
-        // View binding for the bottom sheet
-/*
-        bindingBottomBar = LayoutBottomBarBinding.inflate(layoutInflater)
-*/
-
-
-        buttonTimer = findViewById(R.id.image_view_button_timer)
-
-
-        buttonStart = findViewById(R.id.button_bottom_start)
-        buttonStop = findViewById(R.id.button_bottom_stop)
-        buttonReset = findViewById(R.id.button_bottom_reset)
-        chronometer = findViewById(R.id.chronometer_bottom_bar)
-
-
-
+//        buttonTimer = findViewById(R.id.image_view_button_timer)
+//        buttonStart = findViewById(R.id.button_bottom_start)
+//        buttonStop = findViewById(R.id.button_bottom_stop)
+//        buttonReset = findViewById(R.id.button_bottom_reset)
+//        chronometer = findViewById(R.id.chronometer_bottom_bar)
 
 
         setupBottomSheet()
         onClickListeners()
 
         // Create variable for the chronometer for easier reference
-//        val chronometer = bindingBottomBar.chronometerBottomBar
+        chronometer = binding.bottomSheet.chronometerBottomBar
 
     }
 
 
     private fun setupBottomSheet() {
         // Initializing bottomSheetBehavior
-//        bindingBottomBar = LayoutBottomBarBinding.inflate(layoutInflater)
 
 //        bottomSheetBehavior = BottomSheetBehavior.from(findViewById(R.id.layout_bottom_sheet))
-        bottomSheetBehavior = BottomSheetBehavior.from(binding.bottomSheet.root)
-//        bottomSheetBehavior = BottomSheetBehavior.from(binding.bottomSheet.root)
+//        bottomSheetBehavior = BottomSheetBehavior.from(binding.bottomSheet.layoutBottomSheet)
+        bottomSheetBehavior = BottomSheetBehavior.from(binding.bottomSheet.layoutBottomSheet)
 
         // OnClickListener for bottomSheetBehavior
         bottomSheetBehavior.addBottomSheetCallback(
@@ -91,7 +70,7 @@ class AeropressActivity : AppCompatActivity() {
     private fun onClickListeners() {
         // Change state when clicked
 //        bindingBottomBar.imageViewButtonTimer.setOnClickListener {
-        buttonTimer.setOnClickListener {
+        binding.bottomSheet.imageViewButtonTimer.setOnClickListener {
             val state =
                 if (bottomSheetBehavior.state == BottomSheetBehavior.STATE_EXPANDED)
                     BottomSheetBehavior.STATE_COLLAPSED
@@ -101,8 +80,8 @@ class AeropressActivity : AppCompatActivity() {
         }
 
         //onClickListener for BottomSheet buttons
-//        bindingBottomBar.buttonBottomStart.setOnClickListener {
-        buttonStart.setOnClickListener {
+        binding.bottomSheet.buttonBottomStart.setOnClickListener {
+//        buttonStart.setOnClickListener {
             // if statement to check if startTime is 0 or not in the ChronometerSingleton
 
             if (ChronometerSingleton.getStartTime() == 0L) {
@@ -119,8 +98,8 @@ class AeropressActivity : AppCompatActivity() {
 //            bindingBottomBar.chronometerBottomBar.start()
         }
 
-//        bindingBottomBar.buttonBottomStop.setOnClickListener {
-        buttonStop.setOnClickListener {
+        binding.bottomSheet.buttonBottomStop.setOnClickListener {
+//        buttonStop.setOnClickListener {
 //            bindingBottomBar.chronometerBottomBar.stop()
             // we save the time and reset the clock
 //            val startTime: Long = SystemClock.elapsedRealtime()
@@ -129,13 +108,15 @@ class AeropressActivity : AppCompatActivity() {
             // Here we pause the counting. But it only stops the counting on the View. It still keeps on counting in the background.
 
             ChronometerSingleton.setStartTime(chronometer.base)
+            // Logging the time for debugging purposes
+            Log.d(log, "The chronometer base is ${chronometer.base}")
             // this line resets the counter to 00:00
 //            chronometer.base = SystemClock.elapsedRealtime()
 
         }
 
-//        bindingBottomBar.buttonBottomReset.setOnClickListener {
-        buttonReset.setOnClickListener {
+        binding.bottomSheet.buttonBottomReset.setOnClickListener {
+//        buttonReset.setOnClickListener {
             // if statement if the chronometer is running?
             if (chronometer.isActivated) {
                 chronometer.stop()
