@@ -16,10 +16,6 @@ class AeropressActivity : AppCompatActivity() {
     private lateinit var bottomSheetBehavior: BottomSheetBehavior<ConstraintLayout>
     private lateinit var binding: ActivityAeropressBinding
 
-//    private lateinit var buttonTimer: ImageView
-//    private lateinit var buttonStart: Button
-//    private lateinit var buttonStop: Button
-//    private lateinit var buttonReset: Button
     private lateinit var chronometer: Chronometer
     private val log: String = "AEROPRESS_ACTIVITY"
 
@@ -37,12 +33,13 @@ class AeropressActivity : AppCompatActivity() {
 //        buttonReset = findViewById(R.id.button_bottom_reset)
 //        chronometer = findViewById(R.id.chronometer_bottom_bar)
 
+        // Create variable for the chronometer for easier reference
+        chronometer = binding.bottomSheet.chronometerBottomBar
 
         setupBottomSheet()
         onClickListeners()
 
-        // Create variable for the chronometer for easier reference
-        chronometer = binding.bottomSheet.chronometerBottomBar
+
 
     }
 
@@ -51,7 +48,6 @@ class AeropressActivity : AppCompatActivity() {
         // Initializing bottomSheetBehavior
 
 //        bottomSheetBehavior = BottomSheetBehavior.from(findViewById(R.id.layout_bottom_sheet))
-//        bottomSheetBehavior = BottomSheetBehavior.from(binding.bottomSheet.layoutBottomSheet)
         bottomSheetBehavior = BottomSheetBehavior.from(binding.bottomSheet.layoutBottomSheet)
 
         // OnClickListener for bottomSheetBehavior

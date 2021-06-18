@@ -124,7 +124,8 @@
         </ScrollView>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <include layout="@layout/layout_bottom_bar" />
-
+    <include
+        android:id="@+id/bottom_sheet"
+        layout="@layout/layout_bottom_bar" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

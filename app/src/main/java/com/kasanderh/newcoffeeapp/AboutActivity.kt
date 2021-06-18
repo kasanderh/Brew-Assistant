@@ -28,9 +28,11 @@ class AboutActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-
         setupBottomSheet()
         onClickListeners()
+
+        // Create variable for the chronometer for easier reference
+        chronometer = binding.bottomSheet.chronometerBottomBar
     }
 
     private fun setupBottomSheet() {
