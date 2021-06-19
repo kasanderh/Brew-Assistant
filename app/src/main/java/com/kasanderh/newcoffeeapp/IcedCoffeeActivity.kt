@@ -9,23 +9,22 @@ import android.widget.Chronometer
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.google.android.material.bottomsheet.BottomSheetBehavior
-import com.kasanderh.newcoffeeapp.databinding.ActivityCalculatorBinding
+import com.kasanderh.newcoffeeapp.databinding.ActivityIcedCoffeeBinding
 
 class IcedCoffeeActivity : AppCompatActivity() {
 
     private lateinit var bottomSheetBehavior: BottomSheetBehavior<ConstraintLayout>
-    private lateinit var binding: ActivityCalculatorBinding
+    private lateinit var binding: ActivityIcedCoffeeBinding
 
     private lateinit var chronometer: Chronometer
-    private val log: String = "AEROPRESS_ACTIVITY"
+    private val log: String = "ICED_COFFEE_ACTIVITY"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         // View binding for the activity_aeropress
-        binding = ActivityCalculatorBinding.inflate(layoutInflater)
-        val view = binding.root
-        setContentView(view)
+        binding = ActivityIcedCoffeeBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
         // Create variable for the chronometer for easier reference
         chronometer = binding.bottomSheet.chronometerBottomBar
