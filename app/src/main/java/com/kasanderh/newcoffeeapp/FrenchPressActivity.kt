@@ -18,7 +18,7 @@ class FrenchPressActivity : AppCompatActivity() {
     private lateinit var binding: ActivityFrenchPressBinding
 
     private lateinit var chronometer: Chronometer
-    private val log: String = "AEROPRESS_ACTIVITY"
+    private val logTag: String = "FrenchPressActivity"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -92,7 +92,7 @@ class FrenchPressActivity : AppCompatActivity() {
 
             ChronometerSingleton.setStartTime(chronometer.base)
             // Logging the time for debugging purposes
-            Log.d(log, "The chronometer base is ${chronometer.base}")
+            Log.d(logTag, "The chronometer base is ${chronometer.base}")
             // this line resets the counter to 00:00
 //            chronometer.base = SystemClock.elapsedRealtime()
 

@@ -17,7 +17,7 @@ class AboutActivity : AppCompatActivity() {
     private lateinit var bottomSheetBehavior: BottomSheetBehavior<ConstraintLayout>
     private lateinit var binding: ActivityAboutBinding
     private lateinit var chronometer: Chronometer
-    private val log: String = "AEROPRESS_ACTIVITY"
+    private val logTag: String = "AboutActivity"
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -89,7 +89,7 @@ class AboutActivity : AppCompatActivity() {
 
             ChronometerSingleton.setStartTime(chronometer.base)
             // Logging the time for debugging purposes
-            Log.d(log, "The chronometer base is ${chronometer.base}")
+            Log.d(logTag, "The chronometer base is ${chronometer.base}")
             // this line resets the counter to 00:00
 //            chronometer.base = SystemClock.elapsedRealtime()
         }

@@ -31,6 +31,12 @@ class IcedCoffeeActivity : AppCompatActivity() {
 
         setupBottomSheet()
         onClickListeners()
+
+        // This starts the stopwatch when you enter the activity, if it has been previously running in another activity
+        if(ChronometerSingleton.getStartTime() != 0L) {
+            chronometer.base = ChronometerSingleton.getStartTime()
+            chronometer.start()
+        }
     }
 
     private fun setupBottomSheet() {
