@@ -15,7 +15,6 @@ class AeropressActivity : AppCompatActivity() {
 
     private lateinit var bottomSheetBehavior: BottomSheetBehavior<ConstraintLayout>
     private lateinit var binding: ActivityAeropressBinding
-
     private lateinit var chronometer: Chronometer
     private val logTag: String = "AeropressActivity"
 
@@ -38,6 +37,7 @@ class AeropressActivity : AppCompatActivity() {
             chronometer.start()
         }
         // We may need to set up a onTickListener to update Chronometer.startTime()
+
 
     }
 
