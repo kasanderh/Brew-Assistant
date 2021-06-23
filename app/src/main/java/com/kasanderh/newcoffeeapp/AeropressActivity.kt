@@ -6,6 +6,7 @@ import android.os.SystemClock
 import android.util.Log
 import android.view.View
 import android.widget.Chronometer
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.google.android.material.bottomsheet.BottomSheetBehavior
@@ -32,8 +33,9 @@ class AeropressActivity : AppCompatActivity() {
         onClickListeners()
 
         // This starts the stopwatch when you enter the activity, if it has been previously running in another activity
-        if(ChronometerSingleton.getStartTime() != 0L) {
-            chronometer.base = ChronometerSingleton.getStartTime()
+        if(ChronometerSingleton.getStartTime() != 0L && ChronometerSingleton.getStopwatchIsActive()) {
+//            chronometer.base = ChronometerSingleton.getStartTime()
+            chronometer.base = SystemClock.elapsedRealtime() + ChronometerSingleton.getStartTime()
             chronometer.start()
         }
         // We may need to set up a onTickListener to update Chronometer.startTime()
@@ -72,6 +74,9 @@ class AeropressActivity : AppCompatActivity() {
 
         //onClickListener for BottomSheet buttons
         binding.bottomSheet.buttonBottomStart.setOnClickListener {
+            if(!ChronometerSingleton.getStopwatchIsActive()) {
+
+
             // if statement to check if startTime is 0 or not in the ChronometerSingleton
             if (ChronometerSingleton.getStartTime() == 0L) {
                 // here we set the startTime if the startTime in the ChronometerSingleton is 0L
@@ -80,19 +85,26 @@ class AeropressActivity : AppCompatActivity() {
                 chronometer.base = startTime
             } else {
                 // This means the startTime is not 0 and we retrieve the saved startTime in the ChronometerSingleton and set the base time to this
-                chronometer.base = ChronometerSingleton.getStartTime()
+                chronometer.base = SystemClock.elapsedRealtime() + ChronometerSingleton.getStartTime()
             }
+            ChronometerSingleton.stopwatchIsActive()
             chronometer.start()
+        } else {
+            Toast.makeText(this,"Stopwatch is already running!", Toast.LENGTH_SHORT).show()
+            }
         }
 
         binding.bottomSheet.buttonBottomStop.setOnClickListener {
             // we save the time and reset the clock
 //            val startTime: Long = SystemClock.elapsedRealtime()
 
+            //Test code
+            ChronometerSingleton.setStartTime(chronometer.base - SystemClock.elapsedRealtime())
+            ChronometerSingleton.stopwatchIsNotActive()
             chronometer.stop()
             // Here we pause the counting. But it only stops the counting on the View. It still keeps on counting in the background.
 
-            ChronometerSingleton.setStartTime(chronometer.base)
+//            ChronometerSingleton.setStartTime(chronometer.base)
 
             // Logging the time for debugging purposes
             Log.d(logTag, "The chronometer base is ${chronometer.base}")
@@ -102,12 +114,11 @@ class AeropressActivity : AppCompatActivity() {
         }
 
         binding.bottomSheet.buttonBottomReset.setOnClickListener {
-            // if statement if the chronometer is running?
-            if (chronometer.isActivated) {
-                chronometer.stop()
-            }
+
+            chronometer.stop()
             chronometer.base = SystemClock.elapsedRealtime()
             ChronometerSingleton.setStartTime(0L)
+            ChronometerSingleton.stopwatchIsNotActive()
 
         }
 

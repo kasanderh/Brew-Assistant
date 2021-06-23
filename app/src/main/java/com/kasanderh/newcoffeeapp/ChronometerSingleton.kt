@@ -11,6 +11,7 @@ object ChronometerSingleton {
 //    abstract var chronometerHelper: ChronometerHelper
 
     private var startTime: Long = 0L
+    private var stopwatchIsActive: Boolean = false
 //    private var chronometerBottomDialog = findViewBy
 
 
@@ -27,6 +28,18 @@ object ChronometerSingleton {
 
     fun setStartTime(newTime: Long) {
         this.startTime = newTime
+    }
+
+    fun stopwatchIsNotActive() {
+        stopwatchIsActive = false
+    }
+
+    fun stopwatchIsActive() {
+        stopwatchIsActive = true
+    }
+
+    fun getStopwatchIsActive(): Boolean {
+        return stopwatchIsActive
     }
 
 
