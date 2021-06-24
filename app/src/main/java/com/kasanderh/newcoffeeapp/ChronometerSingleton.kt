@@ -8,11 +8,9 @@ object ChronometerSingleton {
     // bottomSheet stays the same.
 
 
-//    abstract var chronometerHelper: ChronometerHelper
 
     private var startTime: Long = 0L
     private var stopwatchIsActive: Boolean = false
-//    private var chronometerBottomDialog = findViewBy
 
 
     init {
@@ -43,11 +41,7 @@ object ChronometerSingleton {
     }
 
 
-//    private fun initializeChronometer() {
-//        TODO("Not yet implemented")
-//        // initialize here
-//
-//    }
+
 
 
 
