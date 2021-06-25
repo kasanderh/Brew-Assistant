@@ -33,11 +33,21 @@ class AboutActivity : AppCompatActivity() {
 
         setupBottomSheet()
         onClickListeners()
+        chronometerOnTickListener()
+
 
         // This starts the stopwatch when you enter the activity, if it has been previously running in another activity
         if(ChronometerSingleton.getStartTime() != 0L && ChronometerSingleton.getStopwatchIsActive()) {
             chronometer.base = SystemClock.elapsedRealtime() + ChronometerSingleton.getStartTime()
             chronometer.start()
+        }
+    }
+
+    private fun chronometerOnTickListener() {
+        // This updates the Chronometer.startTime() after each tick to ensure the time is correct when
+        // the user exits the current activity and enters a new one.
+        chronometer.setOnChronometerTickListener {
+            ChronometerSingleton.setStartTime(chronometer.base - SystemClock.elapsedRealtime())
         }
     }
 
