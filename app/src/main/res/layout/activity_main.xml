@@ -15,7 +15,8 @@
         android:src="@drawable/image_coffee_main"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/main_activity_header_description" />
 
     <ScrollView
         android:layout_width="match_parent"
@@ -50,7 +51,8 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_centerInParent="true"
-                        android:src="@drawable/icon_v60" />
+                        android:src="@drawable/icon_v60"
+                        android:contentDescription="@string/hario_v60_button_description" />
 
                     <TextView
                         android:id="@+id/text_view_v60"
@@ -86,7 +88,8 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_centerInParent="true"
-                        android:src="@drawable/icon_aeropress" />
+                        android:src="@drawable/icon_aeropress"
+                        android:contentDescription="@string/aeropress_button_description" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -122,7 +125,8 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_centerInParent="true"
-                        android:src="@drawable/icon_french_press" />
+                        android:src="@drawable/icon_french_press"
+                        android:contentDescription="@string/french_press_button_description" />
 
                     <TextView
                         android:id="@+id/text_view_french_press"
@@ -160,7 +164,8 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_centerInParent="true"
-                        android:src="@drawable/icon_iced_coffee" />
+                        android:src="@drawable/icon_iced_coffee"
+                        android:contentDescription="@string/iced_coffee_button_description" />
 
                     <TextView
                         android:id="@+id/text_view_iced_coffee"
@@ -199,7 +204,8 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_centerInParent="true"
-                        android:src="@drawable/icon_coffee_cup" />
+                        android:src="@drawable/icon_coffee_cup"
+                        android:contentDescription="@string/coffee_tips_button_description" />
 
                     <TextView
                         android:id="@+id/text_view_coffee_tips"
@@ -238,7 +244,8 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_centerInParent="true"
-                        android:src="@drawable/icon_calculator" />
+                        android:src="@drawable/icon_calculator"
+                        android:contentDescription="@string/calculator_button_description" />
 
                     <TextView
                         android:id="@+id/text_view_calculator"

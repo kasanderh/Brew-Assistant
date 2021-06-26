@@ -127,6 +127,18 @@
     <string name="clear">Clear</string>
     <string name="calculate">Calculate</string>
     <string name="image_view_about_header_description">About Header</string>
+    <string name="image_view_aeropress_header_description">Aeropress Header</string>
+    <string name="image_view_tips_header_description">Coffee Tips Header</string>
+    <string name="french_press_header_description">French Press Header</string>
+    <string name="hario_v60_header_description">Hario V60 Header</string>
+    <string name="iced_coffee_header_description">Iced Coffee Header</string>
+    <string name="main_activity_header_description">Main Activity Header</string>
+    <string name="hario_v60_button_description">Hario V60 Button</string>
+    <string name="aeropress_button_description">Aeropress Button</string>
+    <string name="french_press_button_description">French Press Button</string>
+    <string name="iced_coffee_button_description">Iced Coffee Button</string>
+    <string name="coffee_tips_button_description">Coffee Tips Button</string>
+    <string name="calculator_button_description">Calculator Button</string>
 
 
 </resources>
