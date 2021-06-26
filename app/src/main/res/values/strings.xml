@@ -100,7 +100,7 @@
     </string>
 
     <string name="about_page">My name is <b>Kasander</b>, and I <i>love</i> coffee!
-        \n\nIn this application I have gathered all my favourite recipes for different coffee brewing methods I have experience with. I have not included espresso, as this is a completely different world.
+        \n\nIn this application I have gathered all my favourite recipes for different coffee brewing methods I have experience with. I have not included espresso, as this is another big and exciting part of the coffee world.
         \n
         \n\nMade by a coffee lover and former barista.
         \n\nSuggestions and feedback are always welcome!
@@ -109,16 +109,24 @@
     <string name="author_contact_info">
         <b><u>You can find me at:</u></b>
         \n\n <b>@github:</b> kasanderh  \n\n <b>@Instagram:</b> kaffekas
-        \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t<big>Happy Brewing!</big>
+        \n\n\n\n\t\t\t\t\t\t\t\t\t\t\t\t\t<big>Happy Brewing!</big>
     </string>
-    <string name="switch_dose_coffee">Dose coffee 60 or 75 g/L</string>
-    <string name="switch_calculate">Calculate coffee or water</string>
+    <string name="switch_dose_coffee">Coffee Dose 60 or 75 g/L</string>
+    <string name="switch_calculate">Calculate Coffee or Water</string>
     <string name="start">Start</string>
     <string name="stop">Stop</string>
     <string name="reset">Reset</string>
     <string name="image_view_home_description">Home Button</string>
     <string name="image_view_stopwatch">Stopwatch</string>
     <string name="image_view_info_description">Home Button</string>
+    <string name="coffee_amount">Coffee Amount</string>
+    <string name="image_view_calculator_water_description">Water Drop</string>
+    <string name="image_view_calculator_coffee_description">Coffee Bean</string>
+    <string name="image_view_calculator_header_description">Calculator Header</string>
+    <string name="image_view_result_card_description">Coffee Beans</string>
+    <string name="clear">Clear</string>
+    <string name="calculate">Calculate</string>
+    <string name="image_view_about_header_description">About Header</string>
 
 
 </resources>

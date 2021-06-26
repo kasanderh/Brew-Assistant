@@ -19,7 +19,8 @@
             android:src="@drawable/image_coffee_tips"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="@string/image_view_about_header_description" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_view_coffee_tips_description"
