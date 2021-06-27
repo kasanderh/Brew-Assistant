@@ -42,6 +42,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintLeft_toRightOf="@id/image_view_button_timer_test"
         app:layout_constraintTop_toTopOf="parent" />
+    
+    <View
+        android:id="@+id/divider_line"
+        android:layout_width="0dp"
+        android:layout_height="5dp"
+        android:background="@color/coffee_light"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintTop_toBottomOf="@id/image_view_button_timer_test"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/chronometer_bottom_bar_test"
+
+        />
 
 
     <Button
@@ -51,7 +65,7 @@
         android:text="@string/reset"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/image_view_button_info_test" />
+        app:layout_constraintTop_toBottomOf="@id/divider_line" />
 
     <Chronometer
         android:id="@+id/chronometer_bottom_bar_test"
@@ -75,7 +89,7 @@
         android:text="@string/start"
         app:layout_constraintBottom_toTopOf="@id/button_bottom_stop_test"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/image_view_button_home_test" />
+        app:layout_constraintTop_toBottomOf="@id/divider_line" />
 
     <Button
         android:id="@+id/button_bottom_stop_test"

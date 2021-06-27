@@ -36,10 +36,6 @@
             android:name=".Hariov60Activity"
             android:label="@string/hario_v60"
             android:parentActivityName=".MainActivity" />
-        <activity
-            android:name=".Hariov60ActivityTest"
-            android:label="@string/hario_v60"
-            android:parentActivityName=".MainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
