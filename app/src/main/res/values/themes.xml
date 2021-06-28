@@ -15,6 +15,9 @@
 
         <item name="android:fontFamily">sans-serif</item>
 
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
+
+
     </style>
 
 
