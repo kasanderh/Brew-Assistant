@@ -19,16 +19,16 @@
         \nFor a half liter brew, you would use 30g of coffee and 500g of water.</string>
 
     <string name="v60_recipe"><b><u>Steps:</u></b>
-        \n1. First we boil the water, measure and grind our beans and put the filter in the V60.
-        \n\n2. Wet the filter with the warm water and discard it.
-        \n\n3. Now we bloom the coffee by wetting all the coffee with 3:1 ratio grams of water to grams of coffee.
-        \n\n4. The coffee blooms for 45 seconds to allow it to release CO2 gas trapped by the roasting process and release the flavor of the beans.
-        \n\n5. Pour water in circles starting from the center and out, and then inwards spiral, and repeat until 350g of water has been poured.
-        \n\n6. Once we reach about 3/4 of the total water, we wait for the coffee bed to lower (about 30s) and we pour water until we reach our target water weight.
-        \n\n7. Quick stir once to the right and once to the left.
-        \n\n8. Let the coffee drain while we move the V60 carefully in circles to get an even extraction.
-        \n\n9. Remove the V60 filter holder and stir the coffee with a wooden spoon before pouring into cups.
-        \n\n10. Serve the coffee and enjoy your fresh brew!
+        \n1. First boil the water, measure and grind our beans and put the filter in the V60.
+        \n\n2. Wet the filter by pouring some of the boiled water through it before discarding it.
+        \n\n3. Bloom the coffee by wetting all the coffee with 3:1 ratio grams of water to grams of coffee.
+        \n\n4. Let the coffee bloom for 45 seconds to allow it to release CO2 gas trapped by the roasting process and unlock the flavor of the coffee.
+        \n\n5. Pour water in circles starting from the center and out, and then inwards spiral, and repeat until 3/4 of water has been poured.
+        \n\n6. Wait for the coffee bed to lower (about 30s) and pour the rest of the water.
+        \n\n7. Carefully give the V60 a quick swirl to knock all the grounds off the walls of the filter.
+        \n\n8. Let the coffee drain while giving the occasional swirl to get an even extraction and a level coffee bed.
+        \n\n9. Remove the V60 filter holder and stir the coffee with a spoon before pouring into cups.
+        \n\n10. Serve the coffee and enjoy the fresh brew!
     </string>
 
     <string name="aeropress_description">The <b>Aeropress</b> is an <u>immersion</u> brewer, which means that water and coffee is left brewing together over time, rather than poured through the coffee in a filter.</string>
@@ -45,7 +45,7 @@
         \n\n5. At the 1:00 mark, remove the piston, stir around with a spoon and put the piston back in.
         \n\n6. At 1:30 minutes, remove the cup from the scale, and then start pressing down gently without using force. Stop when you hear a "hissing" sound.
         \n\n7. Remove the Aeropress from the cup, and press out the remaining water in to a sink, and discard the coffee puck in to the recycling bin. Clean the Aeropress by rinsing it well under warm water.
-        \n\n8. Enjoy your fresh cup of coffee!
+        \n\n8. Enjoy the fresh cup of coffee!
     </string>
 
     <string name="french_press_description">The <b>French Press</b> is a classic <u>immersion</u> brewer, and it uses the most basic principles of brewing to make a rich, enjoyable cup with a lot of body.</string>
@@ -60,15 +60,15 @@
         \n\n2. Pre-heat the French Press including the plunger with boiling water before discarding the water.
         \n\n3. Take out the plunger, put the French Press on the scale and add the coffee. Remember to tare the scale so it starts at zero.
         \n\n4. Start the timer before adding the water quickly and controlled to wet all the coffee.
-        \n\n5. Put the plunger on the top of the French Press, without it touching the coffee for it to trap the heat in the brewer.
-        \n\n6. When the timer hits 3:45 minutes, take off the plunger and stir the coffee with a wooden spoon.
-        \n\n7. I recommend to let the coffee sit for additionally 3-4 minutes after this, with the plunger on, to let all the coffee sink to the bottom.
+        \n\n5. Put the plunger into the top part of the French Press, without it touching the coffee for it to trap the heat in the brewer.
+        \n\n6. When the timer hits 3:45 minutes, take out the plunger and stir the coffee with a spoon.
+        \n\n7. I recommend to let the coffee sit for additionally 3-4 minutes after this, with the plunger in, to let all the coffee grounds sink to the bottom.
         \n\n8. After all the coffee is at the bottom, plunge carefully half-way and decant slowly and carefully to avoid getting the "sludge" at the bottom.
         \n\n9. Enjoy a clean, full-bodied cup of coffee!
     </string>
 
     <string name="iced_coffee_description"><b>Flash brew</b>, or <b>Japanese Iced Coffee</b> is a simple way of making use of all the flavour in the coffee beans and enjoying them chilled.
-        The name <i>Flash Brew</i> comes from the fact that we brew the coffee as we would brew V60, but we replace some of the water with iced cubes, which the  hot coffee drips down on and gets chilled instantly <i>in a flash.</i>
+    The name <i>Flash Brew</i> comes from the fact that it is brewed like the V60, but part of the water is replaced with iced cubes. This results in the hot coffee dripping down on the ice, and it gets chilled instantly <i>in a flash.</i>
     </string>
 
     <string name="iced_coffee_dose"><b><u>Recommended dose:</u></b>
