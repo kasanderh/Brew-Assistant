@@ -8,6 +8,7 @@ import android.view.View
 import android.widget.Chronometer
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.constraintlayout.widget.ConstraintLayout
 import com.google.android.material.bottomsheet.BottomSheetBehavior
 import com.kasanderh.newcoffeeapp.databinding.ActivityAeropressBinding
@@ -38,6 +39,9 @@ class AeropressActivity : AppCompatActivity() {
             chronometer.base = SystemClock.elapsedRealtime() + ChronometerSingleton.getStartTime()
             chronometer.start()
         }
+
+        // Disables Night Mode
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
     }
 
     private fun chronometerOnTickListener() {

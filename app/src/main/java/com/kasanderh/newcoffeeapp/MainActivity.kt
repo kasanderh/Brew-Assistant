@@ -3,6 +3,7 @@ package com.kasanderh.newcoffeeapp
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import com.kasanderh.newcoffeeapp.databinding.ActivityMainBinding
 
 /*
@@ -22,6 +23,9 @@ class MainActivity : AppCompatActivity() {
         setContentView(view)
 
         onClickListeners()
+
+        // Disables Night Mode
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
     }
 
     private fun onClickListeners() {
