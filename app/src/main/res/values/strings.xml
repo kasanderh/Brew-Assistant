@@ -89,14 +89,15 @@
     </string>
 
     <string name="coffee_tips_list"> <b><u>Tips:</u></b>
-        \n1. Tip number one is always use fresh, clean water. The water going in should be odorless, clear, fresh and good enough to drink.
-        \n\n2. Always use clean equipment, as old coffee grounds will produce bad tasting components in your coffee. You only want to taste the fresh beans you just ground and put into your coffee maker.
-        \n\n3. I recommend getting a burr coffee grinder. This way you will be able to enjoy your beans in the freshest way possible, and you can grind your beans according to your brewing method. Some methods require finer or courser grind than others.
-        \n\n4. Weigh your coffee. Get a scale and weigh your coffee. Coffee brewing is a precise science, and you would want to know exactly how much coffee you are using so you can use the same dose every time.
-        \n\n5. Use fresh coffee beans. If you are unsure which coffee to buy, ask the local coffee shop for recommendations. Baristas almost always know the coffees they are selling, and can give information about taste notes, and give recommendations based on your home brewer.
-        \n\n6. It is a good idea to write down your recipes, as you will be able to remake the great cup you made the last time, or you can make changes to your recipe one factor at a time.
-        \n\n7. If your coffee takes too long to brew or is too fast, grind setting is the only factor you need to change. Use the same dose of coffee and same amount of water, and only change the grind setting, and you will be able to find the optimal setting for a perfect cup.
-        \n\n8. Coffee can get very technical very fast. Don\'t get too hung up on the details when brewing. As long as your coffee tastes great, you have already done a lot right.
+        \n<b>Water:</b> Tip number one is always use fresh, clean water. The water going in should be odorless, clear, fresh and good to drink.
+        \n\n<b>Clean Equipment:</b> Always use clean equipment, as old coffee grounds will produce bad tasting components in your coffee. You only want to taste the fresh beans you just ground and put into your coffee maker.
+        \n\n<b>Grinder:</b> I recommend getting a burr coffee grinder. This way you will be able to enjoy your beans in the freshest way possible, and you can grind the beans according to the brewing method. Some methods require finer or courser grind than others.
+        \n\n<b>Scale:</b> Weigh your coffee. Get a scale and weigh your coffee. Coffee brewing is a precise science, and you would want to know exactly how much coffee you are using so you can use the same dose every time.
+        \n\n<b>Timer:</b> Time your brews. This makes it easier to bloom your coffee, and it gives an indication if the coffee is ground too fine or too course. There are scales with built in timers available.
+        \n\n<b>Use fresh coffee beans.</b> If you are unsure which coffee to buy, ask the local coffee shop for recommendations. Baristas almost always know the coffees they are selling, and can give information about taste notes, and give recommendations based on brewing method.
+        \n\n<b>Make notes:</b> It is a good idea to write down your recipes, as you will be able to remake the great cup you made the last time, or you can make changes to your recipe one factor at a time.
+        \n\n<b>Brewing Time:</b> If your coffee takes too long to brew or is too fast, grind setting is the only factor you need to change. Use the same dose of coffee and same amount of water, and only change the grind setting, and you will be able to find the optimal setting for a perfect cup.
+        \n\n<b>Enjoy your coffee.</b> Coffee can get very technical very fast. Don\'t get too hung up on the details when brewing. As long as your coffee tastes great, you have already done a lot right.
     </string>
 
     <string name="about_page">My name is <b>Kasander</b>, and I <i>love</i> coffee!
