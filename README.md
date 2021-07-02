@@ -21,8 +21,8 @@ The original Coffee Application was created in Java, and the new version is comp
 
 ## Screenshots
 
-[<img src="/app/src/main/res/readme/Screenshot_Main.PNG" align="left" width="200">](/app/src/main/res/readme/Screenshot%20Menu.PNG)
-[<img src="/app/src/main/res/readme/Screenshot_V60.PNG" align="center" width="200">](/app/src/main/res/readme/Screenshot%20v60.PNG)
+[<img src="/app/src/main/res/readme/Screenshot_main.PNG" align="left" width="200">](/app/src/main/res/readme/Screenshot_menu.PNG)
+[<img src="/app/src/main/res/readme/Screenshot_V60.PNG" align="center" width="200">](/app/src/main/res/readme/Screenshot_V60.PNG)
 
 
 ## Permissions
