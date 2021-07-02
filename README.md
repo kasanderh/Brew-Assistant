@@ -4,6 +4,8 @@ NewCoffeeApp is a recipe app with built in timer.
 My new and improved coffee app. Built with Kotlin.
 
 [<img src="/app/src/main/ic_launcher-playstore.png" align="left" width="200" hspace="10" vspace="10">]
+[<img src="/app/src/main/ic_launcher-playstore.png" align="center" width="200">](/app/src/main/ic_launcher-playstore.png)
+
 
 
 
@@ -24,7 +26,7 @@ The original Coffee Application was created in Java, and the new version is comp
 [<img src="/app/src/main/res/readme/Screenshot_main.png" align="left" width="200">](/app/src/main/res/readme/Screenshot_menu.png)
 [<img src="/app/src/main/res/readme/Screenshot_V60.png" align="center" width="200">](/app/src/main/res/readme/Screenshot_V60.png)
 [<img src="/app/src/main/res/readme/Screenshot_calculator.png" align="center" width="200">](/app/src/main/res/readme/Screenshot_calculator.png)
-[<img src="/app/src/main/res/readme/Screenshot_tips.png" align="right" width="200">](/app/src/main/res/readme/Screenshot_tips.png)
+[<img src="/app/src/main/res/readme/Screenshot_tips.png" align="center" width="200">](/app/src/main/res/readme/Screenshot_tips.png)
 
 
 ## Permissions
