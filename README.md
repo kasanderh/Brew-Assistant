@@ -1,12 +1,7 @@
 ## NewCoffeeApp
-NewCoffeeApp is a recipe app with built in timer. 
-
-My new and improved coffee app. Built with Kotlin.
-
 [<img src="/app/src/main/ic_launcher-playstore.png" align="left" width="200">](/app/src/main/ic_launcher-playstore.png)
 
-
-
+NewCoffeeApp is a recipe app with built in timer. 
 
 ## About
 The NewCoffeeApp is the new and improved Coffee application. It has everything you need for brewing coffee at home, and you can even time your brews while reading your favorite recipe. 
