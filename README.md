@@ -3,8 +3,7 @@ NewCoffeeApp is a recipe app with built in timer.
 
 My new and improved coffee app. Built with Kotlin.
 
-[<img src="/app/src/main/ic_launcher-playstore.png" align="left" width="200" hspace="10" vspace="10">]
-[<img src="/app/src/main/ic_launcher-playstore.png" align="center" width="200">](/app/src/main/ic_launcher-playstore.png)
+[<img src="/app/src/main/ic_launcher-playstore.png" align="left" width="200">](/app/src/main/ic_launcher-playstore.png)
 
 
 
