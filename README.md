@@ -10,10 +10,10 @@ The original Coffee Application was created in Java, and the new version is comp
 ## Features
 - Recipes for different brewers.
 - Great coffee Tips.
-- Timer
-- Calculator for calculating coffee/water for your brew
-- No permissons needed
-- Ad-free
+- Timer.
+- Calculator for calculating coffee/water for your brew.
+- No permissons needed.
+- Ad-free.
 
 ## Screenshots
 
