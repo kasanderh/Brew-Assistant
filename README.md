@@ -1,7 +1,7 @@
 ## NewCoffeeApp
 [<img src="/app/src/main/ic_launcher-playstore.png" align="left" width="200">](/app/src/main/ic_launcher-playstore.png)
 
-NewCoffeeApp is a recipe app with built in timer. 
+NewCoffeeApp is a recipe app for Android with built in timer.
 
 ## About
 The NewCoffeeApp is the new and improved Coffee application. It has everything you need for brewing coffee at home, and you can even time your brews while reading your favorite recipe. 
@@ -31,5 +31,5 @@ Application is done, but features will be added:
 - Night Mode
 - More brewing methods
 
-## Code style
-Coded with Kotlin in Android Studios.
+## Contributing
+Any contributions are welcome. You can for example [report bugs and make suggestions.](https://github.com/kasanderh/NewCoffeeApp/issues)
