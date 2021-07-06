@@ -216,7 +216,6 @@
                         android:textColor="@color/latte_light"
                         android:text="@string/coffee_tips"
                         android:textSize="18sp" />
-
                 </RelativeLayout>
 
             </androidx.cardview.widget.CardView>
