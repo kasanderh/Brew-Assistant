@@ -8,7 +8,6 @@ object ChronometerSingleton {
     // bottomSheet stays the same.
 
 
-
     private var startTime: Long = 0L
     private var stopwatchIsActive: Boolean = false
 
@@ -17,9 +16,8 @@ object ChronometerSingleton {
         println("Chronometer initialized")
 //        initializeChronometer()
 //        var counter: Chronometer = R.id.chronometer_bottom_bar as Chronometer
-
-
     }
+
     fun getStartTime(): Long {
         return startTime
     }
@@ -39,12 +37,6 @@ object ChronometerSingleton {
     fun getStopwatchIsActive(): Boolean {
         return stopwatchIsActive
     }
-
-
-
-
-
-
 
 
 //    lateinit var counter: Chronometer
