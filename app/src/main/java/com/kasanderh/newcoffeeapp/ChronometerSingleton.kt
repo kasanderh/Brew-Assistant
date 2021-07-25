@@ -7,7 +7,6 @@ object ChronometerSingleton {
     // This creates a seamless UX and created an illusion that the activity changes, but the
     // bottomSheet stays the same.
 
-
     private var startTime: Long = 0L
     private var stopwatchIsActive: Boolean = false
 
