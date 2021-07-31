@@ -19,7 +19,8 @@ import com.kasanderh.newcoffeeapp.databinding.ActivityHariov60Binding
 class Hariov60Activity : AppCompatActivity() {
 
     private lateinit var bottomSheetBehavior: BottomSheetBehavior<ConstraintLayout>
-//    private var timeWhenStopped: Long = 0
+
+    //    private var timeWhenStopped: Long = 0
     private lateinit var binding: ActivityHariov60Binding
 
     private lateinit var chronometer: Chronometer
@@ -41,7 +42,7 @@ class Hariov60Activity : AppCompatActivity() {
         chronometerOnTickListener()
 
         // This starts the stopwatch when you enter the activity, if it has been previously running in another activity
-        if(ChronometerSingleton.getStartTime() != 0L && ChronometerSingleton.getStopwatchIsActive()) {
+        if (ChronometerSingleton.getStartTime() != 0L && ChronometerSingleton.getStopwatchIsActive()) {
             chronometer.base = SystemClock.elapsedRealtime() + ChronometerSingleton.getStartTime()
             chronometer.start()
         }
@@ -89,7 +90,7 @@ class Hariov60Activity : AppCompatActivity() {
 
         //onClickListener for BottomSheet buttons
         binding.bottomSheet.buttonBottomStart.setOnClickListener {
-            if(!ChronometerSingleton.getStopwatchIsActive()) {
+            if (!ChronometerSingleton.getStopwatchIsActive()) {
 
 
                 // if statement to check if startTime is 0 or not in the ChronometerSingleton
@@ -100,12 +101,13 @@ class Hariov60Activity : AppCompatActivity() {
                     chronometer.base = startTime
                 } else {
                     // This means the startTime is not 0 and we retrieve the saved startTime in the ChronometerSingleton and set the base time to this
-                    chronometer.base = SystemClock.elapsedRealtime() + ChronometerSingleton.getStartTime()
+                    chronometer.base =
+                        SystemClock.elapsedRealtime() + ChronometerSingleton.getStartTime()
                 }
                 ChronometerSingleton.stopwatchIsActive()
                 chronometer.start()
             } else {
-                Toast.makeText(this,"Stopwatch is already running!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Stopwatch is already running!", Toast.LENGTH_SHORT).show()
             }
         }
 
