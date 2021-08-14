@@ -17,10 +17,10 @@ The original Coffee Application was created in Java, and the new version is comp
 
 ## Screenshots
 
-[<img src="/app/src/main/res/readme/Screenshot_main.png" align="left" width="200">](/app/src/main/res/readme/Screenshot_menu.png)
-[<img src="/app/src/main/res/readme/Screenshot_V60.png" align="center" width="200">](/app/src/main/res/readme/Screenshot_V60.png)
-[<img src="/app/src/main/res/readme/Screenshot_calculator.png" align="center" width="200">](/app/src/main/res/readme/Screenshot_calculator.png)
-[<img src="/app/src/main/res/readme/Screenshot_tips.png" align="center" width="200">](/app/src/main/res/readme/Screenshot_tips.png)
+[<img src="/app/readme/Screenshot_main.png" align="left" width="200">](/app/readme/Screenshot_menu.png)
+[<img src="/app/readme/Screenshot_V60.png" align="center" width="200">](/app/readme/Screenshot_V60.png)
+[<img src="/app/readme/Screenshot_calculator.png" align="center" width="200">](/app/readme/Screenshot_calculator.png)
+[<img src="/app/readme/Screenshot_tips.png" align="center" width="200">](/app/readme/Screenshot_tips.png)
 
 
 ## Permissions
