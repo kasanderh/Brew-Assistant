@@ -17,7 +17,7 @@ import org.junit.runner.RunWith
 class MainActivityTest {
 
     @get:Rule
-    public var activityRule: ActivityScenarioRule<MainActivity> =
+    var activityRule: ActivityScenarioRule<MainActivity> =
         ActivityScenarioRule(MainActivity::class.java)
 
     @Test
