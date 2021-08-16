@@ -61,6 +61,11 @@ class CalculatorActivityTest {
         onView(withId(R.id.button_clear)).perform(click())
 
         // Check that text_edit_box_coffee, text_edit_box_water and text_view_calculator_result matches ""
+        onView(withId(R.id.text_edit_box_coffee)).check(matches(withText("")))
+
+        onView(withId(R.id.text_edit_box_water)).check(matches(withText("")))
+
+        onView(withId(R.id.text_view_calculator_result)).check(matches(withText("")))
 
     }
 
