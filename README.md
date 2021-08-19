@@ -1,5 +1,5 @@
 ## NewCoffeeApp
-[<img src="/app/src/main/ic_launcher-playstore.png" align="left" width="200">](/app/src/main/ic_launcher-playstore.png)
+[<img src="/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" align="left" width="200">](app/src/main/res/mipmap-xxxhdpi/ic_launcher.png)
 
 NewCoffeeApp is a recipe app for Android with built in timer.
 
