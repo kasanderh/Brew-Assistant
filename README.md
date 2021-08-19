@@ -1,10 +1,10 @@
-## NewCoffeeApp
+## Brew Assistant
 [<img src="/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" align="left" width="200">](app/src/main/res/mipmap-xxxhdpi/ic_launcher.png)
 
-NewCoffeeApp is a recipe app for Android with built in timer.
+Brew Assistant is a recipe app for Android with built in timer.
 
 ## About
-The NewCoffeeApp is the new and improved Coffee application. It has everything you need for brewing coffee at home, and you can even time your brews while reading your favorite recipe. 
+The Brew Assistant is the new and improved Coffee application. It has everything you need for brewing coffee at home, and you can even time your brews while reading your favorite recipe. 
 The original Coffee Application was created in Java, and the new version is completely written in Kotlin. It also has a refreshed UI and implements best practices. 
 
 ## Features
