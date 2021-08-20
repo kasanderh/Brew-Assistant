@@ -55,7 +55,6 @@
                         android:contentDescription="@string/hario_v60_button_description" />
 
                     <TextView
-                        android:id="@+id/text_view_v60"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/latte_light"
@@ -129,7 +128,6 @@
                         android:contentDescription="@string/french_press_button_description" />
 
                     <TextView
-                        android:id="@+id/text_view_french_press"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/latte_light"
@@ -168,7 +166,6 @@
                         android:contentDescription="@string/iced_coffee_button_description" />
 
                     <TextView
-                        android:id="@+id/text_view_iced_coffee"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:textColor="@color/latte_light"
@@ -208,7 +205,6 @@
                         android:contentDescription="@string/coffee_tips_button_description" />
 
                     <TextView
-                        android:id="@+id/text_view_coffee_tips"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/image_view_card_coffee_tips"
@@ -247,7 +243,6 @@
                         android:contentDescription="@string/calculator_button_description" />
 
                     <TextView
-                        android:id="@+id/text_view_calculator"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/image_view_card_calculator"

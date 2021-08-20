@@ -121,7 +121,6 @@
     <string name="image_view_home_description">Home Button</string>
     <string name="image_view_stopwatch">Stopwatch</string>
     <string name="image_view_info_description">Home Button</string>
-    <string name="coffee_amount">Coffee Amount</string>
     <string name="image_view_calculator_water_description">Water Drop</string>
     <string name="image_view_calculator_coffee_description">Coffee Bean</string>
     <string name="image_view_calculator_header_description">Calculator Header</string>

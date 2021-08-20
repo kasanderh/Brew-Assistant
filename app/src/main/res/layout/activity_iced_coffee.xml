@@ -76,7 +76,6 @@
                     app:layout_constraintTop_toBottomOf="@id/card_view_iced_coffee_description">
 
                     <TextView
-                        android:id="@+id/text_view_iced_coffee_dose"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingStart="8dp"
@@ -104,7 +103,6 @@
                     app:layout_constraintTop_toBottomOf="@id/card_view_iced_coffee_dose">
 
                     <TextView
-                        android:id="@+id/text_view_iced_coffee_recipe"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingStart="8dp"
@@ -124,8 +122,6 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <include
-        android:id="@+id/bottom_sheet"
-        layout="@layout/layout_bottom_bar" />
+    <include layout="@layout/layout_bottom_bar" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

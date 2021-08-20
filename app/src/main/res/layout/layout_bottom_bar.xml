@@ -2,7 +2,6 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/layout_bottom_sheet"
     android:layout_width="match_parent"
     android:layout_height="140dp"
     android:background="@drawable/background_bottom_bar"
@@ -57,7 +56,6 @@
         app:layout_constraintTop_toBottomOf="@id/image_view_button_info" />
 
     <Chronometer
-        android:id="@+id/chronometer_bottom_bar"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:format="%s"

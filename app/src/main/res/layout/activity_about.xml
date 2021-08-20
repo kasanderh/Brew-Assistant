@@ -64,7 +64,6 @@
             app:layout_constraintTop_toBottomOf="@id/card_view_coffee_tips_description">
 
             <TextView
-                android:id="@+id/text_view_coffee_tips_recipe"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingStart="8dp"
@@ -79,9 +78,7 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <include
-        android:id="@+id/bottom_sheet"
-        layout="@layout/layout_bottom_bar" />
+    <include layout="@layout/layout_bottom_bar" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
