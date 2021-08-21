@@ -122,6 +122,6 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <include layout="@layout/layout_bottom_bar" />
+    <include layout="@layout/layout_bottom_bar" android:id="@+id/bottomSheet" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

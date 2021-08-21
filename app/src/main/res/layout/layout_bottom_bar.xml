@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="140dp"
+    android:id="@+id/layout_bottom_sheet"
     android:background="@drawable/background_bottom_bar"
     app:behavior_hideable="false"
     app:behavior_peekHeight="50dp"
@@ -56,6 +57,7 @@
         app:layout_constraintTop_toBottomOf="@id/image_view_button_info" />
 
     <Chronometer
+        android:id="@+id/chronometer_bottom_bar"
         android:layout_width="0dp"
         android:layout_height="60dp"
         android:format="%s"

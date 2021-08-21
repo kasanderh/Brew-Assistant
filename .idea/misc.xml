@@ -3,11 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Compu-tron/AndroidStudioProjects/NewCoffeeApplication/app/src/main/res/drawable/ic_calculate.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/Compu-tron/AndroidStudioProjects/NewCoffeeApplication/app/src/main/res/drawable/ic_coffee.xml" value="0.14635416666666667" />
         <entry key="..\:/Users/Compu-tron/AndroidStudioProjects/NewCoffeeApplication/app/src/main/res/drawable/ic_coffee_cup.xml" value="0.2703125" />
+        <entry key="..\:/Users/Compu-tron/AndroidStudioProjects/NewCoffeeApplication/app/src/main/res/drawable/ic_cup_water.xml" value="0.14635416666666667" />
+        <entry key="..\:/Users/Compu-tron/AndroidStudioProjects/NewCoffeeApplication/app/src/main/res/layout/activity_about.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/Compu-tron/AndroidStudioProjects/NewCoffeeApplication/app/src/main/res/layout/activity_aeropress.xml" value="0.1453125" />
         <entry key="..\:/Users/Compu-tron/AndroidStudioProjects/NewCoffeeApplication/app/src/main/res/layout/activity_calculator.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Compu-tron/AndroidStudioProjects/NewCoffeeApplication/app/src/main/res/layout/activity_coffee_tips.xml" value="0.15940685820203893" />
+        <entry key="..\:/Users/Compu-tron/AndroidStudioProjects/NewCoffeeApplication/app/src/main/res/layout/activity_french_press.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/Compu-tron/AndroidStudioProjects/NewCoffeeApplication/app/src/main/res/layout/activity_hariov60.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Compu-tron/AndroidStudioProjects/NewCoffeeApplication/app/src/main/res/layout/activity_iced_coffee.xml" value="0.13020833333333334" />
         <entry key="..\:/Users/Compu-tron/AndroidStudioProjects/NewCoffeeApplication/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Compu-tron/AndroidStudioProjects/NewCoffeeApplication/app/src/main/res/layout/layout_bottom_bar.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/Compu-tron/AndroidStudioProjects/NewCoffeeApplication/app/src/main/res/layout/layout_bottom_bar_two.xml" value="0.264" />
         <entry key="..\:/Users/Compu-tron/AndroidStudioProjects/NewCoffeeApplication/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2703125" />
       </map>
     </option>
