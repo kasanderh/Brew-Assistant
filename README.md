@@ -26,6 +26,11 @@ The original Coffee Application was created in Java, and the new version is comp
 ## Permissions
 No permissions are needed to use the application.
 
+## Testing
+- UI tests built with <a href="https://developer.android.com/training/testing/espresso">Espresso</a>.
+- Can be found in the folder 'androidTest/java'.
+- Tests for MainActivity and CalculatorActivity for testing UI buttons and functions.
+
 ## Build Status
 Application is done, but features will be added:
 - Night Mode
