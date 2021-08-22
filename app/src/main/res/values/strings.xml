@@ -102,7 +102,7 @@
     </string>
 
     <string name="about_page">My name is <b>Kasander</b>, and I <i>love</i> coffee!
-        \n\nIn this application I have gathered all my favourite recipes for different coffee brewing methods I have experience with. I have not included espresso, as this is another big and exciting part of the coffee world.
+        \n\nIn this app I have gathered all my favourite recipes for different coffee brewing methods I have experience with. I have not included espresso, as this is another big and exciting part of the coffee world.
         \n
         \n\nMade by a coffee lover and former barista.
         \n\nSuggestions and feedback are always welcome!
@@ -110,10 +110,9 @@
     </string>
     <string name="author_contact_info">
         <b><u>You can find me at:</u></b>
-        \n <b>@github:</b> kasanderh
-        \n <b>@Instagram:</b> kaffekas
-        \n <b>@LinkedIn:</b> kasander-hanssen
-        \n\n\t\t\t\t\t\t\t\t\t\t\t\t\t<big>Happy Brewing!</big>
+        \n\n <b>@github:</b> kasanderh
+        \n\n <b>@Instagram:</b> kaffekas
+        \n\n <b>@LinkedIn:</b> kasander-hanssen
         \n
     </string>
     <string name="switch_dose_coffee">Coffee Dose 60 or 75 g/L</string>
@@ -143,6 +142,7 @@
     <string name="iced_coffee_button_description">Iced Coffee Button</string>
     <string name="coffee_tips_button_description">Coffee Tips Button</string>
     <string name="calculator_button_description">Calculator Button</string>
+    <string name="happy_brewing">Happy Brewing!</string>
 
 
 </resources>
