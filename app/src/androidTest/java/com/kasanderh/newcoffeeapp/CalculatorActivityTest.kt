@@ -31,7 +31,6 @@ class CalculatorActivityTest {
         // Check result in text_view_calculator_result matches 'You need 30 grams of coffee!'
         onView(withId(R.id.text_view_calculator_result)).check(matches(withText("You need 30 grams of coffee!")))
 
-
     }
 
     @Test
