@@ -53,7 +53,6 @@ class MainActivityTest {
 
         onView(withId(R.id.text_view_french_press_description)).check(matches(withText(R.string.french_press_description)))
 
-
     }
 
     @Test
