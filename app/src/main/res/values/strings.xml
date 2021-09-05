@@ -101,6 +101,15 @@
         \n\n<b>Enjoy your coffee.</b> Coffee can get very technical very fast. Don\'t get too hung up on the details when brewing. As long as your coffee tastes great, you have already done a lot right.
     </string>
 
+
+    <string name="cold_brew_description"><b>Cold Brew</b> has become very popular lately. It is a way of brewing coffee using cold water and letting it sit in room temperature for 8-24 hours.
+        Cold Brew is very different from brewing with hot water, and it can tone down the acidity in the coffee and highlight notes that you would not usually get in a hot brew with the same coffee.
+    </string>
+
+    <string name="cold_brew_dose">Generally, you can create a ready-to-drink cold brew or a concentrate to dilute with water, milk or other milk-substitutes. For <b>ready-to-drink cold brew</b> I recommend using a recipe of </string>
+
+    <string name="cold_brew_recipe"></string>
+
     <string name="about_page">My name is <b>Kasander</b>, and I <i>love</i> coffee!
         \n\nIn this app I have gathered all my favourite recipes for different coffee brewing methods I have experience with. I have not included espresso, as this is another big and exciting part of the coffee world.
         \n
