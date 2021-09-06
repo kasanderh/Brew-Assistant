@@ -9,9 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.NewCoffeeApp">
-        <activity android:name=".AboutActivity"
+        <activity
+            android:name=".ColdBrewActivity"
+            android:exported="true" />
+        <activity
+            android:name=".AboutActivity"
             android:label="About"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".CoffeeTipsActivity"
             android:label="Coffee Tips"

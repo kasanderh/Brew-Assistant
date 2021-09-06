@@ -106,7 +106,8 @@
         Cold Brew is very different from brewing with hot water, and it can tone down the acidity in the coffee and highlight notes that you would not usually get in a hot brew with the same coffee.
     </string>
 
-    <string name="cold_brew_dose">Generally, you can create a ready-to-drink cold brew or a concentrate to dilute with water, milk or other milk-substitutes. For <b>ready-to-drink cold brew</b> I recommend using a recipe of </string>
+    <string name="cold_brew_dose">Generally, you can create a ready-to-drink cold brew or a concentrate to dilute with water, milk or other milk-substitutes. For <b>ready-to-drink cold brew</b> I recommend using a recipe of 70g of coffee per liter water.
+        <b>concentrate</b> I recommend using a dose of g coffee per liter of water. </string>
 
     <string name="cold_brew_recipe"></string>
 
@@ -145,6 +146,7 @@
     <string name="hario_v60_header_description">Hario V60 Header</string>
     <string name="iced_coffee_header_description">Iced Coffee Header</string>
     <string name="main_activity_header_description">Main Activity Header</string>
+    <string name="cold_brew_header_description">Cold Brew Header</string>
     <string name="hario_v60_button_description">Hario V60 Button</string>
     <string name="aeropress_button_description">Aeropress Button</string>
     <string name="french_press_button_description">French Press Button</string>
