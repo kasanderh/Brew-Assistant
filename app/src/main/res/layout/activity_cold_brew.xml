@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="230dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/image_iced_coffee"
+            android:src="@drawable/image_cold_brew"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
