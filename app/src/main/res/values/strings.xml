@@ -111,10 +111,14 @@
 
     <string name="cold_brew_recipe"><b><u>Steps:</u></b>
     \n\n1. Find a container to brew the coffee in, for example a french press, a jar or a bowl.
-    \n\n2. Measure water, coffee and grind your coffee. A medium grind will be great here, think somewhere between V60 and french press.
-    \n\n3.
-    \n\n4.
-    \n\n5.
+    \n\n2. Measure water, coffee and grind your coffee. A medium grind will be great here, somewhere between V60 and french press.
+    \n\n3. Either add your coffee to a paper filter and close it, or add your coffee directly to your water.
+    \n\n4. Make sure all the coffee is saturated with water.
+    \n\n5. Set in room temperature for the desired time.
+    \n\n6. When your coffee is done brewing, remove the filter with coffee and let it drain. If you did not use a filter, you can now filter your coffee through for example a V60 or similar.
+    \n\n7. Pour your fresh cold brew into a bottle with a cap and let it cool in the fridge. It is good up to 14 days when kept cold.
+    \n\n8. Serve over ice and optionally dilute with water or your favourite milk-substitute.
+    \n\n9. Enjoy a round and tasty brew with low acidity.
     </string>
 
     <string name="about_page">My name is <b>Kasander</b>, and I <i>love</i> coffee!
