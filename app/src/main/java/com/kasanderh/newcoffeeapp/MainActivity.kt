@@ -59,10 +59,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-//        binding.cardViewColdBrew.setOnClickListener {
-//            val intent = Intent(this, ColdBrewActivity::class.java)
-//            startActivity(intent)
-//        }
+        binding.cardViewColdBrew.setOnClickListener {
+            val intent = Intent(this, ColdBrewActivity::class.java)
+            startActivity(intent)
+        }
 
 
     }

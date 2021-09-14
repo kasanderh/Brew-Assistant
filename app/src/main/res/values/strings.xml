@@ -165,6 +165,7 @@
     <string name="calculator_button_description">Calculator Button</string>
     <string name="happy_brewing">Happy Brewing!</string>
     <string name="cold_brew">Cold Brew</string>
+    <string name="cold_brew_button_description">Cold Brew Button</string>
 
 
 </resources>

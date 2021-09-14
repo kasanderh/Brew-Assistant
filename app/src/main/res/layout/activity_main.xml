@@ -29,7 +29,8 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="24dp">
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/card_view_v60"
@@ -185,12 +186,13 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginBottom="24dp"
                 app:cardCornerRadius="6dp"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toStartOf="@id/card_view_aeropress"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/card_view_french_press">
 
                 <!--                       app:layout_constraintBottom_toTopOf="@id/card_view_cold_brew"
+                                app:layout_constraintBottom_toBottomOf="parent"
+
          -->
 
                 <RelativeLayout
@@ -226,12 +228,13 @@
                 android:layout_marginTop="24dp"
                 android:layout_marginBottom="24dp"
                 app:cardCornerRadius="6dp"
-                app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@id/card_view_coffee_tips"
                 app:layout_constraintTop_toBottomOf="@id/card_view_iced_coffee">
 
 <!--                       app:layout_constraintBottom_toTopOf="@id/card_view_cold_brew"
+                app:layout_constraintBottom_toBottomOf="parent"
+
          -->
 
                 <RelativeLayout
@@ -261,44 +264,44 @@
 
             </androidx.cardview.widget.CardView>
 
-<!--            <androidx.cardview.widget.CardView-->
-<!--                android:id="@+id/card_view_cold_brew"-->
-<!--                android:layout_width="135dp"-->
-<!--                android:layout_height="135dp"-->
-<!--                android:layout_marginTop="24dp"-->
-<!--                android:layout_marginBottom="24dp"-->
-<!--                app:cardCornerRadius="6dp"-->
-<!--                app:layout_constraintBottom_toBottomOf="parent"-->
-<!--                app:layout_constraintEnd_toEndOf="parent"-->
-<!--                app:layout_constraintStart_toStartOf="parent"-->
-<!--                app:layout_constraintTop_toBottomOf="@id/card_view_coffee_tips">-->
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view_cold_brew"
+                android:layout_width="135dp"
+                android:layout_height="135dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                app:cardCornerRadius="6dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/card_view_coffee_tips">
 
-<!--                <RelativeLayout-->
-<!--                    android:layout_width="match_parent"-->
-<!--                    android:layout_height="match_parent"-->
-<!--                    android:background="@drawable/background_card_view_main"-->
-<!--                    android:gravity="center">-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/background_card_view_main"
+                    android:gravity="center">
 
-<!--                    <ImageView-->
-<!--                        android:id="@+id/image_view_card_cold_brew"-->
-<!--                        android:layout_width="80dp"-->
-<!--                        android:layout_height="80dp"-->
-<!--                        android:layout_centerInParent="true"-->
-<!--                        android:src="@drawable/icon_calculator"-->
-<!--                        android:contentDescription="@string/cold_brew_button_description" />-->
+                    <ImageView
+                        android:id="@+id/image_view_card_cold_brew"
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/icon_calculator"
+                        android:contentDescription="@string/cold_brew_button_description" />
 
-<!--                    <TextView-->
-<!--                        android:layout_width="wrap_content"-->
-<!--                        android:layout_height="wrap_content"-->
-<!--                        android:layout_below="@+id/image_view_card_cold_brew"-->
-<!--                        android:layout_centerInParent="true"-->
-<!--                        android:textColor="@color/latte_light"-->
-<!--                        android:text="@string/cold_brew"-->
-<!--                        android:textSize="18sp" />-->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/image_view_card_cold_brew"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/latte_light"
+                        android:text="@string/cold_brew"
+                        android:textSize="18sp" />
 
-<!--                </RelativeLayout>-->
+                </RelativeLayout>
 
-<!--            </androidx.cardview.widget.CardView>-->
+            </androidx.cardview.widget.CardView>
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
