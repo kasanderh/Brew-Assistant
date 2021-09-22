@@ -30,6 +30,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="24dp"
+            android:paddingBottom="24dp"
             android:layout_marginBottom="24dp">
 
             <androidx.cardview.widget.CardView
@@ -287,16 +288,16 @@
                         android:layout_width="80dp"
                         android:layout_height="80dp"
                         android:layout_centerInParent="true"
-                        android:src="@drawable/icon_calculator"
-                        android:contentDescription="@string/cold_brew_button_description" />
+                        android:contentDescription="@string/cold_brew_button_description"
+                        android:src="@drawable/icon_calculator" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/image_view_card_cold_brew"
                         android:layout_centerInParent="true"
-                        android:textColor="@color/latte_light"
                         android:text="@string/cold_brew"
+                        android:textColor="@color/latte_light"
                         android:textSize="18sp" />
 
                 </RelativeLayout>
