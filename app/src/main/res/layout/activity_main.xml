@@ -289,7 +289,7 @@
                         android:layout_height="80dp"
                         android:layout_centerInParent="true"
                         android:contentDescription="@string/cold_brew_button_description"
-                        android:src="@drawable/icon_calculator" />
+                        android:src="@drawable/icon_cold_brew" />
 
                     <TextView
                         android:layout_width="wrap_content"
